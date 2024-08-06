@@ -1,13 +1,21 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
+interface Project {
+  title: string;
+  description: string;
+  images: string[];
+  category: string;
+}
+
 const PaintingShowcase: React.FC = () => {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Vintage Display Cabinet Revival",
       description:
         "Restoring elegance to this classic mahogany china cabinet, showcasing its timeless charm and craftsmanship.",
       images: ["/image_3.jpeg", "/image_2.jpeg", "/image_1.jpeg"],
+      category: "Cabinet Restoration"
     },
     {
       title: "Modern Farmhouse Dining Set Makeover",
@@ -19,12 +27,14 @@ const PaintingShowcase: React.FC = () => {
         "/image_5.jpeg",
         "/image_4.jpeg",
       ],
+      category: "Dining Set Transformation"
     },
     {
       title: "Vintage Sideboard Revival",
       description:
         "Breathing new life into a classic piece. This elegant sideboard has been transformed with a crisp white finish, preserving its ornate details and adding modern charm to its timeless design.",
       images: ["/image_41.jpeg", "/image_40.jpeg"],
+      category: "Sideboard Makeover"
     },
   ];
 
@@ -41,6 +51,7 @@ const PaintingShowcase: React.FC = () => {
               title={project.title}
               description={project.description}
               images={project.images}
+              category={project.category}
             />
           ))}
         </div>
