@@ -5,7 +5,15 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Hammer, Paintbrush, Scissors, RefreshCw, Truck, Plus, Heart } from 'lucide-react';
 
-const services = [
+interface Service {
+  title: string;
+  description: string;
+  icon: React.ElementType;
+  image: string;
+  details: string[];
+}
+
+const services: Service[] = [
   {
     title: "Furniture Repairs",
     description: "Repair and renew old sentimental pieces, preserving memories and extending the life of your cherished furniture.",
@@ -80,7 +88,12 @@ const services = [
   }
 ];
 
-const ServiceCard = ({ service, index }) => {
+interface ServiceCardProps {
+  service: Service;
+  index: number;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -141,7 +154,7 @@ const ServiceCard = ({ service, index }) => {
   );
 };
 
-const ServicesPage = () => {
+const ServicesPage: React.FC = () => {
   return (
     <div className="bg-daisy-cream min-h-screen py-16">
       <div className="container mx-auto px-4">
