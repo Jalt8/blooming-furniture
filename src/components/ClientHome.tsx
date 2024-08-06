@@ -100,7 +100,7 @@ const ClientHome: React.FC = () => {
           <h2 className="text-4xl font-bold mb-12 text-center">What Our Clients Say</h2>
           <div className="max-w-3xl mx-auto">
             <blockquote className="text-center">
-              <p className="text-2xl italic mb-4">"Blooming Furnitures brought my grandmother's old rocking chair back to life. It's now the centerpiece of our living room!"</p>
+              <p className="text-2xl italic mb-4">"Blooming Furniture brought my grandmother's old rocking chair back to life. It's now the centerpiece of our living room!"</p>
               <footer className="font-semibold">- Sarah J.</footer>
             </blockquote>
           </div>

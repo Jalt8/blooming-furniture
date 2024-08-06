@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Hammer, Paintbrush, Scissors, RefreshCw, Truck, Plus } from 'lucide-react';
+import { Hammer, Paintbrush, Scissors, RefreshCw, Truck, Plus, Heart } from 'lucide-react';
 
 const services = [
   {
@@ -33,7 +33,7 @@ const services = [
   {
     title: "Re-deco",
     description: "Transform your furniture with high-quality chalk paint in your choice of color and sheen.",
-    icon: Paintbrush,
+    icon: Heart,
     image: "/image_50.jpg",
     details: [
       "Wide variety of colors",

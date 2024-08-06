@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ProjectCard from '@/components/ProjectCard';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import ProjectCard from "@/components/ProjectCard";
 
 // Types
 type PortfolioItem = {
@@ -14,68 +14,118 @@ type PortfolioItem = {
 };
 
 const portfolioItems: PortfolioItem[] = [
-    {
-      id: 1,
-      title: "Victorian Dresser Revival",
-      description: "Restored a 19th-century Victorian dresser to its former glory.",
-      images: ["/image_2.jpeg", "/image_3.jpeg"],
-      category: "Antique"
-    },
-    {
-      id: 2,
-      title: "Mid-Century Modern Chair Reimagined",
-      description: "Breathed new life into a classic mid-century modern chair design.",
-      images: ["/image_4.jpeg", "/image_5.jpeg"],
-      category: "Modern"
-    },
-    {
-      id: 3,
-      title: "Rustic Dining Table Transformation",
-      description: "Transformed a worn-out dining table into a stunning rustic centerpiece.",
-      images: ["/image_6.jpeg", "/image_7.jpeg"],
-      category: "Rustic"
-    },
-    {
-      id: 4,
-      title: "Art Deco Cabinet Restoration",
-      description: "Meticulously restored an Art Deco cabinet to its original splendor.",
-      images: ["/image_8.jpeg", "/image_9.jpeg"],
-      category: "Art Deco"
-    },
-    {
-      id: 5,
-      title: "Vintage Rocking Chair Renewal",
-      description: "Renewed a cherished vintage rocking chair with care and precision.",
-      images: ["/image_10.jpeg", "/image_11.jpeg"],
-      category: "Vintage"
-    },
+  {
+    id: 1,
+    title: "Vintage Display Cabinet Revival",
+    description:
+    "Restoring elegance to this classic mahogany china cabinet, showcasing its timeless charm and craftsmanship.",
+    images: ["/image_3.jpeg", "/image_2.jpeg", "/image_1.jpeg"],
+    category: "Vintage",
+  },
+  {
+    id: 2,
+    title: "Modern Farmhouse Dining Set Makeover",
+    description:
+    "Transforming a rustic picnic table into an elegant indoor dining solution. This whitewashed table and bench combo now brings charm and versatility to any dining space.",
+    images: [
+      "/image_7.jpeg",
+      "/image_6.jpeg",
+      "/image_5.jpeg",
+      "/image_4.jpeg",
+    ],
+    category: "Modern",
+  },
+  {
+    id: 3,
+    title: "Dutch-Inspired Antique Washstand Revival",
+    description: "Reimagining a classic washstand with a charming Dutch twist. This beautifully restored pine piece features intricate blue and white tile work, a mirror with ornate framing, and multi-functional storage, perfect for adding character to any space.",
+    images: ["/image_11.jpeg", "/image_9.jpeg"],
+    category: "Antique",
+  },
+  {
+    id: 4,
+    title: "Artisanal Bakery Display Makeover",
+    description: "Transforming a standard store bakery into an inviting artisanal experience. Hand-drawn chalkboard illustrations and playful typography bring warmth and charm to the bread aisle, enticing customers with visual stories of freshly baked goods.",
+    images: [
+      "/image_17.jpeg",
+      "/image_18.jpeg",
+      "/image_19.jpeg",
+      "/image_20.jpeg",
+      "/image_21.jpeg",
+      "/image_22.jpeg",
+      "/image_23.jpeg",
+      "/image_24.jpeg",
+      "/image_25.jpeg",
+      "/image_26.jpeg",
+      "/image_27.jpeg",
+      "/image_28.jpeg",
+      "/image_29.jpeg",
+      "/image_30.jpeg",
+    ],
+    category: "Art Deco",
+  },
+  {
+    id: 5,
+    title: "Charming Cottage Kitchen Refresh",
+    description: "Transforming a dated kitchen into a cozy, mint-green haven. This renovation breathes new life into the space with painted cabinets, polished wood countertops, and thoughtful details, creating a perfect blend of rustic charm and modern functionality.",
+    images: ["/image_31.jpeg", "/image_32.jpeg", "/image_33.jpeg"],
+    category: "Vintage",
+  },
+  {
+    id: 6,
+    title: "Rustic Windmill Barn Door Revival",
+    description: "Transforming a classic barn door into a captivating statement piece. This restored door showcases a weathered blue and white finish, featuring a clever windmill blade design and a pop of red, perfect for adding rustic charm to farmhouse-inspired interiors.",
+    images: ["/image_34.jpeg"],
+    category: "Rustic",
+  },
+  {
+    id: 7,
+    title: "Vintage Sideboard Revival",
+    description:
+    "Breathing new life into a classic piece. This elegant sideboard has been transformed with a crisp white finish, preserving its ornate details and adding modern charm to its timeless design.",
+    images: [
+      "/image_39.jpeg",
+      "/image_40.jpeg",
+      "/image_41.jpeg",
+      "/image_42.jpeg",
+      "/image_43.jpeg",
+      "/image_44.jpeg",
+    ],
+    category: "Vintage",
+  },
 ];
 
 const PortfolioPage: React.FC = () => {
   const [filter, setFilter] = useState<string | null>(null);
 
-  const categories = ['All', ...Array.from(new Set(portfolioItems.map(item => item.category)))];
+  const categories = [
+    "All",
+    ...Array.from(new Set(portfolioItems.map((item) => item.category))),
+  ];
 
-  const filteredItems = filter && filter !== 'All'
-    ? portfolioItems.filter(item => item.category === filter)
-    : portfolioItems;
+  const filteredItems =
+    filter && filter !== "All"
+      ? portfolioItems.filter((item) => item.category === filter)
+      : portfolioItems;
 
   return (
     <div className="min-h-screen bg-white-daisy py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-serif text-dark-wood text-center mb-12">Our Restoration Portfolio</h1>
-        
+        <h1 className="text-4xl md:text-5xl font-serif text-dark-wood text-center mb-12">
+          Our Restoration Portfolio
+        </h1>
+
         <div className="flex justify-center mb-8">
           <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
               <button
                 key={category}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
-                  category === (filter || 'All')
-                    ? 'bg-forest-green text-white-daisy'
-                    : 'bg-golden-center text-dark-wood hover:bg-daisy-cream'
+                  category === (filter || "All")
+                    ? "bg-forest-green text-white-daisy"
+                    : "bg-golden-center text-dark-wood hover:bg-daisy-cream"
                 }`}
-                onClick={() => setFilter(category === 'All' ? null : category)}
+                onClick={() => setFilter(category === "All" ? null : category)}
               >
                 {category}
               </button>
@@ -83,8 +133,8 @@ const PortfolioPage: React.FC = () => {
           </div>
         </div>
 
-        <motion.div 
-          layout 
+        <motion.div
+          layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence>
@@ -107,7 +157,9 @@ const PortfolioPage: React.FC = () => {
         </motion.div>
 
         {filteredItems.length === 0 && (
-          <p className="text-center text-dark-wood mt-12">No items found in this category.</p>
+          <p className="text-center text-dark-wood mt-12">
+            No items found in this category.
+          </p>
         )}
       </div>
     </div>

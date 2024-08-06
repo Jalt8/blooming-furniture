@@ -29,13 +29,18 @@ blooming-furniture
 │  ├─ logs
 │  │  ├─ HEAD
 │  │  └─ refs
-│  │     └─ heads
-│  │        └─ master
+│  │     ├─ heads
+│  │     │  └─ main
+│  │     └─ remotes
+│  │        └─ origin
+│  │           └─ main
 │  ├─ objects
 │  │  ├─ 00
 │  │  │  └─ 5b90921d365a2047b0e4ec2b2b4a6a419b06e8
 │  │  ├─ 01
 │  │  │  └─ 22d6de43fbe7bff258b6e1a8a872bf475b9702
+│  │  ├─ 03
+│  │  │  └─ 2cbcc73f2d49ec0ea2087e9af3a038ed5ffbad
 │  │  ├─ 04
 │  │  │  └─ 725214292aaf4ac251eb05e74c5a89c48e00e7
 │  │  ├─ 05
@@ -51,6 +56,8 @@ blooming-furniture
 │  │  │  └─ a4277355fadde682ecc8399ee656838dc74049
 │  │  ├─ 0e
 │  │  │  └─ 367769b93a74a02e229e58ed76212e6f23c2ba
+│  │  ├─ 0f
+│  │  │  └─ 2c6b2b3d5dc99fef1c1b2dd49b2fe5a321f631
 │  │  ├─ 10
 │  │  │  └─ 456007eb8e546493c5735577e94fb9e4192c91
 │  │  ├─ 13
@@ -62,20 +69,29 @@ blooming-furniture
 │  │  ├─ 1a
 │  │  │  ├─ 69fd2a450afc3bf47e08b22c149190df0ffdb4
 │  │  │  └─ 8e87b602cb49ec904a489e1859638c4c86aa3e
+│  │  ├─ 22
+│  │  │  └─ b14690096ab7532c97e64a244c25a3ef48c589
+│  │  ├─ 26
+│  │  │  └─ 267b782d97ccf97bf44000d968cde936399a9f
 │  │  ├─ 29
 │  │  │  └─ 9a46d0810dc02f9ff41a3f0db453fd4f8a5501
 │  │  ├─ 2a
+│  │  │  ├─ 460aafe0a95797044c8023d0f1fa75cef387ef
 │  │  │  └─ cfd440d7c9eb66792802a8660bf245a4f5a3ab
 │  │  ├─ 2b
 │  │  │  └─ 46d5d6a4629c769281a7e6ef23534d19692db2
 │  │  ├─ 2e
 │  │  │  └─ 0a8927d4a447da9f0619c6f09dfc7164a97064
 │  │  ├─ 2f
-│  │  │  └─ 293f89f08cf2a1208ae51597be9b5099aa8d82
+│  │  │  ├─ 293f89f08cf2a1208ae51597be9b5099aa8d82
+│  │  │  └─ 8c912a5db3694d4050854bda1efcfddf8d1ca7
 │  │  ├─ 32
+│  │  │  ├─ 0386bf7a849a7781e2c6b30d32623d59364d37
 │  │  │  └─ 2d4d089e1b4ae578efd9cec48788f39295d5ac
 │  │  ├─ 33
 │  │  │  └─ 14e4780a0c8785366fdc3b8499668d163e33f8
+│  │  ├─ 35
+│  │  │  └─ 21a0c23e4bdf8869f465bce3aef723607fa8da
 │  │  ├─ 37
 │  │  │  └─ 921b239d99e0d2f702829c7ce7857cc5990949
 │  │  ├─ 3b
@@ -83,11 +99,15 @@ blooming-furniture
 │  │  │  └─ ce0e87044fe954165d3d66f8def4f05cebece9
 │  │  ├─ 3f
 │  │  │  └─ 3a8cff9ce97812f71b1f46cf8b3636c73de93f
+│  │  ├─ 42
+│  │  │  └─ b912f56d8cdb0b1c6007bf2a0bdf46b8dfee38
 │  │  ├─ 46
 │  │  │  ├─ 0887b195b283fdc25530740dea2ab2c487b357
 │  │  │  ├─ 1503edede6367d891ece30197ba5fef7236308
 │  │  │  ├─ 78774e6d606704bce1897a5dab960cd798bf66
 │  │  │  └─ e165b67cff5c56eb661cce795679d008e100f3
+│  │  ├─ 4c
+│  │  │  └─ fa97febb26c4d0f6460160591795cc10317233
 │  │  ├─ 4e
 │  │  │  ├─ 52a2f06da39b0bb581640df874cac1dab8ff53
 │  │  │  └─ 5fb6b34c106dcd21d409216afd60d2e47e180c
@@ -104,10 +124,14 @@ blooming-furniture
 │  │  │  └─ c16cd241ddd3765bd59d64d811ef36b6c228d7
 │  │  ├─ 62
 │  │  │  └─ b30822853d06354518fbda5812ca7a7f6c7aaf
+│  │  ├─ 65
+│  │  │  └─ 5c6d88ac25b813baf3c3403197b85354612308
 │  │  ├─ 66
 │  │  │  └─ f3df305739bee1d1b10b5e11ac66151ffe20fc
 │  │  ├─ 68
 │  │  │  └─ 4e20a09fa33bd4174df0ad0ad901394aac59c6
+│  │  ├─ 69
+│  │  │  └─ 7d5498d1af983020215ecc9949f4f4360d2c14
 │  │  ├─ 6b
 │  │  │  └─ 00da291cf5616b01aa77aa7da70e03ad033838
 │  │  ├─ 6c
@@ -119,6 +143,8 @@ blooming-furniture
 │  │  ├─ 72
 │  │  │  ├─ 9f5068844dfea2d116f1883f811fddc13976ff
 │  │  │  └─ c029c950a83e43f857d148651b5fb2a5257f18
+│  │  ├─ 75
+│  │  │  └─ c58161699b114f6d96de42101064ad09fc2497
 │  │  ├─ 76
 │  │  │  └─ 54d376a37e7d76ead6df6572f69b1d0ee749d0
 │  │  ├─ 77
@@ -127,6 +153,8 @@ blooming-furniture
 │  │  │  └─ 2b3be4a9090ff7e42cb297f83712b656d22347
 │  │  ├─ 79
 │  │  │  └─ bc0c2f9d95c9ae02a52866dfaa3063928c15d6
+│  │  ├─ 7a
+│  │  │  └─ 37e9eb5591b60ed0a33ad1ff1f44aea56a2870
 │  │  ├─ 7b
 │  │  │  ├─ 2858930495fc4a76d7a51d958bacf2d64eb81f
 │  │  │  └─ 32132fdba8d4d2e4ec16c9126fa58d5c3f0298
@@ -137,10 +165,13 @@ blooming-furniture
 │  │  │  └─ f96cb30201f0c75fc08771fdb83add66a099b3
 │  │  ├─ 81
 │  │  │  └─ 2547598c23967fce09c58e93987b3196da7682
+│  │  ├─ 83
+│  │  │  └─ 0e7824566ed4cd2db947f6f2216a9aba97d4e1
 │  │  ├─ 85
 │  │  │  └─ 7c29c4b431efc12d4af5882aa057a766c15512
 │  │  ├─ 86
-│  │  │  └─ 41da20a5f95b3ae8f9f0ce60a07945b28ade0d
+│  │  │  ├─ 41da20a5f95b3ae8f9f0ce60a07945b28ade0d
+│  │  │  └─ 8999caebf43557a5359e28af493e095b80a8ec
 │  │  ├─ 87
 │  │  │  └─ 5c01e819b90038f0c3e4aee2a4dcc2086b0e14
 │  │  ├─ 8c
@@ -153,6 +184,8 @@ blooming-furniture
 │  │  │  └─ 83f68b48e21ddcce1995299cd5a454469f232c
 │  │  ├─ 90
 │  │  │  └─ 9b4d36a74a10dd0ef1f99f02fc81f1dd138ea9
+│  │  ├─ 93
+│  │  │  └─ 4c78867adcdb1915c65df70d5d231cde553de4
 │  │  ├─ 94
 │  │  │  └─ 53a7db15f85fbdf468e1e4da4267c27b96781b
 │  │  ├─ 97
@@ -183,15 +216,19 @@ blooming-furniture
 │  │  │  ├─ 930d0f047184047cb81d620436d91653438b8b
 │  │  │  ├─ 9e0359371a9b6b4691e0d13c462b2728c4ec67
 │  │  │  └─ b9612781e0c9f26ca985b1f86e037413dc3f9e
+│  │  ├─ b7
+│  │  │  └─ 07436e716e7a35eeee97f882c11c2a2e7ee525
 │  │  ├─ bb
 │  │  │  └─ e13aa5fd9a5cc9847f241b82fae2e9355bfedb
 │  │  ├─ be
-│  │  │  └─ 9126a900b05e31ea24e4f8ed4a8acaea38590f
+│  │  │  ├─ 9126a900b05e31ea24e4f8ed4a8acaea38590f
+│  │  │  └─ df86150a562b18e50d8b39c079e4291e07a548
 │  │  ├─ bf
 │  │  │  ├─ 72f747088497ba1f8f68c53bca09c3e0e3eb3d
 │  │  │  └─ fb357a7122523ec94045523758c4b825b448ef
 │  │  ├─ c0
-│  │  │  └─ 88d154feedc66c69e5dd772e7731ad2f0a9c2e
+│  │  │  ├─ 88d154feedc66c69e5dd772e7731ad2f0a9c2e
+│  │  │  └─ fad17b9a73ad4b7a3d80683d044b4b3d55781a
 │  │  ├─ c1
 │  │  │  └─ 9b0d7a33efcf9486b50e14388838c0255b1256
 │  │  ├─ c2
@@ -207,6 +244,10 @@ blooming-furniture
 │  │  ├─ d2
 │  │  │  ├─ 7777bd280bc3cdfd81b5954ec8c7be38fd7e9a
 │  │  │  └─ f84222734f27b623d1c80dda3561b04d1284af
+│  │  ├─ d6
+│  │  │  └─ 5836bef68ddb7c3e8dfc076836de3cdb2da6a7
+│  │  ├─ d7
+│  │  │  └─ 3c8f1cad6ab61ff8b81ab97e937267a08b09af
 │  │  ├─ de
 │  │  │  ├─ 553b436904dcc1f85ff6bcc90b827598596092
 │  │  │  └─ 65106f489b7415e06a4fd2cfd2f8cf3704f939
@@ -254,7 +295,10 @@ blooming-furniture
 │  │  └─ pack
 │  └─ refs
 │     ├─ heads
-│     │  └─ master
+│     │  └─ main
+│     ├─ remotes
+│     │  └─ origin
+│     │     └─ main
 │     └─ tags
 ├─ .gitignore
 ├─ components.json
@@ -348,16 +392,20 @@ blooming-furniture
 │  │  ├─ ClientHome.tsx
 │  │  ├─ Footer.tsx
 │  │  ├─ Layout.tsx
+│  │  ├─ Modal.tsx
 │  │  ├─ Navbar.tsx
+│  │  ├─ PaintingShowcase.tsx
+│  │  ├─ ProjectCard.tsx
 │  │  ├─ SEO.tsx
 │  │  ├─ ServiceArea.tsx
-│  │  ├─ ShowCaseSection.tsx
 │  │  └─ ui
 │  │     ├─ button.tsx
 │  │     └─ card.tsx
 │  ├─ lib
 │  │  └─ utils.ts
 │  ├─ pages
+│  │  ├─ api
+│  │  │  └─ contact.ts
 │  │  └─ _app.tsx
 │  ├─ styles
 │  ├─ types

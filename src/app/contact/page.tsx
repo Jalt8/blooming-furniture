@@ -10,6 +10,8 @@ const ContactPage = () => {
     phone: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,10 +21,32 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission logic here
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -39,15 +63,15 @@ const ContactPage = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 text-forest-green mr-4" />
-                  <span className="text-dark-wood">(123) 456-7890</span>
+                  <span className="text-dark-wood">(079) 375 2588</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-forest-green mr-4" />
-                  <span className="text-dark-wood">info@timelesstouch.com</span>
+                  <span className="text-dark-wood">info@bloomingfurniture.co.za</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 text-forest-green mr-4" />
-                  <span className="text-dark-wood">123 Restoration St, Langebaan, Western Cape, South Africa</span>
+                  <span className="text-dark-wood">Langebaan, Western Cape, South Africa</span>
                 </div>
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-forest-green mr-4" />
@@ -122,11 +146,18 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   className="w-full bg-forest-green text-white-daisy py-3 px-4 rounded-md hover:bg-dark-wood focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-forest-green flex items-center justify-center transition duration-150 ease-in-out"
+                  disabled={isSubmitting}
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                   <Send className="ml-2 h-5 w-5" />
                 </button>
               </div>
+              {submitStatus === 'success' && (
+                <p className="mt-4 text-green-600">Message sent successfully!</p>
+              )}
+              {submitStatus === 'error' && (
+                <p className="mt-4 text-red-600">Error sending message. Please try again.</p>
+              )}
             </form>
           </div>
         </div>

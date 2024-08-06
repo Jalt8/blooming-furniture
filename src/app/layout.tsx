@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blooming Furnitures",
+  title: "Blooming Furniture",
   description: "Discover timeless elegance with our expert furniture restoration and custom design services.",
   icons: {
     icon: [
