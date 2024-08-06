@@ -150,6 +150,7 @@ const PortfolioPage: React.FC = () => {
                   title={item.title}
                   description={item.description}
                   images={item.images}
+                  category={item.category} // Add this line
                 />
               </motion.div>
             ))}

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -48,9 +49,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta name="msapplication-TileColor" content="#da532c" />
-      </head>
+      </Head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
         <Navbar />
         <main className="pt-20">{children}</main>
