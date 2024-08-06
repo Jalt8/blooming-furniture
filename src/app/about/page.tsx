@@ -43,7 +43,7 @@ const AboutPage = () => {
             className="space-y-6"
           >
             <p className="text-lg text-forest-green leading-relaxed">
-              At Blooming Furniture, we breathe new life into cherished furniture pieces, preserving memories and crafting legacies. Our passion for restoration goes beyond mere repair; we're custodians of history, weaving stories of the past into the fabric of the present.
+              At Blooming Furniture, we breathe new life into cherished furniture pieces, preserving memories and crafting legacies. Our passion for restoration goes beyond mere repair; we&apos;re custodians of history, weaving stories of the past into the fabric of the present.
             </p>
             {/* <p className="text-lg text-forest-green leading-relaxed">
               Founded in 2005 by master craftsman Jonathan Hartley, Blooming Furnitures has grown from a small workshop to a beacon of excellence in furniture restoration. Our team of skilled artisans combines time-honored techniques with modern innovations to deliver results that not only restore but often surpass the original beauty of each piece.
