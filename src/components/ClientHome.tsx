@@ -5,9 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Hammer, Award, MessageSquare } from 'lucide-react';
-import ShowcaseSection from '@/components/ShowcaseSection';
+import PaintingShowcase from '@/components/PaintingShowcase';
 
-const ClientHome = () => {
+const ClientHome: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section with Parallax Effect */}
@@ -23,7 +23,7 @@ const ClientHome = () => {
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.onerror = null;
-            target.src = '/img/placeholder.jpg'; // Make sure you have a placeholder image
+            target.src = '/img/placeholder.jpg';
           }}
         />
         <div className="absolute inset-0 bg-dark-wood opacity-50 z-10"></div>
@@ -92,7 +92,7 @@ const ClientHome = () => {
       </section>
 
       {/* Showcase Section */}
-      <ShowcaseSection />
+      <PaintingShowcase />
 
       {/* Testimonials */}
       <section className="py-20 bg-forest-green text-white-daisy">

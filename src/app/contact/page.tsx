@@ -47,7 +47,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 text-forest-green mr-4" />
-                  <span className="text-dark-wood">123 Restoration St, Furniture City, FC 12345</span>
+                  <span className="text-dark-wood">123 Restoration St, Langebaan, Western Cape, South Africa</span>
                 </div>
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-forest-green mr-4" />
@@ -136,7 +136,7 @@ const ContactPage = () => {
             <h2 className="text-2xl font-semibold text-dark-wood mb-6">Visit Our Workshop</h2>
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1961868213017!2d-73.98631932403373!3d40.74881524332175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1685144985191!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52901.31780248376!2d18.010544585501704!3d-33.09102200819919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c34a0485494d675%3A0xd93e6f3069d2309e!2sLangebaan%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1691338127371!5m2!1sen!2sus"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
