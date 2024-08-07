@@ -173,7 +173,7 @@ const ServicesPage: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl text-center text-forest-green mb-12 max-w-3xl mx-auto"
         >
-          At TimelessTouch, we specialize in breathing new life into your cherished pieces. From minor repairs to complete makeovers, our expert craftsmen are dedicated to preserving the beauty and memories of your furniture.
+          At Blooming Furniture, we specialize in breathing new life into your cherished pieces. From minor repairs to complete makeovers, our expert craftsmen are dedicated to preserving the beauty and memories of your furniture.
         </motion.p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -188,7 +188,7 @@ const ServicesPage: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="bg-golden-center rounded-lg p-8 shadow-lg"
         >
-          <h2 className="text-3xl font-serif text-dark-wood mb-6 text-center">Why Choose TimelessTouch?</h2>
+          <h2 className="text-3xl font-serif text-dark-wood mb-6 text-center">Why Choose Blooming Furniture?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Hammer, title: "Expert Craftsmanship", description: "Our skilled artisans bring years of experience to every project." },
