@@ -7,48 +7,52 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/portfolio', label: 'Portfolio' },
-    { href: '/contact', label: 'Contact' },
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-daisy-cream shadow-md' : 'bg-transparent'}`}>
+    <nav className="bg-daisy-cream shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-forest-green">
-              Blooming Furniture
+        <div className="flex items-center justify-between h-24">
+          <div className="flex items-center flex-shrink-0">
+            <Link href="/" className="flex items-center">
+              <img className="h-16 w-auto mr-2 sm:mr-4" src="/android-chrome-256x256.png" alt="Blooming Furniture" />
+              <div className="flex flex-col">
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold text-dark-wood whitespace-nowrap">Blooming Furniture</span>
+                <span className="text-xs sm:text-sm text-forest-green">Restoration and Refurbishment</span>
+              </div>
             </Link>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navLinks.map((link) => (
+          <div className="hidden md:block flex-grow">
+            <div className="ml-10 flex items-center justify-end space-x-4">
+              {navItems.map((item) => (
                 <Link
-                  key={link.href}
-                  href={link.href}
+                  key={item.name}
+                  href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
-                    pathname === link.href
-                      ? 'bg-forest-green text-white-daisy'
-                      : 'text-forest-green hover:bg-golden-center hover:text-dark-wood'
+                    pathname === item.href
+                      ? 'text-white-daisy bg-forest-green'
+                      : 'text-dark-wood hover:text-forest-green hover:bg-golden-center'
                   } transition-colors duration-300`}
                 >
-                  {link.label}
+                  {item.name}
                 </Link>
               ))}
             </div>
@@ -56,14 +60,10 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-forest-green hover:text-white-daisy hover:bg-forest-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-forest-green focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-dark-wood hover:text-forest-green hover:bg-golden-center focus:outline-none focus:ring-2 focus:ring-inset focus:ring-forest-green"
             >
               <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
-              )}
+              {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -72,18 +72,18 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
+            {navItems.map((item) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={item.name}
+                href={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  pathname === link.href
-                    ? 'bg-forest-green text-white-daisy'
-                    : 'text-forest-green hover:bg-golden-center hover:text-dark-wood'
+                  pathname === item.href
+                    ? 'text-white-daisy bg-forest-green'
+                    : 'text-dark-wood hover:text-forest-green hover:bg-golden-center'
                 } transition-colors duration-300`}
                 onClick={() => setIsOpen(false)}
               >
-                {link.label}
+                {item.name}
               </Link>
             ))}
           </div>
