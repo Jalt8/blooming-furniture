@@ -1,13 +1,21 @@
-'use client';
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -20,13 +28,13 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-daisy-cream shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24"> {/* Increased height to accommodate subheading */}
+        <div className="flex items-center justify-between h-24">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <img className="h-16 w-auto mr-4" src="android-chrome-256x256.png" alt="Blooming Furniture" />
+              <img className="h-16 w-auto mr-2 sm:mr-4" src="android-chrome-256x256.png" alt="Blooming Furniture" />
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-dark-wood">Blooming Furniture</span>
-                <span className="text-sm text-forest-green">Restoration and Refurbishment</span>
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold text-dark-wood">Blooming Furniture</span>
+                <span className="text-xs sm:text-sm text-forest-green">Restoration and Refurbishment</span>
               </div>
             </Link>
           </div>
@@ -59,7 +67,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {isOpen && (
+      {isOpen && isMobile && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
