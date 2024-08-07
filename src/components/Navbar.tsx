@@ -28,25 +28,25 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="bg-daisy-cream shadow-md w-full z-50">
+    <nav className="bg-daisy-cream shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img className="h-12 w-auto mr-2" src="/android-chrome-256x256.png" alt="Blooming Furniture" />
+              <img className="h-16 w-auto mr-2 sm:mr-4" src="/android-chrome-256x256.png" alt="Blooming Furniture" />
               <div className="flex flex-col">
-                <span className="text-lg sm:text-xl lg:text-2xl font-bold text-dark-wood whitespace-nowrap">Blooming Furniture</span>
-                <span className="text-xs lg:text-sm text-forest-green hidden sm:block">Restoration and Refurbishment</span>
+                <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-dark-wood whitespace-nowrap">Blooming Furniture</span>
+                <span className="text-xs sm:text-sm text-forest-green">Restoration and Refurbishment</span>
               </div>
             </Link>
           </div>
-          <div className="hidden lg:block">
-            <div className="ml-4 flex items-center space-x-2 lg:space-x-4">
+          <div className="hidden lg:block flex-grow">
+            <div className="ml-10 flex items-center justify-end space-x-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-2 py-1 rounded-md text-sm font-medium ${
+                  className={`px-3 py-2 rounded-md text-sm font-medium ${
                     pathname === item.href
                       ? 'text-white-daisy bg-forest-green'
                       : 'text-dark-wood hover:text-forest-green hover:bg-golden-center'

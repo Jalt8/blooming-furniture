@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-daisy-cream text-dark-wood">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="space-y-6">
             <h2 className="text-2xl font-serif">Blooming Furnitures</h2>
             <p className="text-forest-green max-w-xs">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-forest-green" />
-                <a href="mailto:info@timelesstouch.co.za" className="hover:underline">info@bloomingfurniture.co.za</a>
+                <a href="mailto:info@bloomingfurniture.co.za" className="hover:underline">info@bloomingfurniture.co.za</a>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-forest-green mt-1" />
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-golden-center">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="text-sm text-forest-green">&copy; 2024 Blooming Furniture. All rights reserved.</p>
             <div className="flex space-x-4 text-sm">
               <Link href="/privacy" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">Privacy Policy</Link>
