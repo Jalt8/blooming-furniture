@@ -1,5 +1,9 @@
-import ClientHome from '@/components/ClientHome'
+import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
+
+const ClientHome = dynamic(() => import('@/components/ClientHome'), {
+  ssr: false,
+})
 
 export const metadata: Metadata = {
   title: 'Blooming Furniture - Expert Furniture Restoration',
