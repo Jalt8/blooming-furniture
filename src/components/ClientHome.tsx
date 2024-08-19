@@ -1,15 +1,18 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Hammer, Award, MessageSquare } from 'lucide-react';
 import PaintingShowcase from '@/components/PaintingShowcase';
+import WhatsAppWidget from '@/components/WhatsAppWidget';
 
 const ClientHome: React.FC = () => {
+  const [userIntent, setUserIntent] = useState('');
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
       {/* Hero Section with Parallax Effect */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <Image
@@ -117,6 +120,13 @@ const ClientHome: React.FC = () => {
           </Link>
         </div>
       </section>
+
+      {/* WhatsApp Widget */}
+      <WhatsAppWidget 
+        phoneNumber="+27793752588"
+        message={`Hi, I'm interested in ${userIntent || 'furniture restoration services'}.`}
+        className="lg:absolute lg:bottom-8 lg:right-8"
+      />
     </div>
   );
 };
