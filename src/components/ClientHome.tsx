@@ -120,13 +120,6 @@ const ClientHome: React.FC = () => {
           </Link>
         </div>
       </section>
-
-      {/* WhatsApp Widget */}
-      <WhatsAppWidget 
-        phoneNumber="+27793752588"
-        message={`Hi, I'm interested in ${userIntent || 'furniture restoration services'}.`}
-        className="lg:absolute lg:bottom-8 lg:right-8"
-      />
     </div>
   );
 };
