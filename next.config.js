@@ -21,7 +21,7 @@ const nextConfig = {
   env: {
     MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
     MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
-    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: 'your_cloud_name',
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: 'dofdwsngd',
   },
   compiler: {
     removeConsole: process.env.NODE_ENV !== 'development',
