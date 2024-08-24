@@ -15,7 +15,7 @@ const PaintingShowcase: React.FC = () => {
       title: "Vintage Display Cabinet Revival",
       description:
         "Restoring elegance to this classic mahogany china cabinet, showcasing its timeless charm and craftsmanship.",
-      images: ["image_3._pcofas", "image_2_wiwxtl", "image_1_thfxte"],
+      images: ["/BloomingFurniture/image_3._pcofas", "/BloomingFurniture/image_2_wiwxtl", "/BloomingFurniture/image_1_thfxte"],
       category: "Cabinet Restoration"
     },
     {

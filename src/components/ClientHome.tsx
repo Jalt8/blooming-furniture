@@ -38,7 +38,7 @@ const ClientHome: React.FC = () => {
           width="1920"
           height="1080"
           alt="Hero background image"
-          src="image_46_otypus"
+          src="BloomingFurniture/image_46_otypus"
           quality="80"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1920, 1080))}`}
