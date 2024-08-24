@@ -40,7 +40,7 @@ const portfolioItems: PortfolioItem[] = [
     id: 3,
     title: "Dutch-Inspired Antique Washstand Revival",
     description: "Reimagining a classic washstand with a charming Dutch twist. This beautifully restored pine piece features intricate blue and white tile work, a mirror with ornate framing, and multi-functional storage, perfect for adding character to any space.",
-    images: ["image_11_zj1j1w", "image_9_q1q11y"],
+    images: ["image_11_m3cckd", "image_9_iocp9n"],
     category: "Antique",
   },
   {
