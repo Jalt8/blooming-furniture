@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from 'lucide-react';
+import { CldImage } from 'next-cloudinary';
 
 interface ModalProps {
   isOpen: boolean;
@@ -90,10 +91,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, images, currentIndex, on
               <ChevronRight size={48} />
             </button>
 
-            <motion.img 
-              src={images[currentIndex]}
-              alt={`Image ${currentIndex + 1}`}
-              className={`max-w-[90%] max-h-[90%] object-contain ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
+            <CldImage
+              width="800"
+              height="600"
+              src={`blooming-furniture/${images[currentIndex].replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
+              alt={`Modal image ${currentIndex + 1}`}
+              className={`max-w-full max-h-[80vh] object-contain ${isZoomed ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
               onClick={() => setIsZoomed(!isZoomed)}
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}

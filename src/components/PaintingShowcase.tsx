@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { CldImage } from 'next-cloudinary';
 
 interface Project {
   title: string;
