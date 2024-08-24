@@ -1,9 +1,7 @@
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
 import { Metadata } from 'next'
 
 const ClientHome = dynamic(() => import('@/components/ClientHome'), {
-  loading: () => <p>Loading...</p>,
   ssr: false,
 })
 
@@ -15,9 +13,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Suspense fallback={<p>Loading...</p>}>
-        <ClientHome />
-      </Suspense>
+      <ClientHome />
     </main>
   )
 }
