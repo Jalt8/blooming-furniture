@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
+import { CldImage } from 'next-cloudinary';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,13 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-24">
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img className="h-16 w-auto mr-2 sm:mr-4" src="/android-chrome-256x256.png" alt="Blooming Furniture" />
+              <CldImage
+                width="100"
+                height="100"
+                src="BloomingFurniture/android-chrome-256x256_zkcmph"
+                alt="Blooming Furniture"
+                className="h-16 w-auto mr-2 sm:mr-4"
+              />
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-dark-wood whitespace-nowrap">Blooming Furniture</span>
                 <span className="text-xs sm:text-sm text-forest-green">Restoration and Refurbishment</span>

@@ -18,7 +18,7 @@ const services: Service[] = [
     title: "Furniture Repairs",
     description: "Repair and renew old sentimental pieces, preserving memories and extending the life of your cherished furniture.",
     icon: Hammer,
-    image: "/image_51.png",
+    image: "image_51_bvmlja",
     details: [
       "Structural repairs",
       "Joint reinforcement",
@@ -30,7 +30,7 @@ const services: Service[] = [
     title: "Strip, Sand, Re-Polish",
     description: "Restore your furniture to its natural beauty with our meticulous stripping, sanding, and re-polishing service.",
     icon: Paintbrush,
-    image: "/image_49.webp",
+    image: "image_49_jp17pg",
     details: [
       "Natural or wood stain options",
       "Custom sheen from matt to glass",
@@ -42,7 +42,7 @@ const services: Service[] = [
     title: "Re-deco",
     description: "Transform your furniture with high-quality chalk paint in your choice of color and sheen.",
     icon: Heart,
-    image: "/image_50.jpg",
+    image: "image_50_k5iloh",
     details: [
       "Wide variety of colors",
       "Custom color mixing",
@@ -54,7 +54,7 @@ const services: Service[] = [
     title: "Re-riempie",
     description: "Revitalize your seating with our re-riempie service, replacing old seats with new leather strips.",
     icon: Scissors,
-    image: "/image_52.webp",
+    image: "image_52_l5tpqv",
     details: [
       "Traditional weaving techniques",
       "High-quality leather strips",
@@ -66,7 +66,7 @@ const services: Service[] = [
     title: "Re-design",
     description: "Give your furniture a complete makeover, combining any or all of our services for a stunning transformation.",
     icon: RefreshCw,
-    image: "/image_37.jpeg",
+    image: "image_37_bqxkog",
     details: [
       "Comprehensive redesign",
       "Combine multiple services",
@@ -78,7 +78,7 @@ const services: Service[] = [
     title: "Collection and Delivery",
     description: "Convenient pickup and drop-off service available for a nominal fee, depending on your area.",
     icon: Truck,
-    image: "/image_53.jpg",
+    image: "image_53_ifr8ep",
     details: [
       "Safe transportation",
       "Flexible scheduling",
@@ -108,7 +108,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
         <CldImage
           width="500"
           height="300"
-          src={`blooming-furniture/${service.image.replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
+          src={`BloomingFurniture/${service.image.replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
           alt={service.title}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-64 object-cover rounded-t-lg"

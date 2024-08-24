@@ -3,10 +3,10 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Clock, Wrench, Leaf, Heart } from 'lucide-react';
 import ServiceArea from '@/components/ServiceArea';
+import { CldImage } from 'next-cloudinary';
 
 const AboutPage = () => {
   return (
@@ -27,11 +27,11 @@ const AboutPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Image
-              src="/blooming-furniture.png"
+            <CldImage
+              width="500"
+              height="400"
+              src="BloomingFurniture/blooming-furniture_rkcbqg"
               alt="Master craftsman at work"
-              width={500}
-              height={400}
               className="rounded-lg shadow-md"
             />
           </motion.div>
