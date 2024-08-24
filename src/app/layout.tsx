@@ -4,8 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Blooming Furniture",
@@ -51,6 +55,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="msapplication-TileColor" content="#da532c" />
+        <link
+          rel="preload"
+          href="/blooming-furniture.png"
+          as="image"
+          type="image/png"
+        />
       </head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
         <Navbar />
