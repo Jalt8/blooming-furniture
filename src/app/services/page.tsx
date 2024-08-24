@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Hammer, Paintbrush, Scissors, RefreshCw, Truck, Plus, Heart } from 'lucide-react';
+import { CldImage } from 'next-cloudinary';
 
 interface Service {
   title: string;
@@ -105,11 +105,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       className="bg-white-daisy rounded-lg shadow-lg overflow-hidden"
     >
       <div className="relative h-48 md:h-64">
-        <Image
-          src={service.image}
+        <CldImage
+          width="500"
+          height="300"
+          src={`blooming-furniture/${service.image.replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
           alt={service.title}
-          fill
-          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="w-full h-64 object-cover rounded-t-lg"
         />
         <div className="absolute inset-0 bg-dark-wood bg-opacity-40 flex items-center justify-center">
           <service.icon className="w-16 h-16 text-white-daisy" />

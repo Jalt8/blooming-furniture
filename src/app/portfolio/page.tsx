@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
+import { CldImage } from 'next-cloudinary';
 
 // Types
 type PortfolioItem = {
@@ -150,7 +151,7 @@ const PortfolioPage: React.FC = () => {
                   title={item.title}
                   description={item.description}
                   images={item.images}
-                  category={item.category} // Add this line
+                  category={item.category}
                 />
               </motion.div>
             ))}

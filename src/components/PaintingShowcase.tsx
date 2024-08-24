@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { CldImage } from 'next-cloudinary';
 
 interface Project {
   title: string;
@@ -14,7 +15,7 @@ const PaintingShowcase: React.FC = () => {
       title: "Vintage Display Cabinet Revival",
       description:
         "Restoring elegance to this classic mahogany china cabinet, showcasing its timeless charm and craftsmanship.",
-      images: ["/image_3.jpeg", "/image_2.jpeg", "/image_1.jpeg"],
+      images: ["image_3._pcofas", "image_2_wiwxtl", "image_1_thfxte"],
       category: "Cabinet Restoration"
     },
     {
