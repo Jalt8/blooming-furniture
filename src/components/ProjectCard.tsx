@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, images, c
           <CldImage 
             width="400"
             height="224"
-            src={`blooming-furniture/${images[currentImageIndex].replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
+            src={`BloomingFurniture/${images[currentImageIndex].replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
             alt={`${title} - Image ${currentImageIndex + 1}`} 
             className="w-full h-56 object-cover cursor-pointer"
             onClick={() => setIsModalOpen(true)}

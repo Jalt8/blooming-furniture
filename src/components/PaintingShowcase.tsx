@@ -14,7 +14,7 @@ const PaintingShowcase: React.FC = () => {
       title: "Vintage Display Cabinet Revival",
       description:
         "Restoring elegance to this classic mahogany china cabinet, showcasing its timeless charm and craftsmanship.",
-      images: ["BloomingFurniture/image_3._pcofas", "BloomingFurniture/image_2_wiwxtl", "BloomingFurniture/image_1_thfxte"],
+      images: ["image_3._pcofas", "image_2_wiwxtl", "image_1_thfxte"],
       category: "Cabinet Restoration"
     },
     {
@@ -22,10 +22,10 @@ const PaintingShowcase: React.FC = () => {
       description:
         "Transforming a rustic picnic table into an elegant indoor dining solution. This whitewashed table and bench combo now brings charm and versatility to any dining space.",
       images: [
-        "BloomingFurniture/image_7_rrtjd8",
-        "BloomingFurniture/image_5_xlx6ku",
-        "BloomingFurniture/image_6_klvx7a",
-        "BloomingFurniture/image_4_cxhk5f",
+        "image_7_rrtjd8",
+        "image_5_xlx6ku",
+        "image_6_klvx7a",
+        "image_4_cxhk5f",
       ],
       category: "Dining Set Transformation"
     },
@@ -33,7 +33,7 @@ const PaintingShowcase: React.FC = () => {
       title: "Vintage Sideboard Revival",
       description:
         "Breathing new life into a classic piece. This elegant sideboard has been transformed with a crisp white finish, preserving its ornate details and adding modern charm to its timeless design.",
-      images: ["BloomingFurniture/image_41_w5fagg", "BloomingFurniture/image_40_igwj0w"],
+      images: ["image_41_w5fagg", "image_40_igwj0w"],
       category: "Sideboard Makeover"
     },
   ];
