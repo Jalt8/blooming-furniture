@@ -104,14 +104,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white-daisy rounded-lg shadow-lg overflow-hidden"
     >
-      <div className="relative h-48 md:h-64">
+      <div className="relative aspect-[4/3] w-full">
         <CldImage
           width="500"
-          height="300"
+          height="375"
           src={`BloomingFurniture/${service.image.replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
           alt={service.title}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="w-full h-64 object-cover rounded-t-lg"
+          className="w-full h-full object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-dark-wood bg-opacity-40 flex items-center justify-center">
           <service.icon className="w-16 h-16 text-white-daisy" />

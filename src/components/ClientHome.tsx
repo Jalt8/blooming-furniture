@@ -32,7 +32,7 @@ const ClientHome: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen relative">
-      {/* Hero Section with Parallax Effect */}
+      {/* Hero Section with improved mobile layout */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <CldImage
           width="1920"
@@ -42,7 +42,7 @@ const ClientHome: React.FC = () => {
           quality="80"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1920, 1080))}`}
-          className="absolute z-0 object-cover"
+          className="absolute z-0 object-cover w-full h-full"
           priority
           sizes="100vw"
           onError={(e) => {
@@ -52,12 +52,12 @@ const ClientHome: React.FC = () => {
           }}
         />
         <div className="absolute inset-0 bg-dark-wood opacity-50 z-10"></div>
-        <div className="relative z-20 text-center text-white-daisy px-4">
+        <div className="relative z-20 text-center text-white-daisy px-4 w-full">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-4"
+            className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4"
           >
             Revive Your Memories
           </motion.h1>
@@ -65,7 +65,7 @@ const ClientHome: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8"
+            className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto"
           >
             Expert furniture restoration that breathes new life into your cherished pieces
           </motion.p>
