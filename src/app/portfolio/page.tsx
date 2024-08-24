@@ -94,6 +94,13 @@ const portfolioItems: PortfolioItem[] = [
     ],
     category: "Vintage",
   },
+  {
+    id: 8,
+    title: "Church Kitchen Cabinet Refresh",
+    description: "Revitalized the church kitchen with a modern touch. We repainted and varnished the existing cupboards, transforming them into sleek, grey units that complement the industrial-style space. The project included refinishing the countertops and integrating appliances for a cohesive look.",
+    images: ["d7mc0v", "xi0gy3", "qs3dco", "lfcviy", "eii8i2", "kvreig", "cp5w3n", "yjhunm"],
+    category: "Modern",
+  },
 ];
 
 const PortfolioPage: React.FC = () => {
