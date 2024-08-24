@@ -18,9 +18,12 @@ const ClientHome: React.FC = () => {
         <Image
           src="/image_46.png"
           alt="Restored vintage furniture"
-          fill
-          style={{ objectFit: 'cover' }}
-          className="absolute z-0"
+          width={1920}
+          height={1080}
+          quality={80}
+          placeholder="blur"
+          blurDataURL="/image_46_placeholder.png"
+          className="absolute z-0 object-cover"
           priority
           sizes="100vw"
           onError={(e) => {
