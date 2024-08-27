@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Head from 'next/head';
+import GoogleTagManager from '@/components/GoogleTagManager';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -63,10 +64,19 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
+        <GoogleTagManager gtmId="GTM-T46KVRJM" />
         <Navbar />
         <main className="pt-20">{children}</main>
         <Footer />
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-T46KVRJM`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
       </body>
     </html>
   );
