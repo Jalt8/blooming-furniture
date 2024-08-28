@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Calendar } from 'lucide-react';
 import { CldImage } from 'next-cloudinary';
 
 const Navbar: React.FC = () => {
@@ -47,8 +47,10 @@ const Navbar: React.FC = () => {
               </div>
             </Link>
           </div>
-          <div className="hidden lg:block flex-grow">
-            <div className="ml-10 flex items-center justify-end space-x-4">
+
+          {/* Centered Navigation Links */}
+          <div className="hidden lg:flex flex-grow items-center justify-center">
+            <div className="flex space-x-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -64,6 +66,19 @@ const Navbar: React.FC = () => {
               ))}
             </div>
           </div>
+
+          {/* CTA Button with Hover Effect */}
+          <div className="hidden lg:block">
+            <Link
+              href="/book-consultation"
+              className="bg-forest-green text-white-daisy py-2 px-4 rounded-full font-semibold text-sm hover:bg-dark-wood hover:text-white-daisy transition duration-300 inline-flex items-center"
+            >
+              <Calendar className="mr-2 h-4 w-4" />
+              Book Free Consultation
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -93,6 +108,13 @@ const Navbar: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            <Link
+              href="/book-consultation"
+              className="block w-full text-center bg-forest-green text-white-daisy py-2 px-4 rounded-full font-semibold text-sm hover:bg-dark-wood transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Book Free Consultation
+            </Link>
           </div>
         </div>
       )}
