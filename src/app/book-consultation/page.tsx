@@ -11,9 +11,9 @@ const BeforeAfterGallery: React.FC = () => {
   const [comparePosition, setComparePosition] = useState(50);
 
   const transformations = [
-    { before: "kvreig", after: "d7mc0v", description: "Antique Dresser Restoration" },
-    { before: "download_2_lascnc", after: "download_3_dyzvy5", description: "Dining Table Refinishing" },
-    { before: "download_1_w6ork4", after: "download_f7h2zd", description: "Vintage Chair Upholstery" },
+    { before: "kvreig", after: "d7mc0v", description: "Church Kitchen Cabinet Refresh" },
+    { before: "download_2_lascnc", after: "download_3_dyzvy5", description: "Vintage Display Cabinet Revival" },
+    { before: "download_1_w6ork4", after: "download_f7h2zd", description: "Dutch-Inspired Antique Washstand Revival" },
   ];
 
   const handleSlideChange = (direction: 'next' | 'prev') => {
