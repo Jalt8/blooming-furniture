@@ -6,6 +6,12 @@ import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 import { ArrowRight, Clock, Hammer, Star, Calendar, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 const BeforeAfterGallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [comparePosition, setComparePosition] = useState(50);
@@ -139,6 +145,19 @@ const BookConsultation: React.FC = () => {
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
+        
+        // Push to dataLayer for GTM
+        if (typeof window !== 'undefined' && window.dataLayer) {
+          window.dataLayer.push({
+            event: 'consultation_form_submission',
+            formData: {
+              name: formData.name,
+              email: formData.email,
+              phone: formData.phone
+            }
+          });
+        }
+        
         // Google Analytics event tracking
         if (typeof window !== 'undefined' && (window as any).gtag) {
           (window as any).gtag('event', 'consultation_form_submission', {

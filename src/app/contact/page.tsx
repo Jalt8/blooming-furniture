@@ -3,6 +3,13 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 
+// Add this at the top of your file
+declare global {
+  interface Window {
+    gtagSendEvent?: (event: string) => void;
+  }
+}
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,6 +45,11 @@ const ContactPage = () => {
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
+        
+        // Track the conversion
+        if (typeof window !== 'undefined' && window.gtagSendEvent) {
+          window.gtagSendEvent('conversion_event_submit_lead_form');
+        }
       } else {
         setSubmitStatus('error');
       }

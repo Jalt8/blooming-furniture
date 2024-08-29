@@ -64,19 +64,35 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
-        <GoogleTagManager gtmId="GTM-T46KVRJM" />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ''} />
         <Navbar />
         <main className="pt-20">{children}</main>
         <Footer />
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-T46KVRJM`}
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            function gtagSendEvent(eventName, url) {
+              var callback = function () {
+                if (typeof url === 'string') {
+                  window.location = url;
+                }
+              };
+              gtag('event', eventName, {
+                'event_callback': callback,
+                'event_timeout': 2000,
+              });
+              return false;
+            }
+          `
+        }} />
       </body>
     </html>
   );
