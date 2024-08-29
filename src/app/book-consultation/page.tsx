@@ -143,7 +143,6 @@ const BookConsultation: React.FC = () => {
         'event_callback': callback,
         'event_timeout': 2000,
       });
-      // Remove the return statement
     };
   }, []);
 
@@ -166,6 +165,8 @@ const BookConsultation: React.FC = () => {
         // Use the gtagSendEvent function for form submission
         window.gtagSendEvent('#thank-you');
       } else {
+        const errorData = await response.json();
+        console.error('Error submitting form:', errorData);
         setSubmitStatus('error');
       }
     } catch (error) {
