@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
@@ -9,6 +9,8 @@ import { ArrowRight, Clock, Hammer, Star, Calendar, Check, ChevronLeft, ChevronR
 declare global {
   interface Window {
     dataLayer: any[];
+    gtag: (command: string, eventName: string, eventParams: object) => void;
+    gtagSendEvent: (url: string) => boolean;
   }
 }
 
@@ -130,6 +132,22 @@ const BookConsultation: React.FC = () => {
     setFormData(prevData => ({ ...prevData, [name]: value }));
   };
 
+  useEffect(() => {
+    // Add the gtagSendEvent function to the window object
+    window.gtagSendEvent = (url: string) => {
+      const callback = () => {
+        if (typeof url === 'string') {
+          window.location.href = url;
+        }
+      };
+      window.gtag('event', 'conversion_event_request_quote_1', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    };
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -146,25 +164,8 @@ const BookConsultation: React.FC = () => {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
         
-        // Push to dataLayer for GTM
-        if (typeof window !== 'undefined' && window.dataLayer) {
-          window.dataLayer.push({
-            event: 'consultation_form_submission',
-            formData: {
-              name: formData.name,
-              email: formData.email,
-              phone: formData.phone
-            }
-          });
-        }
-        
-        // Google Analytics event tracking
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'consultation_form_submission', {
-            'event_category': 'Form',
-            'event_label': 'Consultation Request'
-          });
-        }
+        // Use the gtagSendEvent function for form submission
+        window.gtagSendEvent('#thank-you');
       } else {
         setSubmitStatus('error');
       }
@@ -201,7 +202,14 @@ const BookConsultation: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Link href="#book-call" className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center">
+            <Link
+              href="#book-call"
+              onClick={(e) => {
+                e.preventDefault();
+                window.gtagSendEvent('#book-call');
+              }}
+              className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center"
+            >
               Claim Your Free Consultation <ArrowRight className="ml-2" />
             </Link>
           </motion.div>
@@ -262,7 +270,14 @@ const BookConsultation: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <Link href="#book-call" className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center">
+              <Link
+                href="#book-call"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.gtagSendEvent('#book-call');
+                }}
+                className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center"
+              >
                 Start Your Restoration Journey Now <ArrowRight className="ml-2" />
               </Link>
             </div>
@@ -344,7 +359,14 @@ const BookConsultation: React.FC = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Every day that passes, your cherished furniture loses a bit of its former glory. Act now to preserve your family's history and create a legacy that lasts for generations.
           </p>
-          <Link href="#book-call" className="bg-forest-green text-white-daisy py-3 px-8 rounded-full font-semibold text-lg hover:bg-dark-wood transition duration-300 inline-flex items-center">
+          <Link
+            href="#book-call"
+            onClick={(e) => {
+              e.preventDefault();
+              window.gtagSendEvent('#book-call');
+            }}
+            className="bg-forest-green text-white-daisy py-3 px-8 rounded-full font-semibold text-lg hover:bg-dark-wood transition duration-300 inline-flex items-center"
+          >
             Save Your Heirlooms Today <ArrowRight className="ml-2" />
           </Link>
         </div>
@@ -373,7 +395,14 @@ const BookConsultation: React.FC = () => {
           <h2 className="text-3xl font-serif mb-8 text-center text-white-daisy">See the Blooming Furniture Magic</h2>
           <BeforeAfterGallery />
           <div className="mt-12 text-center">
-            <Link href="#book-call" className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center">
+            <Link
+              href="#book-call"
+              onClick={(e) => {
+                e.preventDefault();
+                window.gtagSendEvent('#book-call');
+              }}
+              className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center"
+            >
               Transform Your Furniture Now <ArrowRight className="ml-2" />
             </Link>
           </div>
