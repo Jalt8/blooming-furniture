@@ -134,15 +134,21 @@ const BookConsultation: React.FC = () => {
   useEffect(() => {
     // Add the gtagSendEvent function to the window object
     window.gtagSendEvent = (url: string) => {
-      const callback = () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion_event_request_quote_1', {
+          'event_callback': () => {
+            if (typeof url === 'string') {
+              window.location.href = url;
+            }
+          },
+          'event_timeout': 2000,
+        });
+      } else {
+        console.warn('Google Tag Manager not loaded');
         if (typeof url === 'string') {
           window.location.href = url;
         }
-      };
-      window.gtag('event', 'conversion_event_request_quote_1', {
-        'event_callback': callback,
-        'event_timeout': 2000,
-      });
+      }
     };
   }, []);
 
@@ -158,6 +164,8 @@ const BookConsultation: React.FC = () => {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+
       if (response.ok) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
@@ -165,8 +173,7 @@ const BookConsultation: React.FC = () => {
         // Use the gtagSendEvent function for form submission
         window.gtagSendEvent('#thank-you');
       } else {
-        const errorData = await response.json();
-        console.error('Error submitting form:', errorData);
+        console.error('Error submitting form:', data.error);
         setSubmitStatus('error');
       }
     } catch (error) {
@@ -218,10 +225,10 @@ const BookConsultation: React.FC = () => {
 
       <section className="py-16 bg-white-daisy">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif text-dark-wood text-center mb-12">Why 1000+ Clients Trust Blooming Furniture</h2>
+          <h2 className="text-3xl font-serif text-dark-wood text-center mb-12">Why Clients Trust Blooming Furniture</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Clock, title: "30+ Years of Expertise", description: "Unmatched restoration experience" },
+              { icon: Clock, title: "10+ Years of Expertise", description: "Unmatched restoration experience" },
               { icon: Hammer, title: "Bespoke Solutions", description: "Tailored approach for every unique piece" },
               { icon: Star, title: "100% Satisfaction Guarantee", description: "We're not happy until you're thrilled" }
             ].map((item, index) => (
@@ -245,13 +252,14 @@ const BookConsultation: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <CldImage
-                width="500"
-                height="400"
-                src="BloomingFurniture/Group_18_apbkmb"
-                alt="Stunning Before and After Furniture Restoration"
-                className="rounded-lg shadow-lg"
-              />
+            <CldImage
+              width="500"
+              height="400"
+              src="BloomingFurniture/Group_18_apbkmb"
+              alt="Stunning Before and After Furniture Restoration"
+              className="rounded-lg shadow-lg"
+              style={{ width: 'auto', height: 'auto' }}
+            />
             </div>
             <div className="md:w-1/2 md:pl-12 text-white-daisy">
               <h2 className="text-3xl font-serif mb-6">Transform Your Furniture, Relive Your Memories</h2>

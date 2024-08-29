@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Head from 'next/head';
 import GoogleTagManager from '@/components/GoogleTagManager';
+import MetaPixel from '@/components/MetaPixel';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function RootLayout({
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
           />
+          <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''} />
         </noscript>
         <script dangerouslySetInnerHTML={{
           __html: `
