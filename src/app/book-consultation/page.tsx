@@ -10,10 +10,9 @@ declare global {
   interface Window {
     dataLayer: any[];
     gtag: (command: string, eventName: string, eventParams: object) => void;
-    gtagSendEvent: (url: string) => boolean;
+    gtagSendEvent: (url: string) => void;
   }
 }
-
 const BeforeAfterGallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [comparePosition, setComparePosition] = useState(50);
@@ -144,7 +143,7 @@ const BookConsultation: React.FC = () => {
         'event_callback': callback,
         'event_timeout': 2000,
       });
-      return false;
+      // Remove the return statement
     };
   }, []);
 

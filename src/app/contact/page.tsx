@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 
-// Add this at the top of your file
 declare global {
   interface Window {
-    gtagSendEvent?: (event: string) => void;
+    dataLayer: any[];
+    gtag: (command: string, eventName: string, eventParams: object) => void;
+    gtagSendEvent: (url: string) => void;
   }
 }
 
