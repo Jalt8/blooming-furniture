@@ -70,6 +70,7 @@ export default function RootLayout({
         <main className="pt-20">{children}</main>
         <Footer />
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
+        <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''} />
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
