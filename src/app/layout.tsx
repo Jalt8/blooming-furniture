@@ -7,6 +7,7 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Head from 'next/head';
 import GoogleTagManager from '@/components/GoogleTagManager';
 import MetaPixel from '@/components/MetaPixel';
+import CookieConsent from '@/components/CookieConsent';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -70,6 +71,7 @@ export default function RootLayout({
         <main className="pt-20">{children}</main>
         <Footer />
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
+        <CookieConsent />
         <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''} />
         <noscript>
           <iframe

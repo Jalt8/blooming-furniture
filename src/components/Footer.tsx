@@ -60,8 +60,8 @@ const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="text-sm text-forest-green">&copy; 2024 Blooming Furniture. All rights reserved.</p>
             <div className="flex space-x-4 text-sm">
-              <Link href="/privacy" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">Terms of Service</Link>
+              <Link href="/privacy-policy" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">Privacy Policy</Link>
+              <Link href="/terms-of-service" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
