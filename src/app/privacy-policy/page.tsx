@@ -77,9 +77,8 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-forest-green">8. Contact Us</h2>
             <p className="text-dark-wood">If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p className="text-dark-wood">Email: privacy@bloomingfurniture.com</p>
-            <p className="text-dark-wood">Phone: [Your Phone Number]</p>
-            <p className="text-dark-wood">Address: [Your Business Address]</p>
+            <p className="text-dark-wood">Email: info@bloomingfurniture.com</p>
+            <p className="text-dark-wood">Phone: (079) 375 2588</p>
           </section>
         </div>
       </div>
