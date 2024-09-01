@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 
-const GoogleAdsConversion = ({ conversionId, conversionLabel }: { conversionId: string, conversionLabel: string }) => {
+const GoogleAdsConversion = ({ conversionId, conversionLabel, eventName }: { conversionId: string, conversionLabel: string, eventName: string }) => {
   return (
     <>
       <Script
@@ -22,7 +22,7 @@ const GoogleAdsConversion = ({ conversionId, conversionLabel }: { conversionId: 
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            gtag('event', 'conversion', {'send_to': '${conversionId}/${conversionLabel}'});
+            gtag('event', '${eventName}', {'send_to': '${conversionId}/${conversionLabel}'});
           `,
         }}
       />

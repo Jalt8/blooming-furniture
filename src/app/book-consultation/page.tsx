@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 import { ArrowRight, Clock, Hammer, Star, Calendar, Check, ChevronLeft, ChevronRight } from 'lucide-react';
+import GoogleAdsConversion from '@/components/GoogleAdsConversion';
 
 declare global {
   interface Window {
@@ -172,6 +173,12 @@ const BookConsultation: React.FC = () => {
         
         // Use the gtagSendEvent function for form submission
         window.gtagSendEvent('#thank-you');
+        // Trigger Google Ads conversion event
+        window.gtag('event', 'conversion_event_request_quote_1', {
+          send_to: '16684346503/6A9aCJHn8M4ZEIfZ25M-',
+          value: 1.0,
+          currency: 'ZAR',
+        });
       } else {
         console.error('Error submitting form:', data.error);
         setSubmitStatus('error');
@@ -416,6 +423,12 @@ const BookConsultation: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <GoogleAdsConversion
+        conversionId="16684346503"
+        conversionLabel="6A9aCJHn8M4ZEIfZ25M-"
+        eventName="conversion_event_request_quote_1"
+      />
     </div>
   );
 };
