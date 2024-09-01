@@ -175,7 +175,7 @@ const BookConsultation: React.FC = () => {
         window.gtagSendEvent('#thank-you');
         // Trigger Google Ads conversion event
         window.gtag('event', 'conversion_event_request_quote_1', {
-          send_to: '16684346503/6A9aCJHn8M4ZEIfZ25M-',
+          send_to: '16684346503/6A9aCJHn8M4ZEIfZ25M-', // Update with your conversion ID and label
           value: 1.0,
           currency: 'ZAR',
         });
@@ -425,8 +425,8 @@ const BookConsultation: React.FC = () => {
       </section>
 
       <GoogleAdsConversion
-        conversionId="16684346503"
-        conversionLabel="6A9aCJHn8M4ZEIfZ25M-"
+        conversionId="16684346503" // Update with your conversion ID
+        conversionLabel="6A9aCJHn8M4ZEIfZ25M-" // Update with your conversion label
         eventName="conversion_event_request_quote_1"
       />
     </div>
