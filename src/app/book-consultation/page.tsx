@@ -171,14 +171,8 @@ const BookConsultation: React.FC = () => {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
         
-        // Use the gtagSendEvent function for form submission
-        window.gtagSendEvent('#thank-you');
-        // Trigger Google Ads conversion event
-        window.gtag('event', 'conversion_event_request_quote_1', {
-          send_to: '16684346503/6A9aCJHn8M4ZEIfZ25M-', // Update with your conversion ID and label
-          value: 1.0,
-          currency: 'ZAR',
-        });
+        // Redirect to the thank-you page
+        window.location.href = '/book-consultation/thank-you';
       } else {
         console.error('Error submitting form:', data.error);
         setSubmitStatus('error');
