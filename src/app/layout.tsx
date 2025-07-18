@@ -15,8 +15,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Blooming Furniture",
-  description: "Discover timeless elegance with our expert furniture restoration and custom design services.",
+  title: {
+    default: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
+    template: "%s | Blooming Furniture"
+  },
+  description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa. Serving Saldanha Bay, Vredenburg, Langebaan. Expert craftsmen, free quotes & collection.",
+  keywords: "furniture restoration, furniture repair, West Coast South Africa, furniture refinishing, antique restoration, Saldanha Bay, Vredenburg, Langebaan, furniture makeover",
+  authors: [{ name: "Blooming Furniture" }],
+  creator: "Blooming Furniture",
+  publisher: "Blooming Furniture",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -30,6 +48,28 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  openGraph: {
+    type: "website",
+    locale: "en_ZA",
+    url: "https://bloomingfurniture.co.za",
+    siteName: "Blooming Furniture",
+    title: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
+    description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa. Expert craftsmen serving Saldanha Bay, Vredenburg, Langebaan.",
+    images: [
+      {
+        url: "/blooming-furniture.png",
+        width: 1200,
+        height: 630,
+        alt: "Blooming Furniture - Professional Furniture Restoration"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
+    description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa.",
+    images: ["/blooming-furniture.png"]
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -39,6 +79,15 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+  other: {
+    "geo.region": "ZA-WC",
+    "geo.placename": "Cape Town, South Africa",
+    "geo.position": "-33.0895;18.0371",
+    "ICBM": "-33.0895, 18.0371"
+  }
 };
 
 export const viewport: Viewport = {
@@ -73,6 +122,80 @@ export default function RootLayout({
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
         <CookieConsent />
         <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''} />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Blooming Furniture",
+              "description": "Professional furniture restoration, repair and refinishing services in West Coast, South Africa",
+              "url": "https://bloomingfurniture.co.za",
+              "telephone": "+27793752588",
+              "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Western Cape",
+                "addressCountry": "South Africa",
+                "addressLocality": "Cape Town"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -33.0895,
+                "longitude": 18.0371
+              },
+              "openingHours": [
+                "Mo-Fr 08:00-17:00",
+                "Sa 08:00-14:00"
+              ],
+              "priceRange": "$$",
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": -33.0895,
+                  "longitude": 18.0371
+                },
+                "geoRadius": "100000"
+              },
+              "sameAs": [
+                "https://wa.me/27793752588"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Furniture Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Furniture Repair",
+                      "description": "Professional furniture repair services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Furniture Restoration",
+                      "description": "Complete furniture restoration services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Furniture Refinishing",
+                      "description": "Professional furniture refinishing"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
+        
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 import Modal from './Modal';
 import { CldImage } from 'next-cloudinary';
 
@@ -8,9 +9,10 @@ interface ProjectCardProps {
   description: string;
   images: string[];
   category: string;
+  projectUrl?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, images, category }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, images, category, projectUrl }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -60,7 +62,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, images, c
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2 text-dark-wood">{title}</h3>
           <p className="text-forest-green mb-4">{description}</p>
-          <span className="inline-block bg-golden-center text-dark-wood px-3 py-1 rounded-full text-sm">{category}</span>
+          <div className="flex items-center justify-between">
+            <span className="inline-block bg-golden-center text-dark-wood px-3 py-1 rounded-full text-sm">{category}</span>
+            {projectUrl && (
+              <Link
+                href={projectUrl}
+                className="inline-flex items-center text-forest-green hover:text-dark-wood transition-colors text-sm font-semibold"
+              >
+                View Details <ExternalLink className="ml-1 h-4 w-4" />
+              </Link>
+            )}
+          </div>
         </div>
       </div>
 

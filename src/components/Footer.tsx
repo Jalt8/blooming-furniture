@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-daisy-cream text-dark-wood">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <h2 className="text-2xl font-serif">Blooming Furnitures</h2>
             <p className="text-forest-green max-w-xs">
@@ -34,6 +34,42 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/service-areas" className="text-forest-green hover:text-dark-wood hover:underline transition-colors">
+                  Service Areas
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Service Locations</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/furniture-restoration-langebaan" className="text-forest-green hover:text-dark-wood hover:underline transition-colors text-sm">
+                  Langebaan
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-repair-saldanha-bay" className="text-forest-green hover:text-dark-wood hover:underline transition-colors text-sm">
+                  Saldanha Bay
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-restoration-vredenburg" className="text-forest-green hover:text-dark-wood hover:underline transition-colors text-sm">
+                  Vredenburg
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-repair-paternoster" className="text-forest-green hover:text-dark-wood hover:underline transition-colors text-sm">
+                  Paternoster
+                </Link>
+              </li>
+              <li>
+                <Link href="/west-coast-furniture-repair" className="text-forest-green hover:text-dark-wood hover:underline transition-colors text-sm">
+                  West Coast Region
+                </Link>
+              </li>
             </ul>
           </div>
           

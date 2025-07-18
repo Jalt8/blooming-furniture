@@ -59,7 +59,7 @@ const ClientHome: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4"
           >
-            Revive Your Memories
+            Expert Furniture Restoration & Repair
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

@@ -28,9 +28,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV !== 'development',
   },
   swcMinify: true,
-  experimental: {
-    optimizeFonts: true,
-  },
   async headers() {
     return [
       {
