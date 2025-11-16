@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration, repair and refinishing services in Yzerfontein, Western Cape. Specializing in coastal and marine environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-yzerfontein",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Yzerfontein",
@@ -144,7 +144,7 @@ export default function YzerfonteintFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/Lime-Wash1.jpg"
                   alt="Coastal furniture restoration in Yzerfontein"
                   width={600}
                   height={400}
@@ -436,7 +436,7 @@ export default function YzerfonteintFurnitureRestoration() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

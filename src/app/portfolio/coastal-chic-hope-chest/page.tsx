@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Star, Clock, Award, Waves, Sparkles, Sun } from 'lucide-react';
 
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     images: [
       {
-        url: "/Lime-Wash1.jpg",
+        url: "/images/portfolio/Lime-Wash1.jpg",
         width: 800,
         height: 600,
         alt: "Coastal-Chic Hope Chest - Lime-Wash Transformation",
@@ -37,7 +36,7 @@ const projectSchema = {
     "name": "Blooming Furniture",
     "url": "https://bloomingfurniture.co.za"
   },
-  "image": "/Lime-Wash1.jpg",
+  "image": "/images/portfolio/Lime-Wash1.jpg",
   "dateCreated": "2024-10-01",
   "keywords": ["lime wash", "coastal furniture", "cerusing", "brass restoration", "coastal chic"]
 };
@@ -48,35 +47,35 @@ export default function CoastalChicHopeChest() {
       step: "1",
       title: "Strip & Neutralise",
       description: "Soy-based remover and gentle scraping lifted the century-old finish without raising the grain.",
-      images: ["/Lime-Wash2.jpg"],
+      images: ["/images/portfolio/Lime-Wash2.jpg"],
       technique: "Eco-friendly stripping"
     },
     {
-      step: "2", 
+      step: "2",
       title: "Deep Clean & Sand",
       description: "Progressive sanding (100 → 220 grit) on flat panels; hand-sanding inside the vertical flutes to reveal crisp profiles.",
-      images: ["/Lime-Wash3.jpg"],
+      images: ["/images/portfolio/Lime-Wash3.jpg"],
       technique: "Progressive grain preparation"
     },
     {
       step: "3",
-      title: "Cerusing / Lime-Wash", 
+      title: "Cerusing / Lime-Wash",
       description: "Custom grey-white wax infused into open grain, then lightly buffed back to create that weathered, sun-kissed look while letting knots peek through.",
-      images: ["/Lime-Wash4.jpg", "/Lime-Wash5.jpg"],
+      images: ["/images/portfolio/Lime-Wash4.jpg", "/images/portfolio/Lime-Wash5.jpg"],
       technique: "Specialized cerusing"
     },
     {
       step: "4",
       title: "Hardware Restoration",
       description: "Brass hinges, escutcheon and campaign pulls soaked in a mild citric bath, then hand-polished and sealed with micro-crystalline wax for a satin glow—not a mirror shine.",
-      images: ["/Lime-Wash6.jpg"], 
+      images: ["/images/portfolio/Lime-Wash6.jpg"],
       technique: "Brass revival"
     },
     {
       step: "5",
       title: "Protective Finish",
       description: "Two coats of dead-flat water-based varnish lock in the wash, repel spills, and keep the chalky matte aesthetic intact.",
-      images: ["/Lime-Wash7.jpg"],
+      images: ["/images/portfolio/Lime-Wash7.jpg"],
       technique: "Matte protection"
     }
   ];
@@ -128,12 +127,10 @@ export default function CoastalChicHopeChest() {
               </div>
               
               <div className="relative">
-                <Image
-                  src="/Lime-Wash1.jpg"
+                <img
+                  src="/images/portfolio/Lime-Wash1.jpg"
                   alt="Coastal-Chic Hope Chest - Before and After"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-xl"
+                  className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
                   <div className="flex items-center">
@@ -209,13 +206,11 @@ export default function CoastalChicHopeChest() {
                   
                   <div className={`grid gap-4 ${step.images.length > 1 ? 'grid-cols-2' : 'grid-cols-1'} ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                     {step.images.map((image, imgIndex) => (
-                      <Image
+                      <img
                         key={imgIndex}
                         src={image}
                         alt={`${step.title} - Step ${step.step}`}
-                        width={300}
-                        height={200}
-                        className="rounded-lg shadow-md"
+                        className="rounded-lg shadow-md w-full h-auto"
                       />
                     ))}
                   </div>

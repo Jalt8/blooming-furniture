@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration and refinishing services in Vredenburg, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-vredenburg",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Vredenburg",
@@ -121,7 +121,7 @@ export default function VredenburgFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_11.jpeg"
+                  src="/images/portfolio/Chest3.jpg"
                   alt="Furniture restoration in Vredenburg"
                   width={600}
                   height={400}
@@ -277,7 +277,7 @@ export default function VredenburgFurnitureRestoration() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white-daisy rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/image_12.jpeg"
+                  src="/images/portfolio/portfolio-3.jpeg"
                   alt="Before restoration - Vredenburg antique"
                   width={400}
                   height={300}
@@ -291,7 +291,7 @@ export default function VredenburgFurnitureRestoration() {
               
               <div className="bg-white-daisy rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/image_13.jpeg"
+                  src="/images/portfolio/portfolio-7.jpeg"
                   alt="Dining table restoration Vredenburg"
                   width={400}
                   height={300}
@@ -305,7 +305,7 @@ export default function VredenburgFurnitureRestoration() {
               
               <div className="bg-white-daisy rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/image_14.jpeg"
+                  src="/images/portfolio/portfolio-9.jpeg"
                   alt="Cabinet restoration Vredenburg"
                   width={400}
                   height={300}
@@ -357,7 +357,7 @@ export default function VredenburgFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_15.jpeg"
+                  src="/images/portfolio/Lime-Wash6.jpg"
                   alt="Vredenburg furniture restoration workshop"
                   width={600}
                   height={400}
@@ -384,7 +384,7 @@ export default function VredenburgFurnitureRestoration() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

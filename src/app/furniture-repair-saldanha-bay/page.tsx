@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture repair and restoration services in Saldanha Bay, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-repair-saldanha-bay",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Saldanha Bay",
@@ -121,7 +121,7 @@ export default function SaldanhaBayFurnitureRepair() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_6.jpeg"
+                  src="/images/portfolio/Chest6.jpg"
                   alt="Furniture repair in Saldanha Bay"
                   width={600}
                   height={400}
@@ -267,28 +267,28 @@ export default function SaldanhaBayFurnitureRepair() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/image_7.jpeg"
+                  src="/images/portfolio/portfolio-12.jpeg"
                   alt="Commercial furniture repair Saldanha Bay"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_8.jpeg"
+                  src="/images/portfolio/portfolio-14.jpeg"
                   alt="Office furniture repair Saldanha"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_9.jpeg"
+                  src="/images/portfolio/portfolio-15.jpeg"
                   alt="Restaurant furniture repair Saldanha Bay"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_10.jpeg"
+                  src="/images/portfolio/portfolio-16.jpeg"
                   alt="Industrial furniture repair Saldanha"
                   width={300}
                   height={200}
@@ -356,7 +356,7 @@ export default function SaldanhaBayFurnitureRepair() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

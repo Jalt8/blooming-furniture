@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import ContactForm from '@/components/ContactForm';
+import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: "Contact Blooming Furniture | Get Your Free Restoration Consultation",
@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration and repair services in West Coast South Africa. Expert craftsmanship serving Langebaan, Saldanha Bay, Vredenburg, and surrounding areas.",
   "url": "https://bloomingfurniture.co.za",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Langebaan",
@@ -86,8 +86,12 @@ const ContactPage = () => {
           __html: JSON.stringify(localBusinessSchema),
         }}
       />
-      
+
       <div className="min-h-screen bg-daisy-cream pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+        <Breadcrumbs
+          items={[{ label: 'Contact', href: '/contact' }]}
+          className="max-w-7xl mx-auto"
+        />
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold text-center text-dark-wood mb-12">
             Start Your Furniture Restoration Journey
@@ -104,7 +108,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 text-forest-green mr-4" />
-                    <span className="text-dark-wood">info@bloomingfurniture.co.za</span>
+                    <span className="text-dark-wood">wendydanie@gmail.com</span>
                   </div>
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 text-forest-green mr-4" />
@@ -124,8 +128,22 @@ const ContactPage = () => {
 
             <div className="bg-white-daisy shadow-lg rounded-lg overflow-hidden">
               <div className="p-8">
-                <h2 className="text-2xl font-semibold text-dark-wood mb-6">Send Us a Message</h2>
-                <ContactForm />
+                <h2 className="text-2xl font-semibold text-dark-wood mb-6">Get In Touch</h2>
+                <p className="text-dark-wood mb-6">
+                  Ready to restore your furniture? Contact us directly on WhatsApp for a quick response and free consultation.
+                </p>
+                <a
+                  href="https://wa.me/27793752588?text=Hi%2C%20I%27d%20like%20to%20inquire%20about%20furniture%20restoration%20services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
+                  <MessageCircle className="h-6 w-6 mr-3" />
+                  Chat on WhatsApp
+                </a>
+                <p className="text-sm text-forest-green mt-4 text-center">
+                  We typically respond within minutes during business hours
+                </p>
               </div>
             </div>
           </div>

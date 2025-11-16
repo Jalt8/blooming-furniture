@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration, repair and refinishing services in Elands Bay, Western Cape. Specializing in coastal cottage and fishing village furniture restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-elands-bay",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Elands Bay",
@@ -144,7 +144,7 @@ export default function ElandsBayFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/sunbed3.jpg"
                   alt="Surf culture furniture restoration in Elands Bay"
                   width={600}
                   height={400}
@@ -481,7 +481,7 @@ export default function ElandsBayFurnitureRestoration() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

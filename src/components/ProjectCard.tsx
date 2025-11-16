@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import Modal from './Modal';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -32,11 +32,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, images, c
     <>
       <div className="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105">
         <div className="relative">
-          <CldImage 
-            width="400"
-            height="224"
-            src={`BloomingFurniture/${images[currentImageIndex].replace(/^\//, '').replace(/\.(jpeg|jpg|png|webp)$/, '')}`}
-            alt={`${title} - Image ${currentImageIndex + 1}`} 
+          <Image
+            width={400}
+            height={224}
+            src={images[currentImageIndex].startsWith('/') ? images[currentImageIndex] : `/images/portfolio/${images[currentImageIndex]}`}
+            alt={`${title} - Image ${currentImageIndex + 1}`}
             className="w-full h-56 object-cover cursor-pointer"
             onClick={() => setIsModalOpen(true)}
           />

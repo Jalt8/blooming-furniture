@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   try {
     const data = await resend.emails.send({
       from: 'Blooming Furniture <onboarding@resend.dev>', // Use your verified domain here
-      to: ['info@bloomingfurniture.co.za'], // The email where you want to receive consultation requests
+      to: ['wendydanie@gmail.com'], // The email where you want to receive consultation requests
       replyTo: email, // Set the reply-to as the submitter's email
       subject: 'New Blooming Furniture Consultation Request',
       html: `

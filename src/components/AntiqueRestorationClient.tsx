@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, Crown, MapPin, Shield, Award, Camera, BookOpen, Users, Star } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 export default function AntiqueRestorationClient() {
   return (

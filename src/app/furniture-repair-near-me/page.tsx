@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "description": "Professional furniture repair services near you. Expert local repairs for broken chairs, tables, cabinets, and all furniture types with convenient pickup and delivery.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-near-me",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "Western Cape",
@@ -119,7 +119,7 @@ const faqSchema = {
       "name": "How much does furniture repair cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Furniture repair costs vary by type and extent of damage. Simple repairs start from R150-R300, while complex structural repairs can range from R500-R2000. We provide free quotes and transparent pricing for all repair work."
+        "text": "Furniture repair costs vary depending on the piece, its condition, and services needed. Each project is unique. We provide free assessments and detailed quotes. Contact us for a personalized estimate."
       }
     }
   ]
@@ -191,7 +191,7 @@ export default function FurnitureRepairNearMe() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/portfolio-5.jpeg"
                   alt="Local furniture repair services near you"
                   width={600}
                   height={400}
@@ -424,98 +424,6 @@ export default function FurnitureRepairNearMe() {
                   )}
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Guide */}
-        <section className="py-16 bg-daisy-cream">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-dark-wood mb-4">
-                Transparent Furniture Repair Pricing
-              </h2>
-              <p className="text-lg text-forest-green max-w-3xl mx-auto">
-                No hidden costs or surprises. Here's what you can expect for common furniture repairs in your area.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  category: "Quick Fixes",
-                  price: "R150 - R400",
-                  description: "Simple repairs that can often be done on-site",
-                  includes: [
-                    "Tightening loose screws",
-                    "Minor hardware replacement", 
-                    "Simple glue repairs",
-                    "Drawer adjustments",
-                    "Door realignment"
-                  ],
-                  turnaround: "Same day possible"
-                },
-                {
-                  category: "Standard Repairs",
-                  price: "R400 - R1200",
-                  description: "Common structural repairs requiring workshop time",
-                  includes: [
-                    "Joint reinforcement",
-                    "Leg replacement",
-                    "Hardware upgrades",
-                    "Minor refinishing",
-                    "Structural stabilization"
-                  ],
-                  turnaround: "2-4 days typical"
-                },
-                {
-                  category: "Complex Repairs",
-                  price: "R1200 - R3000+",
-                  description: "Extensive repairs or antique restoration work",
-                  includes: [
-                    "Frame reconstruction",
-                    "Veneer repair",
-                    "Custom part creation",
-                    "Antique restoration",
-                    "Complete rebuilds"
-                  ],
-                  turnaround: "5-10 days"
-                }
-              ].map((tier, index) => (
-                <div key={index} className="bg-white-daisy p-8 rounded-lg shadow-lg">
-                  <h3 className="text-2xl font-bold text-dark-wood mb-2">{tier.category}</h3>
-                  <div className="text-3xl font-bold text-golden-center mb-4">{tier.price}</div>
-                  <p className="text-forest-green mb-6">{tier.description}</p>
-                  
-                  <h4 className="font-semibold text-dark-wood mb-3">Typically Includes:</h4>
-                  <ul className="space-y-2 mb-6">
-                    {tier.includes.map((item, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <CheckCircle className="h-4 w-4 text-golden-center mr-2 flex-shrink-0 mt-0.5" />
-                        <span className="text-forest-green text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <div className="bg-golden-center/10 p-3 rounded-lg">
-                    <div className="text-sm font-semibold text-dark-wood">Turnaround Time:</div>
-                    <div className="text-sm text-golden-center">{tier.turnaround}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-8">
-              <p className="text-forest-green mb-4">
-                All prices include collection and delivery within our service area. 
-                Free quotes provided before any work begins.
-              </p>
-              <Link 
-                href="/book-consultation"
-                className="bg-golden-center text-dark-wood px-8 py-3 rounded-lg font-semibold hover:bg-dark-wood hover:text-white-daisy transition duration-300"
-              >
-                Get Your Free Quote
-              </Link>
             </div>
           </div>
         </section>

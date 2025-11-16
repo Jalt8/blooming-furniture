@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, CheckCircle, Ruler, Palette, Truck, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -105,6 +106,21 @@ export default function CustomFurniturePage() {
                   </Button>
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Image Section */}
+        <section className="py-12 bg-white-daisy">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <Image
+                src="/images/services/custom-furniture-hero.svg"
+                alt="Custom furniture craftsmanship"
+                width={1200}
+                height={800}
+                className="rounded-lg shadow-xl w-full"
+              />
             </div>
           </div>
         </section>

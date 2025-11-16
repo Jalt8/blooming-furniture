@@ -35,7 +35,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration services near you. Expert local craftsmen providing comprehensive furniture repair, refinishing, and restoration services.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-near-me",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "Western Cape",
@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "How much does local furniture restoration cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Furniture restoration costs vary depending on the piece, condition, and work required. We provide free, detailed quotes for all projects. Typical restoration projects range from R500 for minor repairs to R5000+ for complete antique restorations. Contact us for an accurate quote."
+        "text": "Furniture repair costs vary depending on the piece, its condition, and services needed. Each project is unique. We provide free assessments and detailed quotes. Contact us for a personalized estimate."
       }
     }
   ]
@@ -184,7 +184,7 @@ export default function FurnitureRestorationNearMe() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/portfolio-8.jpeg"
                   alt="Local furniture restoration services near you"
                   width={600}
                   height={400}

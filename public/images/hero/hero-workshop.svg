@@ -1,0 +1,15 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C5F2D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3E2723;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <text x="960" y="500" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#D4AF37" text-anchor="middle">
+    Blooming Furniture
+  </text>
+  <text x="960" y="600" font-family="Arial, sans-serif" font-size="36" fill="#F5F0E8" text-anchor="middle">
+    Expert Furniture Restoration • West Coast
+  </text>
+</svg>

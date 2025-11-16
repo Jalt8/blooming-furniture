@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Star, Hammer, Paintbrush, RefreshCw, Truck } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -146,13 +145,10 @@ const WestCoastClient = () => {
               className="grid md:grid-cols-2 gap-8 items-center"
             >
               <div>
-                <CldImage
-                  width="600"
-                  height="400"
-                  src="BloomingFurniture/image_51_bvmlja"
+                <img
+                  src="/images/portfolio/image_51.png"
                   alt="Furniture repair West Coast South Africa"
                   className="rounded-lg shadow-lg w-full"
-                  priority
                 />
               </div>
               <div className="space-y-6">
@@ -322,21 +318,19 @@ const WestCoastClient = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { image: "image_39_y0xoeu", title: "Vintage Sideboard - Saldanha Bay" },
-                { image: "image_7_rrtjd8", title: "Dining Set Makeover - Vredenburg" },
-                { image: "image_31_yf0wbz", title: "Kitchen Refresh - Langebaan" }
+                { image: "image_39.jpeg", title: "Vintage Sideboard - Saldanha Bay" },
+                { image: "image_7.jpeg", title: "Dining Set Makeover - Vredenburg" },
+                { image: "image_31.jpeg", title: "Kitchen Refresh - Langebaan" }
               ].map((project, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className="bg-daisy-cream rounded-lg overflow-hidden shadow-lg"
                 >
-                  <CldImage
-                    width="400"
-                    height="300"
-                    src={`BloomingFurniture/${project.image}`}
+                  <img
+                    src={`/images/portfolio/${project.image}`}
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />

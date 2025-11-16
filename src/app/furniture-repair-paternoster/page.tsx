@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Expert furniture repair and restoration services in Paternoster, Western Cape. Specialized coastal furniture treatments.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-paternoster",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Paternoster",
@@ -121,7 +121,7 @@ export default function PaternosterFurnitureRepair() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_16.jpeg"
+                  src="/images/portfolio/Lime-Wash4.jpg"
                   alt="Furniture repair in Paternoster"
                   width={600}
                   height={400}
@@ -267,28 +267,28 @@ export default function PaternosterFurnitureRepair() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/image_17.jpeg"
+                  src="/images/portfolio/portfolio-21.jpeg"
                   alt="Traditional Paternoster fishing cottage furniture"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_18.jpeg"
+                  src="/images/portfolio/portfolio-22.jpeg"
                   alt="Luxury holiday home furniture Paternoster"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_19.jpeg"
+                  src="/images/portfolio/portfolio-23.jpeg"
                   alt="Coastal furniture repair Paternoster"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_20.jpeg"
+                  src="/images/portfolio/portfolio-24.jpeg"
                   alt="Restored furniture in Paternoster home"
                   width={300}
                   height={200}
@@ -366,7 +366,7 @@ export default function PaternosterFurnitureRepair() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

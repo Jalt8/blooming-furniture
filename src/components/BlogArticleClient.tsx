@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle, Thermometer, Droplets, Wind } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 export default function BlogArticleClient() {
   return (

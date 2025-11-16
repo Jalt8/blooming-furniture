@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Calendar, Clock, User, ArrowRight } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 // Featured and recent blog posts data
 const featuredPosts = [

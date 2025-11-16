@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Phone, MessageCircle, Clock, Hammer, Star } from 'lucide-react';
 import BeforeAfterGallery from '@/components/BeforeAfterGallery';

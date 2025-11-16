@@ -4,11 +4,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Wrench, Leaf, Heart } from 'lucide-react';
 import ServiceArea from '@/components/ServiceArea';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const AboutClient = () => {
   return (
     <div className="bg-daisy-cream min-h-screen py-16">
+      <Breadcrumbs
+        items={[{ label: 'About Us', href: '/about' }]}
+        className="max-w-7xl mx-auto"
+      />
       <div className="container mx-auto px-4">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
@@ -20,16 +25,16 @@ const AboutClient = () => {
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <CldImage
-              width="500"
-              height="400"
-              src="BloomingFurniture/blooming-furniture_rkcbqg"
-              alt="Master craftsman at work"
+            <Image
+              width={500}
+              height={400}
+              src="/blooming-furniture.png"
+              alt="Blooming Furniture - Expert furniture restoration craftsmen at work in West Coast South Africa"
               className="rounded-lg shadow-md"
             />
           </motion.div>

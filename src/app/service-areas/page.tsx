@@ -293,7 +293,7 @@ export default function ServiceAreas() {
             </div>
             <div className="relative">
               <Image
-                src="/image_29.jpeg"
+                src="/images/portfolio/portfolio-11.jpeg"
                 alt="West Coast furniture restoration services"
                 width={600}
                 height={400}

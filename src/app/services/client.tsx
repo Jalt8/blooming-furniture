@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Hammer, Paintbrush, Scissors, RefreshCw, Truck, Plus, Heart } from 'lucide-react';
-import Image from 'next/image';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 interface Service {
   title: string;
@@ -18,7 +18,7 @@ const services: Service[] = [
     title: "Furniture Repairs",
     description: "Repair and renew old sentimental pieces, preserving memories and extending the life of your cherished furniture.",
     icon: Hammer,
-    image: "/image_51.png",
+    image: "/images/portfolio/image_51_bvmlja.jpg",
     details: [
       "Structural repairs",
       "Joint reinforcement",
@@ -30,7 +30,7 @@ const services: Service[] = [
     title: "Strip, Sand, Re-Polish",
     description: "Restore your furniture to its natural beauty with our meticulous stripping, sanding, and re-polishing service.",
     icon: Paintbrush,
-    image: "/image_49.webp",
+    image: "/images/portfolio/image_49_jp17pg.jpg",
     details: [
       "Natural or wood stain options",
       "Custom sheen from matt to glass",
@@ -42,7 +42,7 @@ const services: Service[] = [
     title: "Re-deco",
     description: "Transform your furniture with high-quality chalk paint in your choice of color and sheen.",
     icon: Heart,
-    image: "/image_50.jpg",
+    image: "/images/portfolio/image_50_k5iloh.jpg",
     details: [
       "Wide variety of colors",
       "Custom color mixing",
@@ -54,7 +54,7 @@ const services: Service[] = [
     title: "Re-riempie",
     description: "Revitalize your seating with our re-riempie service, replacing old seats with new leather strips.",
     icon: Scissors,
-    image: "/image_52.webp",
+    image: "/images/portfolio/image_52_l5tpqv.jpg",
     details: [
       "Traditional weaving techniques",
       "High-quality leather strips",
@@ -66,7 +66,7 @@ const services: Service[] = [
     title: "Re-design",
     description: "Give your furniture a complete makeover, combining any or all of our services for a stunning transformation.",
     icon: RefreshCw,
-    image: "/image_37.jpeg",
+    image: "/images/portfolio/image_37_bqxkog.jpg",
     details: [
       "Comprehensive redesign",
       "Combine multiple services",
@@ -78,7 +78,7 @@ const services: Service[] = [
     title: "Collection and Delivery",
     description: "Convenient pickup and drop-off service available for a nominal fee, depending on your area.",
     icon: Truck,
-    image: "/image_53.jpg",
+    image: "/images/portfolio/image_53_ifr8ep.jpg",
     details: [
       "Safe transportation",
       "Flexible scheduling",
@@ -104,18 +104,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white-daisy rounded-lg shadow-lg overflow-hidden"
     >
-      <div className="relative aspect-[4/3] w-full">
-        <Image
-          width={500}
-          height={375}
+      <div className="relative w-full h-64 overflow-hidden bg-gray-200">
+        <img
           src={service.image}
-          alt={service.title}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="w-full h-full object-cover"
-          priority
+          alt={`${service.title} - Professional furniture restoration service in West Coast South Africa`}
+          className="w-full h-full object-cover block"
+          loading="lazy"
         />
-        <div className="absolute inset-0 bg-dark-wood bg-opacity-40 flex items-center justify-center">
-          <service.icon className="w-16 h-16 text-white-daisy" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark-wood/40 flex items-center justify-center">
+          <service.icon className="w-16 h-16 text-white-daisy drop-shadow-2xl" />
         </div>
       </div>
       <div className="p-6">
@@ -160,8 +157,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
 const ServicesClient: React.FC = () => {
   return (
     <div className="bg-daisy-cream min-h-screen py-16">
+      <Breadcrumbs
+        items={[{ label: 'Services', href: '/services' }]}
+        className="max-w-7xl mx-auto"
+      />
       <div className="container mx-auto px-4">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

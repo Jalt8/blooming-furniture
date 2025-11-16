@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Professional Furniture Restoration in Langebaan | Blooming Furniture",
-  description: "Expert furniture restoration, repair and refinishing services in Langebaan, Western Cape. Transform your beloved furniture with local craftsmanship. Free quotes for Langebaan residents.",
-  keywords: "furniture restoration Langebaan, furniture repair Langebaan, furniture refinishing Langebaan, antique restoration Langebaan, Langebaan furniture services, West Coast furniture restoration",
+  title: "Professional Woodwork & Furniture Restoration Langebaan | Blooming Furniture",
+  description: "Expert woodwork restoration, wood furniture repair and refinishing services in Langebaan, Western Cape. Transform your wooden furniture with local craftsmanship. Free quotes for Langebaan residents.",
+  keywords: "woodwork restoration Langebaan, wood furniture repair Langebaan, furniture refinishing Langebaan, antique wood restoration Langebaan, Langebaan furniture services, West Coast woodwork, wooden furniture Langebaan",
   openGraph: {
     title: "Professional Furniture Restoration in Langebaan | Blooming Furniture",
     description: "Expert furniture restoration, repair and refinishing services in Langebaan, Western Cape. Transform your beloved furniture with local craftsmanship.",
@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration, repair and refinishing services in Langebaan, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-langebaan",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Langebaan",
@@ -68,10 +68,12 @@ const localBusinessSchema = {
     }
   ],
   "serviceType": [
+    "Woodwork Restoration",
+    "Wood Furniture Repair",
     "Furniture Restoration",
-    "Furniture Repair", 
-    "Furniture Refinishing",
-    "Antique Restoration"
+    "Wood Refinishing",
+    "Antique Wood Restoration",
+    "Wooden Furniture Refinishing"
   ],
   "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
   "priceRange": "$$"
@@ -94,11 +96,11 @@ export default function LangebaanFurnitureRestoration() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                  Professional Furniture Restoration in <span className="text-golden-center">Langebaan</span>
+                  Professional Woodwork & Furniture Restoration in <span className="text-golden-center">Langebaan</span>
                 </h1>
                 <p className="text-xl mb-6">
-                  Transform your beloved furniture with expert craftsmanship right here in Langebaan. 
-                  From antique restoration to modern furniture repair, we bring new life to your pieces.
+                  Transform your wooden furniture with expert woodwork craftsmanship right here in Langebaan.
+                  From antique wood restoration to modern furniture repair, we bring new life to all your wood pieces.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
@@ -117,7 +119,7 @@ export default function LangebaanFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/Lime-Wash2.jpg"
                   alt="Furniture restoration in Langebaan"
                   width={600}
                   height={400}
@@ -171,23 +173,23 @@ export default function LangebaanFurnitureRestoration() {
         <section className="py-16 bg-daisy-cream">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-dark-wood mb-12">
-              Furniture Restoration Services in Langebaan
+              Woodwork & Furniture Restoration Services in Langebaan
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white-daisy rounded-lg p-6 shadow-lg text-center">
                 <Hammer className="h-12 w-12 text-forest-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-dark-wood mb-2">Antique Restoration</h3>
+                <h3 className="text-xl font-semibold text-dark-wood mb-2">Antique Wood Restoration</h3>
                 <p className="text-forest-green">
-                  Restore precious family heirlooms and valuable antiques with traditional techniques.
+                  Restore precious wooden heirlooms and valuable antique woodwork with traditional techniques.
                 </p>
               </div>
-              
+
               <div className="bg-white-daisy rounded-lg p-6 shadow-lg text-center">
                 <Paintbrush className="h-12 w-12 text-forest-green mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-dark-wood mb-2">Furniture Refinishing</h3>
+                <h3 className="text-xl font-semibold text-dark-wood mb-2">Wood Refinishing</h3>
                 <p className="text-forest-green">
-                  Complete refinishing services including stripping, sanding, and applying new finishes.
+                  Complete wood refinishing services including stripping, sanding, and applying new finishes to all wood types.
                 </p>
               </div>
               
@@ -237,38 +239,32 @@ export default function LangebaanFurnitureRestoration() {
                       <strong>Quality Guarantee:</strong> Every piece restored with the highest standards of craftsmanship
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <Star className="h-6 w-6 text-golden-center mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-forest-green">
-                      <strong>Competitive Pricing:</strong> Fair, transparent pricing for all Langebaan furniture restoration projects
-                    </span>
-                  </li>
                 </ul>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/image_2.jpeg"
+                  src="/images/portfolio/Chest1.jpg"
                   alt="Before furniture restoration in Langebaan"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_3.jpeg"
+                  src="/images/portfolio/Chest2.jpg"
                   alt="After furniture restoration in Langebaan"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_4.jpeg"
+                  src="/images/portfolio/sunbed1.jpg"
                   alt="Langebaan furniture repair process"
                   width={300}
                   height={200}
                   className="rounded-lg shadow-lg"
                 />
                 <Image
-                  src="/image_5.jpeg"
+                  src="/images/portfolio/sunbed7.jpg"
                   alt="Restored furniture in Langebaan home"
                   width={300}
                   height={200}
@@ -295,7 +291,7 @@ export default function LangebaanFurnitureRestoration() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

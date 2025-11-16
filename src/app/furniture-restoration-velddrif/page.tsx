@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "description": "Professional furniture restoration, repair and refinishing services in Velddrif, Western Cape. Specializing in coastal environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-velddrif",
   "telephone": "(079) 375 2588",
-  "email": "info@bloomingfurniture.co.za",
+  "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Velddrif",
@@ -144,7 +144,7 @@ export default function VelddrifFurnitureRestoration() {
               </div>
               <div className="relative">
                 <Image
-                  src="/image_1.jpeg"
+                  src="/images/portfolio/Chest4.jpg"
                   alt="Furniture restoration in Velddrif"
                   width={600}
                   height={400}
@@ -404,7 +404,7 @@ export default function VelddrifFurnitureRestoration() {
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="h-6 w-6 mr-3" />
-                <span className="text-lg">info@bloomingfurniture.co.za</span>
+                <span className="text-lg">wendydanie@gmail.com</span>
               </div>
               <div className="flex items-center justify-center">
                 <MapPin className="h-6 w-6 mr-3" />

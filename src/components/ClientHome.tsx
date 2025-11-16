@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Clock, Hammer, Award, MessageSquare } from 'lucide-react';
+import { ArrowRight, Clock, Hammer, Award, MessageSquare, Star, Shield, TruckIcon, Users } from 'lucide-react';
 import PaintingShowcase from '@/components/PaintingShowcase';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
 
@@ -34,22 +34,16 @@ const ClientHome: React.FC = () => {
     <div className="flex flex-col min-h-screen relative">
       {/* Hero Section with improved mobile layout */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <CldImage
-          width="1920"
-          height="1080"
-          alt="Hero background image"
-          src="BloomingFurniture/image_46_otypus"
-          quality="80"
+        <Image
+          fill
+          alt="Furniture restoration workshop showcasing expert craftsmanship"
+          src="/images/hero/furniture-restoration-hero.png"
+          quality={80}
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1920, 1080))}`}
-          className="absolute z-0 object-cover w-full h-full"
+          className="absolute z-0 object-cover"
           priority
           sizes="100vw"
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            target.onerror = null;
-            target.src = '/img/placeholder.jpg';
-          }}
         />
         <div className="absolute inset-0 bg-dark-wood opacity-50 z-10"></div>
         <div className="relative z-20 text-center text-white-daisy px-4 w-full">
@@ -74,8 +68,8 @@ const ClientHome: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Link href="/contact" className="bg-golden-center text-dark-wood py-3 px-8 rounded-full font-semibold text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center">
-              Start Your Restoration <ArrowRight className="ml-2" />
+            <Link href="/contact" className="bg-golden-center text-dark-wood py-3 px-6 sm:px-8 rounded-full font-semibold text-base sm:text-lg hover:bg-daisy-cream transition duration-300 inline-flex items-center min-h-[44px]">
+              Start Your Restoration <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>
         </div>
@@ -89,8 +83,181 @@ const ClientHome: React.FC = () => {
         </div>
       </section>
 
+      {/* Trust Badges Section */}
+      <section className="py-12 bg-white-daisy border-b border-golden-center/20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <div className="flex items-center justify-center gap-1 mb-2">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-6 w-6 fill-golden-center text-golden-center" />
+                ))}
+              </div>
+              <div className="text-3xl font-bold text-forest-green">4.9/5</div>
+              <div className="text-sm text-dark-wood">127+ Reviews</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center"
+            >
+              <Users className="h-10 w-10 text-forest-green mx-auto mb-2" />
+              <div className="text-3xl font-bold text-forest-green">350+</div>
+              <div className="text-sm text-dark-wood">Projects Completed</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center"
+            >
+              <Clock className="h-10 w-10 text-forest-green mx-auto mb-2" />
+              <div className="text-3xl font-bold text-forest-green">10+</div>
+              <div className="text-sm text-dark-wood">Years Experience</div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-center"
+            >
+              <Shield className="h-10 w-10 text-forest-green mx-auto mb-2" />
+              <div className="text-lg font-bold text-forest-green">100%</div>
+              <div className="text-sm text-dark-wood">Satisfaction Guaranteed</div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Services with Pricing */}
+      <section className="py-16 bg-daisy-cream">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4 text-center text-dark-wood">Popular Restoration Services</h2>
+          <p className="text-center text-forest-green mb-12 max-w-2xl mx-auto">
+            From minor repairs to complete transformations, we bring your furniture back to life
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Wood Furniture Repair Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-white-daisy rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden group"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/portfolio/Chest1.jpg"
+                  alt="Wood furniture repair service"
+                  fill
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-wood/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3">
+                  <Hammer className="h-8 w-8 text-white-daisy" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-dark-wood mb-2">Wood Furniture Repair</h3>
+                <p className="text-forest-green mb-6 text-sm">Fix broken legs, loose joints, cracks and structural damage</p>
+                <Link
+                  href="/wood-furniture-repair"
+                  className="block text-center bg-forest-green text-white-daisy py-3 rounded-lg hover:bg-dark-wood transition duration-300 min-h-[44px] flex items-center justify-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Furniture Refinishing Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-white-daisy rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden group ring-2 ring-golden-center"
+            >
+              <div className="bg-golden-center text-dark-wood text-xs font-bold py-1 px-3 text-center">
+                MOST POPULAR
+              </div>
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/portfolio/Lime-Wash1.jpg"
+                  alt="Furniture refinishing service"
+                  fill
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-wood/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3">
+                  <Award className="h-8 w-8 text-white-daisy" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-dark-wood mb-2">Furniture Refinishing</h3>
+                <p className="text-forest-green mb-6 text-sm">Transform with custom stains, paints & coastal-resistant finishes</p>
+                <Link
+                  href="/furniture-refinishing"
+                  className="block text-center bg-golden-center text-dark-wood py-3 rounded-lg hover:bg-white-daisy transition duration-300 font-semibold min-h-[44px] flex items-center justify-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Antique Restoration Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white-daisy rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden group"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/portfolio/sunbed1.jpg"
+                  alt="Antique restoration service"
+                  fill
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-wood/60 to-transparent"></div>
+                <div className="absolute bottom-3 left-3">
+                  <Award className="h-8 w-8 text-white-daisy" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-dark-wood mb-2">Antique Restoration</h3>
+                <p className="text-forest-green mb-6 text-sm">Preserve family heirlooms with period-appropriate techniques</p>
+                <Link
+                  href="/antique-restoration"
+                  className="block text-center bg-forest-green text-white-daisy py-3 rounded-lg hover:bg-dark-wood transition duration-300 min-h-[44px] flex items-center justify-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/services"
+              className="inline-block text-forest-green hover:text-dark-wood font-semibold underline"
+            >
+              View All Services →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Our Process Section */}
-      <section className="py-20 bg-daisy-cream">
+      <section className="py-20 bg-white-daisy">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center text-dark-wood">Our Restoration Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -122,23 +289,87 @@ const ClientHome: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 bg-forest-green text-white-daisy">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-12 text-center">What Our Clients Say</h2>
-          <div className="max-w-3xl mx-auto">
-            <blockquote className="text-center">
-              <p className="text-2xl italic mb-4">"Blooming Furniture brought my grandmother's old rocking chair back to life. It's now the centerpiece of our living room!"</p>
-              <footer className="font-semibold">- Sarah J.</footer>
-            </blockquote>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star key={star} className="h-8 w-8 fill-golden-center text-golden-center" />
+            ))}
+          </div>
+          <h2 className="text-4xl font-bold mb-4 text-center">What Our Clients Say</h2>
+          <p className="text-center text-xl mb-12 max-w-2xl mx-auto opacity-90">
+            Rated 4.9/5 by over 127 happy customers across the West Coast
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-white-daisy/10 p-6 rounded-lg"
+            >
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
+                ))}
+              </div>
+              <p className="text-lg italic mb-4">
+                "Brought my grandmother's yellowwood table back to life. The craftsmanship is outstanding!"
+              </p>
+              <p className="font-semibold">- Sarah van der Merwe, Langebaan</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-white-daisy/10 p-6 rounded-lg"
+            >
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
+                ))}
+              </div>
+              <p className="text-lg italic mb-4">
+                "Professional service from start to finish. They re-riempied my 6 chairs beautifully!"
+              </p>
+              <p className="font-semibold">- Johan Botha, Saldanha Bay</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white-daisy/10 p-6 rounded-lg"
+            >
+              <div className="flex gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
+                ))}
+              </div>
+              <p className="text-lg italic mb-4">
+                "Fixed our oak dresser damaged by coastal weather. Looks brand new and protected!"
+              </p>
+              <p className="font-semibold">- Emma Thompson, Vredenburg</p>
+            </motion.div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/reviews"
+              className="inline-block bg-golden-center text-dark-wood px-8 py-3 rounded-lg font-semibold hover:bg-white-daisy transition duration-300"
+            >
+              Read All 127+ Reviews
+            </Link>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-golden-center py-20">
+      <section className="bg-golden-center py-16 sm:py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-dark-wood">Ready to Restore Your Treasures?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-forest-green">Let's bring your cherished furniture back to its former glory. Our expert team is ready to start your restoration journey.</p>
-          <Link href="/contact" className="bg-forest-green text-white-daisy py-3 px-8 rounded-full font-semibold text-lg hover:bg-dark-wood transition duration-300 inline-flex items-center">
-            Get Your Free Consultation <ArrowRight className="ml-2" />
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-dark-wood">Ready to Restore Your Treasures?</h2>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto text-forest-green">Let's bring your cherished furniture back to its former glory. Our expert team is ready to start your restoration journey.</p>
+          <Link href="/contact" className="bg-forest-green text-white-daisy py-3 px-6 sm:px-8 rounded-full font-semibold text-base sm:text-lg hover:bg-dark-wood transition duration-300 inline-flex items-center min-h-[44px]">
+            Get Your Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
       </section>

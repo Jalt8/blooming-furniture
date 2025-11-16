@@ -1,0 +1,26 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chairBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C5F2D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B3A1C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="woodTexture" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#chairBg)"/>
+  <rect x="100" y="300" width="120" height="200" fill="url(#woodTexture)" opacity="0.4" rx="5"/>
+  <rect x="980" y="300" width="120" height="200" fill="url(#woodTexture)" opacity="0.4" rx="5"/>
+  <rect x="200" y="150" width="800" height="500" fill="#F5F0E8" opacity="0.92" rx="12"/>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#2C5F2D" text-anchor="middle">
+    Chair Repair
+  </text>
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="30" fill="#3E2723" text-anchor="middle">
+    Structural • Reupholstery • Refinishing
+  </text>
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="22" fill="#5D4037" text-anchor="middle" opacity="0.7">
+    Expert Seating Solutions
+  </text>
+</svg>

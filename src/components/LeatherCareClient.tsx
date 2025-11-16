@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Shield, Droplets, Sun, Wind, AlertTriangle, CheckCircle, Calendar, Thermometer, Eye } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
 export default function LeatherCareClient() {
   return (

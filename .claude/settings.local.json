@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(echo:*)",
+      "Read(//mnt/c/**)",
+      "Bash(cd:*)"
     ],
     "deny": []
   }

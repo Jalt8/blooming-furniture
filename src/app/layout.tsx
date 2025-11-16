@@ -15,12 +15,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bloomingfurniture.co.za'),
   title: {
-    default: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
+    default: "Blooming Furniture - Expert Woodwork & Furniture Restoration West Coast SA",
     template: "%s | Blooming Furniture"
   },
-  description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa. Serving Saldanha Bay, Vredenburg, Langebaan. Expert craftsmen, free quotes & collection.",
-  keywords: "furniture restoration, furniture repair, West Coast South Africa, furniture refinishing, antique restoration, Saldanha Bay, Vredenburg, Langebaan, furniture makeover",
+  description: "Professional woodwork restoration, furniture repair & refinishing services on the West Coast, South Africa. Expert wood furniture craftsmen serving Langebaan, Saldanha Bay, Vredenburg. Free quotes & collection.",
+  keywords: "furniture restoration West Coast, wood furniture repair, woodwork restoration, furniture refinishing West Coast, antique wood restoration, Saldanha Bay furniture, Vredenburg woodwork, Langebaan furniture restoration, West Coast craftsmen",
   authors: [{ name: "Blooming Furniture" }],
   creator: "Blooming Furniture",
   publisher: "Blooming Furniture",
@@ -53,8 +54,8 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     url: "https://bloomingfurniture.co.za",
     siteName: "Blooming Furniture",
-    title: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
-    description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa. Expert craftsmen serving Saldanha Bay, Vredenburg, Langebaan.",
+    title: "Blooming Furniture - Expert Woodwork & Furniture Restoration West Coast SA",
+    description: "Professional woodwork restoration, furniture repair & refinishing services on the West Coast, South Africa. Expert wood furniture craftsmen serving Langebaan, Saldanha Bay, Vredenburg.",
     images: [
       {
         url: "/blooming-furniture.png",
@@ -66,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blooming Furniture - Expert Furniture Restoration West Coast South Africa",
-    description: "Professional furniture restoration, repair & refinishing services in West Coast, South Africa.",
+    title: "Blooming Furniture - Expert Woodwork & Furniture Restoration West Coast SA",
+    description: "Professional woodwork restoration, furniture repair & refinishing services on the West Coast, South Africa.",
     images: ["/blooming-furniture.png"]
   },
   appleWebApp: {
@@ -84,9 +85,9 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "ZA-WC",
-    "geo.placename": "Cape Town, South Africa",
-    "geo.position": "-33.0895;18.0371",
-    "ICBM": "-33.0895, 18.0371"
+    "geo.placename": "West Coast, Western Cape, South Africa",
+    "geo.position": "-32.9729;18.0189",
+    "ICBM": "-32.9729, 18.0189"
   }
 };
 
@@ -94,7 +95,8 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({
@@ -131,19 +133,19 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Blooming Furniture",
-              "description": "Professional furniture restoration, repair and refinishing services in West Coast, South Africa",
+              "description": "Professional woodwork restoration, furniture repair and wood refinishing services on the West Coast, South Africa. Expert craftsmen specializing in all types of wood furniture restoration and woodwork.",
               "url": "https://bloomingfurniture.co.za",
               "telephone": "+27793752588",
               "address": {
                 "@type": "PostalAddress",
                 "addressRegion": "Western Cape",
                 "addressCountry": "South Africa",
-                "addressLocality": "Cape Town"
+                "addressLocality": "West Coast District"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": -33.0895,
-                "longitude": 18.0371
+                "latitude": -32.9729,
+                "longitude": 18.0189
               },
               "openingHours": [
                 "Mo-Fr 08:00-17:00",
@@ -170,24 +172,32 @@ export default function RootLayout({
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Furniture Repair",
-                      "description": "Professional furniture repair services"
+                      "name": "Wood Furniture Repair",
+                      "description": "Professional wood furniture repair and restoration services"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Furniture Restoration",
-                      "description": "Complete furniture restoration services"
+                      "name": "Woodwork Restoration",
+                      "description": "Complete woodwork and furniture restoration services for all wood types"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Furniture Refinishing",
-                      "description": "Professional furniture refinishing"
+                      "name": "Wood Refinishing",
+                      "description": "Expert wood refinishing and furniture refinishing services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Antique Wood Restoration",
+                      "description": "Specialist antique wooden furniture restoration and preservation"
                     }
                   }
                 ]
