@@ -299,27 +299,6 @@ export default function PaternosterFurnitureRepair() {
           </div>
         </section>
 
-        {/* Testimonial Section */}
-        <section className="py-16 bg-daisy-cream">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-dark-wood mb-8">What Paternoster Clients Say</h2>
-            
-            <div className="bg-white-daisy rounded-lg p-8 shadow-lg">
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 text-golden-center fill-current" />
-                ))}
-              </div>
-              <blockquote className="text-xl text-forest-green italic mb-4">
-                "Our holiday home in Paternoster needed specialized care for our antique furniture. 
-                Blooming Furniture understood the coastal challenges and restored our pieces beautifully. 
-                Their attention to detail and premium service exceeded our expectations."
-              </blockquote>
-              <p className="text-dark-wood font-semibold">- Holiday Home Owner, Paternoster</p>
-            </div>
-          </div>
-        </section>
-
         {/* Service Areas */}
         <section className="py-16 bg-white-daisy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

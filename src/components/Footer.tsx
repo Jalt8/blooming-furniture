@@ -149,9 +149,6 @@ const Footer: React.FC = () => {
               <Link href="/portfolio" className="text-gray-400 hover:text-white-daisy transition-colors">
                 Portfolio
               </Link>
-              <Link href="/reviews" className="text-gray-400 hover:text-white-daisy transition-colors">
-                Reviews
-              </Link>
               <Link href="/faq" className="text-gray-400 hover:text-white-daisy transition-colors">
                 FAQ
               </Link>

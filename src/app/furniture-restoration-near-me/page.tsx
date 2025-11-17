@@ -64,11 +64,6 @@ const localBusinessSchema = {
   ],
   "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
   "priceRange": "$$",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "127"
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Local Furniture Restoration Services",
@@ -174,12 +169,8 @@ export default function FurnitureRestorationNearMe() {
                   </Link>
                 </div>
                 <div className="flex items-center text-golden-center">
-                  <Star className="h-5 w-5 fill-current mr-1" />
-                  <Star className="h-5 w-5 fill-current mr-1" />
-                  <Star className="h-5 w-5 fill-current mr-1" />
-                  <Star className="h-5 w-5 fill-current mr-1" />
-                  <Star className="h-5 w-5 fill-current mr-3" />
-                  <span className="text-white-daisy">4.9/5 from 127+ local customers</span>
+                  <Award className="h-8 w-8 mr-3" />
+                  <span className="text-white-daisy">Trusted by local customers across the West Coast</span>
                 </div>
               </div>
               <div className="relative">
@@ -476,43 +467,6 @@ export default function FurnitureRestorationNearMe() {
                 <div key={index} className="bg-daisy-cream p-6 rounded-lg">
                   <h3 className="text-lg font-semibold text-dark-wood mb-3">{faq.question}</h3>
                   <p className="text-forest-green">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="py-16 bg-forest-green text-white-daisy">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">What Local Customers Say</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  text: "Found them searching for furniture restoration near me. Couldn't be happier with the service! They collected my dining table, restored it beautifully, and delivered it back looking better than new.",
-                  author: "Sarah M., Langebaan",
-                  rating: 5
-                },
-                {
-                  text: "Local service makes such a difference. Quick response, fair pricing, and incredible craftsmanship. My antique cabinet has been completely transformed. Highly recommend!",
-                  author: "David K., Saldanha Bay",
-                  rating: 5
-                },
-                {
-                  text: "Professional service from start to finish. Free assessment, clear quote, and delivery right to my door. The restoration exceeded my expectations. True local experts!",
-                  author: "Linda R., Vredenburg",
-                  rating: 5
-                }
-              ].map((testimonial, index) => (
-                <div key={index} className="bg-white-daisy/10 p-6 rounded-lg">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-golden-center fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="text-lg italic mb-4">"{testimonial.text}"</blockquote>
-                  <cite className="text-golden-center font-semibold">— {testimonial.author}</cite>
                 </div>
               ))}
             </div>

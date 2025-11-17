@@ -93,13 +93,9 @@ const ClientHome: React.FC = () => {
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <div className="flex items-center justify-center gap-1 mb-2">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-6 w-6 fill-golden-center text-golden-center" />
-                ))}
-              </div>
-              <div className="text-3xl font-bold text-forest-green">4.9/5</div>
-              <div className="text-sm text-dark-wood">127+ Reviews</div>
+              <Award className="h-10 w-10 text-forest-green mx-auto mb-2" />
+              <div className="text-3xl font-bold text-forest-green">10+</div>
+              <div className="text-sm text-dark-wood">Years Experience</div>
             </motion.div>
 
             <motion.div
@@ -109,7 +105,7 @@ const ClientHome: React.FC = () => {
               className="text-center"
             >
               <Users className="h-10 w-10 text-forest-green mx-auto mb-2" />
-              <div className="text-3xl font-bold text-forest-green">350+</div>
+              <div className="text-2xl font-bold text-forest-green">Countless</div>
               <div className="text-sm text-dark-wood">Projects Completed</div>
             </motion.div>
 
@@ -285,83 +281,6 @@ const ClientHome: React.FC = () => {
 
       {/* Showcase Section */}
       <PaintingShowcase />
-
-      {/* Testimonials */}
-      <section className="py-20 bg-forest-green text-white-daisy">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-8 w-8 fill-golden-center text-golden-center" />
-            ))}
-          </div>
-          <h2 className="text-4xl font-bold mb-4 text-center">What Our Clients Say</h2>
-          <p className="text-center text-xl mb-12 max-w-2xl mx-auto opacity-90">
-            Rated 4.9/5 by over 127 happy customers across the West Coast
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-white-daisy/10 p-6 rounded-lg"
-            >
-              <div className="flex gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
-                ))}
-              </div>
-              <p className="text-lg italic mb-4">
-                "Brought my grandmother's yellowwood table back to life. The craftsmanship is outstanding!"
-              </p>
-              <p className="font-semibold">- Sarah van der Merwe, Langebaan</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white-daisy/10 p-6 rounded-lg"
-            >
-              <div className="flex gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
-                ))}
-              </div>
-              <p className="text-lg italic mb-4">
-                "Professional service from start to finish. They re-riempied my 6 chairs beautifully!"
-              </p>
-              <p className="font-semibold">- Johan Botha, Saldanha Bay</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white-daisy/10 p-6 rounded-lg"
-            >
-              <div className="flex gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-5 w-5 fill-golden-center text-golden-center" />
-                ))}
-              </div>
-              <p className="text-lg italic mb-4">
-                "Fixed our oak dresser damaged by coastal weather. Looks brand new and protected!"
-              </p>
-              <p className="font-semibold">- Emma Thompson, Vredenburg</p>
-            </motion.div>
-          </div>
-
-          <div className="text-center">
-            <Link
-              href="/reviews"
-              className="inline-block bg-golden-center text-dark-wood px-8 py-3 rounded-lg font-semibold hover:bg-white-daisy transition duration-300"
-            >
-              Read All 127+ Reviews
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="bg-golden-center py-16 sm:py-20">

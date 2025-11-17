@@ -73,11 +73,6 @@ const organizationSchema = {
   ],
   "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
   "priceRange": "$$",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "127"
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Furniture Restoration Services",

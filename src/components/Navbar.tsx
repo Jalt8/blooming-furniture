@@ -35,11 +35,10 @@ const Navbar: React.FC = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  // Streamlined main navigation - only 4 core items
+  // Streamlined main navigation - only 3 core items
   const navItems = [
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Reviews', href: '/reviews' },
     { name: 'About', href: '/about' },
   ];
 
