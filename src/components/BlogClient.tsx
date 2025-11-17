@@ -124,9 +124,9 @@ export default function BlogClient() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative h-48">
-                  <CldImage
-                    width="400"
-                    height="300"
+                  <Image
+                    width={400}
+                    height={300}
                     src={post.image}
                     alt={post.title}
                     className="object-cover w-full h-full"
@@ -228,9 +228,9 @@ export default function BlogClient() {
                   <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/3">
                       <div className="relative h-48 md:h-full">
-                        <CldImage
-                          width="300"
-                          height="200"
+                        <Image
+                          width={300}
+                          height={200}
                           src={post.image}
                           alt={post.title}
                           className="object-cover w-full h-full"

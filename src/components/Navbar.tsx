@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
               <button
                 onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
-                  pathname.includes('/services') || pathname.includes('/wood-furniture') || pathname.includes('/refinishing') || pathname.includes('/antique')
+                  pathname && (pathname.includes('/services') || pathname.includes('/wood-furniture') || pathname.includes('/refinishing') || pathname.includes('/antique'))
                     ? 'text-white-daisy bg-forest-green shadow-md'
                     : 'text-dark-wood hover:text-forest-green hover:bg-golden-center/30'
                 }`}
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
                 key={item.name}
                 href={item.href}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                  pathname === item.href
+                  pathname && pathname === item.href
                     ? 'text-white-daisy bg-forest-green shadow-md'
                     : 'text-dark-wood hover:text-forest-green hover:bg-golden-center/30'
                 }`}
@@ -250,7 +250,7 @@ const Navbar: React.FC = () => {
                   key={item.name}
                   href={item.href}
                   className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 ${
-                    pathname === item.href
+                    pathname && pathname === item.href
                       ? 'text-white-daisy bg-forest-green shadow-md'
                       : 'text-dark-wood hover:text-forest-green hover:bg-golden-center/30'
                   }`}

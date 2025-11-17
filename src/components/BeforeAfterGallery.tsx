@@ -76,20 +76,20 @@ const BeforeAfterGallery: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="absolute inset-0"
           >
-            <CldImage
-              src={`BloomingFurniture/${transformations[currentIndex].after}`}
+            <Image
+              src={`/images/gallery/${transformations[currentIndex].after}.jpg`}
               alt={`After ${transformations[currentIndex].description}`}
               fill
               style={{ objectFit: 'cover' }}
             />
           </motion.div>
         </AnimatePresence>
-        <div 
+        <div
           className="absolute inset-0"
           style={{ clipPath: `inset(0 ${100 - comparePosition}% 0 0)` }}
         >
-          <CldImage
-            src={`BloomingFurniture/${transformations[currentIndex].before}`}
+          <Image
+            src={`/images/gallery/${transformations[currentIndex].before}.jpg`}
             alt={`Before ${transformations[currentIndex].description}`}
             fill
             style={{ objectFit: 'cover' }}

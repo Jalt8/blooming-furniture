@@ -10,10 +10,10 @@ export default function LeatherCareClient() {
       {/* Featured Image */}
       <div className="mb-12">
         <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-          <CldImage
-            width="1200"
-            height="600"
-            src="BloomingFurniture/leather-care-guide"
+          <Image
+            width={1200}
+            height={600}
+            src="/images/blog/leather-care-guide.jpg"
             alt="Leather furniture care in coastal environment showing protection techniques"
             className="object-cover w-full h-full"
           />

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Bug, CheckCircle, Phone, Mail, Clock, Shield, AlertTriangle, Zap } from 'lucide-react';
+import { Bug, CheckCircle, Phone, Mail, Clock, Shield, AlertTriangle, Zap, Droplet } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {

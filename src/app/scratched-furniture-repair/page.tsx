@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Tool, CheckCircle, Phone, Mail, Clock, Shield, AlertCircle, Zap } from 'lucide-react';
+import { Wrench, CheckCircle, Phone, Mail, Clock, Shield, AlertCircle, Zap } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
@@ -53,7 +53,7 @@ export default function ScratchedFurnitureRepair() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-4">
-                <Tool className="h-10 w-10 text-golden-center" />
+                <Wrench className="h-10 w-10 text-golden-center" />
                 <span className="bg-orange-600 text-white px-4 py-1 rounded-full text-sm font-semibold">SCRATCH SPECIALISTS</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">Scratched Furniture Repair & Professional Scratch Removal</h1>
@@ -118,7 +118,7 @@ export default function ScratchedFurnitureRepair() {
                 </ul>
               </div>
               <div className="bg-white-daisy rounded-lg p-6 shadow-lg">
-                <Tool className="h-10 w-10 text-forest-green mb-4" />
+                <Wrench className="h-10 w-10 text-forest-green mb-4" />
                 <h3 className="text-xl font-bold text-dark-wood mb-3">Moving & Accidents</h3>
                 <ul className="space-y-2 text-forest-green text-sm">
                   <li>• Furniture being moved or rearranged</li>
@@ -183,7 +183,7 @@ export default function ScratchedFurnitureRepair() {
               {[
                 { icon: Shield, title: "Use Protection", tips: ["Placemats and coasters always", "Tablecloths for daily use", "Felt pads under decorative items", "Protective film on high-use surfaces"] },
                 { icon: CheckCircle, title: "Pet Management", tips: ["Keep pet nails trimmed", "Provide scratching posts for cats", "Train pets to stay off furniture", "Use pet-friendly furniture covers"] },
-                { icon: Tool, title: "Careful Handling", tips: ["Lift items, don't drag", "Use moving pads when rearranging", "Place felt pads under everything", "Be mindful with sharp objects"] },
+                { icon: Wrench, title: "Careful Handling", tips: ["Lift items, don't drag", "Use moving pads when rearranging", "Place felt pads under everything", "Be mindful with sharp objects"] },
                 { icon: Clock, title: "Regular Maintenance", tips: ["Apply furniture wax quarterly", "Inspect for early damage", "Address small scratches immediately", "Professional refinishing every 5-7 years"] },
                 { icon: AlertCircle, title: "Smart Cleaning", tips: ["Use soft, lint-free cloths", "Avoid abrasive cleaners", "Clean in direction of grain", "No sandy cloths on coastal furniture"] },
                 { icon: Zap, title: "Quick Response", tips: ["Address scratches immediately", "Don't let damage worsen", "Professional assessment for deep scratches", "Early repair prevents further damage"] }
@@ -207,7 +207,7 @@ export default function ScratchedFurnitureRepair() {
 
         <section className="py-16 bg-gradient-to-br from-forest-green to-dark-wood text-white-daisy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <Tool className="h-16 w-16 mx-auto mb-6 text-golden-center" />
+            <Wrench className="h-16 w-16 mx-auto mb-6 text-golden-center" />
             <h2 className="text-3xl font-bold mb-6">Make Scratches Disappear with Expert Repair</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">Don't live with scratched furniture. Our professional repair makes damage invisible. Perfect results guaranteed.</p>
             <Link href="/book-consultation" className="inline-block bg-golden-center text-dark-wood px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white-daisy transition duration-300">Get Free Scratch Assessment</Link>

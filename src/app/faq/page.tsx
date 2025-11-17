@@ -421,7 +421,7 @@ export default function FAQPage() {
                       <div className="px-6 pb-6 text-forest-green">
                         <p className="mb-3">{faq.a}</p>
 
-                        {faq.details && (
+                        {'details' in faq && faq.details && (
                           <ul className="space-y-2 mb-3">
                             {faq.details.map((detail, detailIdx) => (
                               <li key={detailIdx} className="flex items-start">
@@ -432,7 +432,7 @@ export default function FAQPage() {
                           </ul>
                         )}
 
-                        {faq.note && (
+                        {'note' in faq && faq.note && (
                           <p className="text-sm italic bg-golden-center/10 p-3 rounded-lg mt-3">
                             💡 <strong>Note:</strong> {faq.note}
                           </p>

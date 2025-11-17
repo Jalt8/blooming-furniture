@@ -10,10 +10,10 @@ export default function SeaSaltDamageClient() {
       {/* Featured Image */}
       <div className="mb-12">
         <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-          <CldImage
-            width="1200"
-            height="600"
-            src="BloomingFurniture/salt-damage-guide"
+          <Image
+            width={1200}
+            height={600}
+            src="/images/blog/salt-damage-guide.jpg"
             alt="Furniture damage from sea salt air on West Coast"
             className="object-cover w-full h-full"
           />

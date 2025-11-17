@@ -10,10 +10,10 @@ export default function BlogArticleClient() {
       {/* Featured Image */}
       <div className="mb-12">
         <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-          <CldImage
-            width="1200"
-            height="600"
-            src="BloomingFurniture/coastal-restoration-guide"
+          <Image
+            width={1200}
+            height={600}
+            src="/images/blog/coastal-restoration-guide.jpg"
             alt="West Coast furniture restoration workshop with coastal view"
             className="object-cover w-full h-full"
           />

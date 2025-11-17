@@ -10,10 +10,10 @@ export default function AntiqueRestorationClient() {
       {/* Featured Image */}
       <div className="mb-12">
         <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-          <CldImage
-            width="1200"
-            height="600"
-            src="BloomingFurniture/antique-heritage-guide"
+          <Image
+            width={1200}
+            height={600}
+            src="/images/blog/antique-heritage-guide.jpg"
             alt="Victorian furniture restoration showcasing West Coast heritage pieces"
             className="object-cover w-full h-full"
           />
