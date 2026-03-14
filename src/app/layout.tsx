@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
-import Head from 'next/head';
 import GoogleTagManager from '@/components/GoogleTagManager';
 import MetaPixel from '@/components/MetaPixel';
 import CookieConsent from '@/components/CookieConsent';

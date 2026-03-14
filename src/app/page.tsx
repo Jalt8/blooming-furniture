@@ -3,6 +3,24 @@ import { Metadata } from 'next'
 
 const ClientHome = dynamic(() => import('@/components/ClientHome'))
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Blooming Furniture",
+  "url": "https://bloomingfurniture.co.za",
+  "description": "Expert furniture restoration and wood repair services on the West Coast, South Africa",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blooming Furniture",
+    "url": "https://bloomingfurniture.co.za"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://bloomingfurniture.co.za/services",
+    "query-input": "required name=search_term_string"
+  }
+}
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -111,6 +129,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema),
         }}
       />
       <main>
