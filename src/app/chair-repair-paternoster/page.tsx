@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Chair Repair Paternoster",
   "url": "https://bloomingfurniture.co.za/chair-repair-paternoster",
   "telephone": "(079) 375 2588",

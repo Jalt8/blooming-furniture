@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-restoration-velddrif",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Velddrif Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Velddrif, Western Cape. Specializing in coastal environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-velddrif",

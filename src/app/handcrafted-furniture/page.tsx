@@ -34,6 +34,7 @@ export default function HandcraftedFurniturePage() {
       'availability': 'https://schema.org/InStock',
       'seller': {
         '@type': 'LocalBusiness',
+        '@id': 'https://bloomingfurniture.co.za',
         'name': 'Blooming Furniture',
         'telephone': '+27793752588'
       }

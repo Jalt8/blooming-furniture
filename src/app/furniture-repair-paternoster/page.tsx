@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-repair-paternoster",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Paternoster Furniture Repair",
   "description": "Expert furniture repair and restoration services in Paternoster, Western Cape. Specialized coastal furniture treatments.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-paternoster",

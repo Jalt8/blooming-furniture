@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-restoration-vredenburg",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Vredenburg Furniture Restoration",
   "description": "Professional furniture restoration and refinishing services in Vredenburg, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-vredenburg",

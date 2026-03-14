@@ -25,6 +25,7 @@ const serviceSchema = {
   "serviceType": "Furniture Refinishing",
   "provider": {
     "@type": "LocalBusiness",
+    "@id": "https://bloomingfurniture.co.za",
     "name": "Blooming Furniture",
     "telephone": "+27793752588"
   },

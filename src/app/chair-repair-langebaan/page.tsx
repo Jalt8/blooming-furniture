@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Chair Repair Langebaan",
   "url": "https://bloomingfurniture.co.za/chair-repair-langebaan",
   "telephone": "(079) 375 2588",

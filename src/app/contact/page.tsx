@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/contact",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Restoration & Refurbishment",
   "description": "Professional furniture restoration and repair services in West Coast South Africa. Expert craftsmanship serving Langebaan, Saldanha Bay, Vredenburg, and surrounding areas.",
   "url": "https://bloomingfurniture.co.za",

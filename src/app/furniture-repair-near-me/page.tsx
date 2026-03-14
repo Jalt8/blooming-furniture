@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-repair-near-me",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Local Furniture Repair Services",
   "description": "Professional furniture repair services near you. Expert local repairs for broken chairs, tables, cabinets, and all furniture types with convenient pickup and delivery.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-near-me",

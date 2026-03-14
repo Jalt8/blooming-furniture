@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Custom Furniture Paternoster",
   "url": "https://bloomingfurniture.co.za/custom-furniture-paternoster",
   "telephone": "(079) 375 2588",

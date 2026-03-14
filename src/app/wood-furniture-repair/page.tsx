@@ -25,6 +25,7 @@ const serviceSchema = {
   "serviceType": "Wood Furniture Repair",
   "provider": {
     "@type": "LocalBusiness",
+    "@id": "https://bloomingfurniture.co.za",
     "name": "Blooming Furniture",
     "image": "https://bloomingfurniture.co.za/blooming-furniture.png",
     "telephone": "+27793752588",

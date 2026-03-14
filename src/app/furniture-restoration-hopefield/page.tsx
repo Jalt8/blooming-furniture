@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-restoration-hopefield",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Hopefield Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Hopefield, Western Cape. Specializing in heritage and farmhouse furniture restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-hopefield",

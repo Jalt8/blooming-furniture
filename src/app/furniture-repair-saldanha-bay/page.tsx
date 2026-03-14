@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-repair-saldanha-bay",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Saldanha Bay Furniture Repair",
   "description": "Professional furniture repair and restoration services in Saldanha Bay, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-repair-saldanha-bay",

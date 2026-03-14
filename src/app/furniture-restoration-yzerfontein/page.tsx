@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-restoration-yzerfontein",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Yzerfontein Coastal Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Yzerfontein, Western Cape. Specializing in coastal and marine environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-yzerfontein",

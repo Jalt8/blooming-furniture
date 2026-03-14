@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/custom-furniture-langebaan",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Custom Furniture Langebaan",
   "description": "Professional custom furniture design and creation services in Langebaan, Western Cape. Bespoke handcrafted pieces for coastal living.",
   "url": "https://bloomingfurniture.co.za/custom-furniture-langebaan",

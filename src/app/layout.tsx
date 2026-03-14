@@ -132,6 +132,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://bloomingfurniture.co.za",
               "name": "Blooming Furniture",
               "description": "Professional woodwork restoration, furniture repair and wood refinishing services on the West Coast, South Africa. Expert craftsmen specializing in all types of wood furniture restoration and woodwork.",
               "url": "https://bloomingfurniture.co.za",

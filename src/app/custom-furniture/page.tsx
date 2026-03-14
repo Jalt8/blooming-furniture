@@ -26,6 +26,7 @@ export default function CustomFurniturePage() {
     'name': 'Custom Furniture Design & Manufacturing',
     'provider': {
       '@type': 'LocalBusiness',
+      '@id': 'https://bloomingfurniture.co.za',
       'name': 'Blooming Furniture',
       'telephone': '+27793752588',
       'address': {

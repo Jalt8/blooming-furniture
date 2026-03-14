@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock, Hammer, Award, MessageSquare, Star, Shield, TruckIcon, Users } from 'lucide-react';
 import PaintingShowcase from '@/components/PaintingShowcase';
-import WhatsAppWidget from '@/components/WhatsAppWidget';
 
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -7,6 +7,7 @@ import { MapPin, Phone, Mail, Clock, Star, Hammer, Paintbrush, RefreshCw, Truck 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture",
   "description": "Professional furniture repair and restoration services in West Coast, South Africa",
   "address": {

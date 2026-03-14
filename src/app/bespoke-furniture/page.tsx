@@ -25,6 +25,7 @@ export default function BespokeFurniturePage() {
     'name': 'Bespoke Furniture Design Services',
     'provider': {
       '@type': 'LocalBusiness',
+      '@id': 'https://bloomingfurniture.co.za',
       'name': 'Blooming Furniture',
       'telephone': '+27793752588',
       'address': {

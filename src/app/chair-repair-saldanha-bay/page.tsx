@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Chair Repair Saldanha Bay",
   "url": "https://bloomingfurniture.co.za/chair-repair-saldanha-bay",
   "telephone": "(079) 375 2588",

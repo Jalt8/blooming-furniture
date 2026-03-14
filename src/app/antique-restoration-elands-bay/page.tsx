@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Antique Restoration Elands Bay",
   "url": "https://bloomingfurniture.co.za/antique-restoration-elands-bay",
   "telephone": "(079) 375 2588",

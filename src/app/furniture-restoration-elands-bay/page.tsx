@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://bloomingfurniture.co.za/furniture-restoration-elands-bay",
+  "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Elands Bay Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Elands Bay, Western Cape. Specializing in coastal cottage and fishing village furniture restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-elands-bay",
