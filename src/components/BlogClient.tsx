@@ -43,6 +43,16 @@ const featuredPosts = [
 
 const recentPosts = [
   {
+    id: 'furniture-restoration-cost-south-africa',
+    title: 'Furniture Restoration Cost in South Africa: Complete 2026 Price Guide',
+    excerpt: 'How much does furniture restoration cost in South Africa? Complete pricing guide for wood repair, refinishing, antique restoration and more. Get a free quote from Blooming Furniture.',
+    category: 'Pricing Guide',
+    readTime: '14 min read',
+    publishDate: '2026-03-14',
+    image: 'BloomingFurniture/restoration-cost-guide',
+    tags: ['pricing', 'restoration cost', 'south africa']
+  },
+  {
     id: 'sea-salt-furniture-damage-west-coast',
     title: 'How Sea Salt Damages Your Furniture: A West Coast Problem',
     excerpt: 'Understanding the unique challenges coastal living presents to your furniture and how to protect against salt air damage.',

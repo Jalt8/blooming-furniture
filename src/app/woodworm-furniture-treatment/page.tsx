@@ -217,6 +217,23 @@ export default function WoodwormFurnitureTreatment() {
           </div>
         </section>
 
+        {/* Related Services */}
+        <section className="py-12 bg-white-daisy">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold text-dark-wood mb-6">Related Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Link href="/wood-furniture-repair" className="block p-4 bg-daisy-cream rounded-lg shadow hover:shadow-md transition">
+                <h3 className="font-semibold text-forest-green">Wood Furniture Repair</h3>
+                <p className="text-sm text-dark-wood mt-1">Professional repair for broken joints, cracks, and structural damage</p>
+              </Link>
+              <Link href="/antique-restoration" className="block p-4 bg-daisy-cream rounded-lg shadow hover:shadow-md transition">
+                <h3 className="font-semibold text-forest-green">Antique Restoration</h3>
+                <p className="text-sm text-dark-wood mt-1">Specialist restoration preserving the character of antique furniture</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 bg-gradient-to-br from-forest-green to-dark-wood text-white-daisy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Bug className="h-16 w-16 mx-auto mb-6 text-golden-center" />

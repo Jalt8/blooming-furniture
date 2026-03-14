@@ -316,6 +316,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/blog/furniture-restoration-cost-south-africa`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
 
     // ===== PROGRAMMATIC SEO: Phase 1 - Service + Location Matrix =====
     // Custom Furniture + Location (8 pages)

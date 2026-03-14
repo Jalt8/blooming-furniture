@@ -39,6 +39,23 @@ export default function FurnitureRefinishingFadedWood() {
           </div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <section className="py-12 bg-white-daisy">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold text-dark-wood mb-6">Related Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/furniture-refinishing" className="block p-4 bg-daisy-cream rounded-lg shadow hover:shadow-md transition">
+              <h3 className="font-semibold text-forest-green">Furniture Refinishing</h3>
+              <p className="text-sm text-dark-wood mt-1">Custom stains, paints, and coastal-resistant finishes</p>
+            </Link>
+            <Link href="/sun-faded-furniture-restoration" className="block p-4 bg-daisy-cream rounded-lg shadow hover:shadow-md transition">
+              <h3 className="font-semibold text-forest-green">Sun Faded Furniture Restoration</h3>
+              <p className="text-sm text-dark-wood mt-1">Reverse UV damage and restore original color and beauty</p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

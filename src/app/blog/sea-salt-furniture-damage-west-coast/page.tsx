@@ -43,7 +43,7 @@ const articleSchema = {
     "name": "Blooming Furniture",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://bloomingfurniture.co.za/blooming-furniture.png"
+      "url": "https://bloomingfurniture.co.za/blog/salt-damage-guide.jpg"
     }
   },
   "mainEntityOfPage": {
