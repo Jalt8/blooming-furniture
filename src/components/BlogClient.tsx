@@ -53,6 +53,46 @@ const recentPosts = [
     tags: ['pricing', 'restoration cost', 'south africa']
   },
   {
+    id: 'is-it-worth-restoring-old-furniture',
+    title: 'Is It Worth Restoring Old Furniture? A Honest Cost-Benefit Analysis',
+    excerpt: 'Is it worth restoring old furniture? Honest analysis covering sentimental value, build quality comparison, environmental benefits, and real cost scenarios for South African homeowners.',
+    category: 'Decision Guide',
+    readTime: '11 min read',
+    publishDate: '2026-03-14',
+    image: 'BloomingFurniture/restoration-worth-it-guide',
+    tags: ['restoration', 'cost benefit', 'decision guide']
+  },
+  {
+    id: 'how-to-remove-scratches-from-wooden-furniture',
+    title: 'How to Remove Scratches from Wooden Furniture: DIY & Professional Guide',
+    excerpt: 'Learn how to remove scratches from wooden furniture with DIY methods including the walnut trick, furniture markers, and sanding. Know when to call a professional for deep scratches.',
+    category: 'DIY & Professional Guide',
+    readTime: '12 min read',
+    publishDate: '2026-03-14',
+    image: 'BloomingFurniture/scratch-removal-guide',
+    tags: ['DIY', 'scratch repair', 'wood care']
+  },
+  {
+    id: 'furniture-restoration-vs-buying-new',
+    title: 'Furniture Restoration vs Buying New: Which Saves You More Money in South Africa?',
+    excerpt: 'Direct price comparison of furniture restoration vs buying new in South Africa. Real pricing from @Home, Coricraft, and Mr Price Home compared with professional restoration costs.',
+    category: 'Comparison Guide',
+    readTime: '13 min read',
+    publishDate: '2026-03-14',
+    image: 'BloomingFurniture/restore-vs-buy-new-guide',
+    tags: ['comparison', 'pricing', 'south africa']
+  },
+  {
+    id: 'how-to-care-for-wooden-furniture-coastal-climate',
+    title: 'How to Care for Wooden Furniture in a Coastal Climate: West Coast Guide',
+    excerpt: 'Expert guide on caring for wooden furniture in South Africa coastal climate. Salt air protection, humidity management, UV damage prevention, and a seasonal care calendar.',
+    category: 'Care Guide',
+    readTime: '13 min read',
+    publishDate: '2026-03-14',
+    image: 'BloomingFurniture/coastal-furniture-care-guide',
+    tags: ['coastal care', 'west coast', 'furniture protection']
+  },
+  {
     id: 'sea-salt-furniture-damage-west-coast',
     title: 'How Sea Salt Damages Your Furniture: A West Coast Problem',
     excerpt: 'Understanding the unique challenges coastal living presents to your furniture and how to protect against salt air damage.',

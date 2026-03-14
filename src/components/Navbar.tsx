@@ -49,6 +49,8 @@ const Navbar: React.FC = () => {
       { name: 'Wood Furniture Repair', href: '/wood-furniture-repair', desc: 'Fix broken legs, joints & cracks' },
       { name: 'Furniture Refinishing', href: '/furniture-refinishing', desc: 'Custom colors & finishes' },
       { name: 'Antique Restoration', href: '/antique-restoration', desc: 'Preserve family heirlooms' },
+      { name: 'Table Restoration', href: '/table-restoration', desc: 'Dining, coffee & side tables' },
+      { name: 'Cabinet Restoration', href: '/cabinet-restoration', desc: 'Kitchen, display & antique cabinets' },
     ],
     other: [
       { name: 'All Services', href: '/services' },

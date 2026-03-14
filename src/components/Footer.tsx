@@ -55,8 +55,31 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/table-restoration" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Table Restoration
+                </Link>
+              </li>
+              <li>
+                <Link href="/cabinet-restoration" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Cabinet Restoration
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="text-gray-300 hover:text-white-daisy transition-colors">
                   All Services
+                </Link>
+              </li>
+            </ul>
+            <h3 className="text-sm font-bold text-golden-center uppercase tracking-wide pt-4">Guides</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/south-african-wood-species-guide" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  SA Wood Species Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/furniture-restoration-cost-south-africa" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Restoration Cost Guide
                 </Link>
               </li>
             </ul>

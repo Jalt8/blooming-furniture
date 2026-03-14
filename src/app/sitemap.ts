@@ -143,6 +143,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/furniture-restoration-st-helena-bay`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/furniture-restoration-malmesbury`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/furniture-restoration-darling`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/furniture-restoration-near-me`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -318,6 +336,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/furniture-restoration-cost-south-africa`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/is-it-worth-restoring-old-furniture`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-remove-scratches-from-wooden-furniture`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/furniture-restoration-vs-buying-new`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-care-for-wooden-furniture-coastal-climate`,
       lastModified: new Date('2026-03-14'),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -534,6 +576,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+
+    // ===== PILLAR CONTENT =====
+    {
+      url: `${baseUrl}/south-african-wood-species-guide`,
+      lastModified: new Date('2026-03-14'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+
+    // ===== SERVICE PAGES: Expansion (4 pages) =====
+    {
+      url: `${baseUrl}/french-polishing`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/table-restoration`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/outdoor-furniture-restoration`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/cabinet-restoration`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
 
     {
