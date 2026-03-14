@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: 'en_ZA',
     images: [
       {
-        url: '/blog/coastal-restoration-guide.jpg',
+        url: '/blooming-furniture.png',
         width: 1200,
         height: 630,
         alt: 'West Coast Furniture Restoration Guide',
@@ -33,7 +33,7 @@ const articleSchema = {
   "@id": "https://bloomingfurniture.co.za/blog/complete-guide-furniture-restoration-west-coast",
   "headline": "The Complete Guide to Furniture Restoration on the West Coast South Africa",
   "description": "Master furniture restoration in West Coast conditions. Learn about coastal weather effects, local wood types, salt air protection, and professional restoration techniques.",
-  "image": "https://bloomingfurniture.co.za/blog/coastal-restoration-guide.jpg",
+  "image": "https://bloomingfurniture.co.za/blooming-furniture.png",
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {

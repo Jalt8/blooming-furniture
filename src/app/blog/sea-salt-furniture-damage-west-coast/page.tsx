@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     locale: 'en_ZA',
     images: [
       {
-        url: '/blog/salt-damage-guide.jpg',
+        url: '/blooming-furniture.png',
         width: 1200,
         height: 630,
         alt: 'Sea Salt Furniture Damage West Coast Prevention Guide',
@@ -31,7 +31,7 @@ const articleSchema = {
   "@id": "https://bloomingfurniture.co.za/blog/sea-salt-furniture-damage-west-coast",
   "headline": "How Sea Salt Damages Your Furniture: A West Coast Problem",
   "description": "Understand how sea salt air damages furniture on the West Coast. Learn prevention strategies, early warning signs, and professional repair solutions.",
-  "image": "https://bloomingfurniture.co.za/blog/salt-damage-guide.jpg",
+  "image": "https://bloomingfurniture.co.za/blooming-furniture.png",
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {

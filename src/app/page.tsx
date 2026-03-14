@@ -1,9 +1,7 @@
 import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
 
-const ClientHome = dynamic(() => import('@/components/ClientHome'), {
-  ssr: false,
-})
+const ClientHome = dynamic(() => import('@/components/ClientHome'))
 
 const organizationSchema = {
   "@context": "https://schema.org",

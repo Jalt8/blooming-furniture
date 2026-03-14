@@ -1,4 +1,13 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service | Blooming Furniture',
+  description: 'Terms of Service for Blooming Furniture. Read our terms and conditions for furniture restoration and repair services on the West Coast, South Africa.',
+  alternates: {
+    canonical: 'https://bloomingfurniture.co.za/terms-of-service',
+  },
+};
 
 const TermsOfService = () => {
   return (

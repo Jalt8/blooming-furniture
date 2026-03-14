@@ -147,10 +147,7 @@ export default function RootLayout({
                 "latitude": -32.9729,
                 "longitude": 18.0189
               },
-              "openingHours": [
-                "Mo-Fr 08:00-17:00",
-                "Sa 08:00-14:00"
-              ],
+              "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
               "priceRange": "$$",
               "serviceArea": {
                 "@type": "GeoCircle",

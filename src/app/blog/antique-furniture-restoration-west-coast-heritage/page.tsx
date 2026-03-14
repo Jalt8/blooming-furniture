@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: 'en_ZA',
     images: [
       {
-        url: '/blog/antique-heritage-guide.jpg',
+        url: '/blooming-furniture.png',
         width: 1200,
         height: 630,
         alt: 'West Coast Antique Furniture Restoration Heritage Guide',
@@ -32,7 +32,7 @@ const articleSchema = {
   "@id": "https://bloomingfurniture.co.za/blog/antique-furniture-restoration-west-coast-heritage",
   "headline": "Antique Furniture Restoration: Preserving West Coast Heritage",
   "description": "Expert guide to restoring antique furniture while preserving historical value and West Coast heritage.",
-  "image": "https://bloomingfurniture.co.za/blog/antique-heritage-guide.jpg",
+  "image": "https://bloomingfurniture.co.za/blooming-furniture.png",
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {

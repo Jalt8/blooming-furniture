@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: 'en_ZA',
     images: [
       {
-        url: '/blog/leather-care-guide.jpg',
+        url: '/blooming-furniture.png',
         width: 1200,
         height: 630,
         alt: 'Leather Furniture Care in Coastal Climates Guide',
@@ -32,7 +32,7 @@ const articleSchema = {
   "@id": "https://bloomingfurniture.co.za/blog/leather-furniture-care-coastal-climates",
   "headline": "Leather Furniture Care and Repair in Coastal Climates",
   "description": "Comprehensive guide to protecting and maintaining leather furniture in coastal environments with high humidity and salt air exposure.",
-  "image": "https://bloomingfurniture.co.za/blog/leather-care-guide.jpg",
+  "image": "https://bloomingfurniture.co.za/blooming-furniture.png",
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {

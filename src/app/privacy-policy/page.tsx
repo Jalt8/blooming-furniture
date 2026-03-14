@@ -1,4 +1,13 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Blooming Furniture',
+  description: 'Privacy Policy for Blooming Furniture. Learn how we collect, use, and protect your personal information when using our furniture restoration services on the West Coast.',
+  alternates: {
+    canonical: 'https://bloomingfurniture.co.za/privacy-policy',
+  },
+};
 
 const PrivacyPolicy = () => {
   return (
@@ -10,7 +19,7 @@ const PrivacyPolicy = () => {
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-forest-green">1. Introduction</h2>
-            <p className="text-dark-wood">Welcome to Blooming Furniture ("we", "our", or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [www.bloomingfurniture.com] or use our services.</p>
+            <p className="text-dark-wood">Welcome to Blooming Furniture ("we", "our", or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [bloomingfurniture.co.za] or use our services.</p>
           </section>
 
           <section className="mb-8">
@@ -77,7 +86,7 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-forest-green">8. Contact Us</h2>
             <p className="text-dark-wood">If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p className="text-dark-wood">Email: info@bloomingfurniture.com</p>
+            <p className="text-dark-wood">Email: wendydanie@gmail.com</p>
             <p className="text-dark-wood">Phone: (079) 375 2588</p>
           </section>
         </div>

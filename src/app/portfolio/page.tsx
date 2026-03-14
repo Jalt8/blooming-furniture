@@ -11,7 +11,10 @@ export const metadata: Metadata = {
     description: 'Stunning before & after gallery of furniture restoration projects including vintage, modern, and antique pieces.',
     images: ['/blooming-furniture.png'],
     type: 'website'
-  }
+  },
+  alternates: {
+    canonical: 'https://bloomingfurniture.co.za/portfolio',
+  },
 };
 
 export default function PortfolioPage() {

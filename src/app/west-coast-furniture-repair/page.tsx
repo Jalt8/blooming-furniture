@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     images: ['/blooming-furniture.png'],
     type: 'website',
     locale: 'en_ZA'
-  }
+  },
+  alternates: {
+    canonical: 'https://bloomingfurniture.co.za/west-coast-furniture-repair',
+  },
 };
 
 export default function WestCoastFurnitureRepairPage() {

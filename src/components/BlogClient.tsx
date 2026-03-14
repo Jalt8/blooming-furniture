@@ -51,26 +51,6 @@ const recentPosts = [
     publishDate: '2025-01-06',
     image: 'BloomingFurniture/salt-damage-guide',
     tags: ['salt damage', 'coastal', 'protection']
-  },
-  {
-    id: 'furniture-restoration-langebaan-local-guide',
-    title: 'Furniture Restoration in Langebaan: A Local\'s Guide',
-    excerpt: 'Your complete guide to furniture restoration services in Langebaan, featuring local success stories and community insights.',
-    category: 'Local Guide',
-    readTime: '7 min read',
-    publishDate: '2025-01-05',
-    image: 'BloomingFurniture/langebaan-guide',
-    tags: ['langebaan', 'local', 'community']
-  },
-  {
-    id: 'signs-antique-furniture-needs-restoration',
-    title: '5 Signs Your Antique Furniture Needs Professional Restoration',
-    excerpt: 'Learn to identify when your precious antique pieces require expert attention to preserve their value and beauty.',
-    category: 'Problem Solving',
-    readTime: '5 min read',
-    publishDate: '2025-01-04',
-    image: 'BloomingFurniture/antique-signs-guide',
-    tags: ['antique', 'assessment', 'restoration']
   }
 ];
 
@@ -186,14 +166,15 @@ export default function BlogClient() {
               <h3 className="text-xl font-bold text-dark-wood mb-6">Browse by Category</h3>
               <div className="space-y-3">
                 {categories.map((category) => (
-                  <Link
+                  <a
                     key={category.name}
-                    href={`/blog/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     className="flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:border-golden-center hover:bg-golden-center/10 transition-all duration-300"
                   >
                     <span className="font-medium text-dark-wood">{category.name}</span>
                     <span className="text-sm text-forest-green">({category.count})</span>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

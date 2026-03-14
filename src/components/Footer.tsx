@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Facebook, Instagram, Calendar } from 'lucide-react';
+import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
@@ -33,14 +33,6 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-300 max-w-xs">
               Expert woodwork restoration and furniture refinishing across the West Coast. Preserving memories for generations.
             </p>
-            <div className="flex space-x-3">
-              <a href="#" className="text-golden-center hover:text-white-daisy transition-colors" aria-label="Facebook">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-golden-center hover:text-white-daisy transition-colors" aria-label="Instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Services */}
@@ -148,6 +140,9 @@ const Footer: React.FC = () => {
               </Link>
               <Link href="/portfolio" className="text-gray-400 hover:text-white-daisy transition-colors">
                 Portfolio
+              </Link>
+              <Link href="/blog" className="text-gray-400 hover:text-white-daisy transition-colors">
+                Blog
               </Link>
               <Link href="/faq" className="text-gray-400 hover:text-white-daisy transition-colors">
                 FAQ
