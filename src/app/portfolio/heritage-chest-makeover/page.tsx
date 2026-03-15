@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     images: [
       {
-        url: "/Chest1.jpg",
+        url: "/images/portfolio/Chest1.jpg",
         width: 800,
         height: 600,
         alt: "Heritage Chest Makeover - Before and After Restoration",
@@ -37,7 +37,7 @@ const projectSchema = {
     "name": "Blooming Furniture",
     "url": "https://bloomingfurniture.co.za"
   },
-  "image": "/Chest1.jpg",
+  "image": "/images/portfolio/Chest1.jpg",
   "dateCreated": "2024-11-01",
   "keywords": ["mahogany restoration", "heritage furniture", "antique restoration", "furniture refinishing"]
 };
@@ -49,49 +49,49 @@ export default function HeritageChestMakeover() {
       treatment: "Finish Removal",
       process: "Hand-scraped the old shellac, followed by eco-stripper & a nylon brush",
       purpose: "Exposed raw timber without raising the grain",
-      images: ["/Chest2.jpg"]
+      images: ["/images/portfolio/Chest2.jpg"]
     },
     {
       step: "2️⃣", 
       treatment: "Progressive Sanding",
       process: "100 → 150 → 220 grit on the top, plus detail sanding inside mouldings",
       purpose: "Erased water marks & levelled decades of uneven wear",
-      images: ["/Chest3.jpg"]
+      images: ["/images/portfolio/Chest3.jpg"]
     },
     {
       step: "3️⃣",
       treatment: "Grain Revival", 
       process: "Wet-down & final 320-grit 'slurry sand' to minimise grain-raise",
       purpose: "Left the surface silky pre-finish",
-      images: ["/Chest4.jpg"]
+      images: ["/images/portfolio/Chest4.jpg"]
     },
     {
       step: "4️⃣",
       treatment: "Custom Dye Stain",
       process: "Warm cherry-mahogany mix hand-rubbed in two coats", 
       purpose: "Restored uniform tone while highlighting cathedral grain & knots",
-      images: ["/Chest5.jpg"]
+      images: ["/images/portfolio/Chest5.jpg"]
     },
     {
       step: "5️⃣",
       treatment: "Oil-Based Sealer",
       process: "Flood-coat of tung-oil/poly blend, burnished between coats",
       purpose: "Locked in colour, added depth, hardened the surface", 
-      images: ["/Chest6.jpg"]
+      images: ["/images/portfolio/Chest6.jpg"]
     },
     {
       step: "6️⃣",
       treatment: "High-Build Satin Varnish",
       process: "Three sprayed coats, de-nibbed to 800 grit, then a final rub-out with micro-mesh",
       purpose: "Created a low-sheen 'piano-smooth' top resistant to spills",
-      images: ["/Chest7.jpg"]
+      images: ["/images/portfolio/Chest7.jpg"]
     },
     {
       step: "7️⃣", 
       treatment: "Hardware Refurb",
       process: "Pulled, stripped & French-polished original timber handles; lubricated runners",
       purpose: "Drawers now glide softly and keep their vintage charm",
-      images: ["/Chest8.jpg"]
+      images: ["/images/portfolio/Chest8.jpg"]
     }
   ];
 
@@ -144,7 +144,7 @@ export default function HeritageChestMakeover() {
               
               <div className="relative">
                 <Image
-                  src="/Chest1.jpg"
+                  src="/images/portfolio/Chest1.jpg"
                   alt="Heritage Chest Makeover - Before and After"
                   width={600}
                   height={400}

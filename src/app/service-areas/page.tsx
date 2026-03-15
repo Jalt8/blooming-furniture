@@ -32,7 +32,7 @@ const serviceAreas = [
     name: "Langebaan",
     href: "/furniture-restoration-langebaan",
     description: "Professional furniture restoration in Langebaan with specialized coastal treatments",
-    image: "/image_21.jpeg",
+    image: "/images/portfolio/image_21.jpeg",
     services: ["Furniture Restoration", "Coastal Protection", "Antique Repair"],
     featured: true
   },
@@ -40,7 +40,7 @@ const serviceAreas = [
     name: "Saldanha Bay",
     href: "/furniture-repair-saldanha-bay",
     description: "Expert furniture repair services for residential and commercial clients in Saldanha Bay",
-    image: "/image_22.jpeg",
+    image: "/images/portfolio/image_22.jpeg",
     services: ["Emergency Repairs", "Commercial Services", "Industrial Furniture"],
     featured: true
   },
@@ -48,7 +48,7 @@ const serviceAreas = [
     name: "Vredenburg", 
     href: "/furniture-restoration-vredenburg",
     description: "Complete furniture restoration services for Vredenburg residents and businesses",
-    image: "/image_23.jpeg",
+    image: "/images/portfolio/image_23.jpeg",
     services: ["Antique Restoration", "Modern Makeovers", "Custom Refinishing"],
     featured: true
   },
@@ -56,7 +56,7 @@ const serviceAreas = [
     name: "Paternoster",
     href: "/furniture-repair-paternoster", 
     description: "Premium furniture repair and restoration for Paternoster's coastal properties",
-    image: "/image_24.jpeg",
+    image: "/images/portfolio/image_24.jpeg",
     services: ["Holiday Home Care", "Luxury Restoration", "Salt Air Protection"],
     featured: true
   },
@@ -64,7 +64,7 @@ const serviceAreas = [
     name: "Velddrif",
     href: "/contact",
     description: "Furniture restoration services for the fishing town of Velddrif",
-    image: "/image_25.jpeg",
+    image: "/images/portfolio/image_25.jpeg",
     services: ["Marine Environment Treatments", "Residential Services", "Boat Furniture"],
     featured: false
   },
@@ -72,7 +72,7 @@ const serviceAreas = [
     name: "Hopefield",
     href: "/contact",
     description: "Professional furniture repair and restoration in Hopefield",
-    image: "/image_26.jpeg", 
+    image: "/images/portfolio/image_26.jpeg", 
     services: ["Agricultural Community Services", "Family Furniture", "Heritage Pieces"],
     featured: false
   },
@@ -80,7 +80,7 @@ const serviceAreas = [
     name: "St Helena Bay",
     href: "/contact",
     description: "Coastal furniture restoration services for St Helena Bay area",
-    image: "/image_27.jpeg",
+    image: "/images/portfolio/image_27.jpeg",
     services: ["Coastal Furniture Care", "Holiday Properties", "Fishing Lodge Furniture"], 
     featured: false
   },
@@ -88,7 +88,7 @@ const serviceAreas = [
     name: "Yzerfontein",
     href: "/contact",
     description: "Expert furniture services for Yzerfontein coastal properties",
-    image: "/image_28.jpeg",
+    image: "/images/portfolio/image_28.jpeg",
     services: ["Beach House Furniture", "Salt Air Protection", "Modern Restoration"],
     featured: false
   }

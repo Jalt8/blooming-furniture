@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     images: [
       {
-        url: "/sunbed1.jpg",
+        url: "/images/portfolio/sunbed1.jpg",
         width: 800,
         height: 600,
         alt: "Patio Daybed Revival - Before and After Restoration",
@@ -37,7 +37,7 @@ const projectSchema = {
     "name": "Blooming Furniture",
     "url": "https://bloomingfurniture.co.za"
   },
-  "image": "/sunbed1.jpg",
+  "image": "/images/portfolio/sunbed1.jpg",
   "dateCreated": "2024-12-01",
   "keywords": ["furniture restoration", "patio daybed", "coastal furniture", "UV damage repair"]
 };
@@ -91,7 +91,7 @@ export default function PatioDaybedRevival() {
               
               <div className="relative">
                 <Image
-                  src="/sunbed1.jpg"
+                  src="/images/portfolio/sunbed1.jpg"
                   alt="Patio Daybed Revival - Before and After"
                   width={600}
                   height={400}

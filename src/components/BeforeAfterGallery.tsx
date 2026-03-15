@@ -7,8 +7,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const transformations = [
   { before: "kvreig", after: "d7mc0v", description: "Vintage Dining Table Revival" },
-  { before: "download_2_lascnc", after: "download_3_dyzvy5", description: "Antique Armchair Restoration" },
-  { before: "download_1_w6ork4", after: "download_f7h2zd", description: "Classic Dresser Transformation" },
+  { before: "before-armchair", after: "after-armchair", description: "Antique Armchair Restoration" },
+  { before: "before-dresser", after: "after-dresser", description: "Classic Dresser Transformation" },
 ];
 
 const BeforeAfterGallery: React.FC = () => {
@@ -77,7 +77,7 @@ const BeforeAfterGallery: React.FC = () => {
             className="absolute inset-0"
           >
             <Image
-              src={`/images/gallery/${transformations[currentIndex].after}.jpg`}
+              src={`/images/portfolio/${transformations[currentIndex].after}.jpeg`}
               alt={`After ${transformations[currentIndex].description}`}
               fill
               style={{ objectFit: 'cover' }}
@@ -89,7 +89,7 @@ const BeforeAfterGallery: React.FC = () => {
           style={{ clipPath: `inset(0 ${100 - comparePosition}% 0 0)` }}
         >
           <Image
-            src={`/images/gallery/${transformations[currentIndex].before}.jpg`}
+            src={`/images/portfolio/${transformations[currentIndex].before}.jpeg`}
             alt={`Before ${transformations[currentIndex].description}`}
             fill
             style={{ objectFit: 'cover' }}
