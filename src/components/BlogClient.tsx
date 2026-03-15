@@ -13,7 +13,7 @@ const featuredPosts = [
     category: 'Pillar Guide',
     readTime: '12 min read',
     publishDate: '2025-01-06',
-    image: 'BloomingFurniture/coastal-restoration-guide',
+    image: '/blog/coastal-restoration-guide.jpg',
     featured: true,
     tags: ['restoration', 'west coast', 'guide', 'coastal climate']
   },
@@ -24,7 +24,7 @@ const featuredPosts = [
     category: 'Heritage Guide',
     readTime: '10 min read',
     publishDate: '2025-01-06',
-    image: 'BloomingFurniture/antique-heritage-guide',
+    image: '/blog/antique-heritage-guide.jpg',
     featured: true,
     tags: ['antique', 'heritage', 'restoration', 'history']
   },
@@ -35,7 +35,7 @@ const featuredPosts = [
     category: 'Care Guide',
     readTime: '8 min read',
     publishDate: '2025-01-06',
-    image: 'BloomingFurniture/leather-care-guide',
+    image: '/blog/leather-care-guide.jpg',
     featured: true,
     tags: ['leather', 'coastal', 'care', 'maintenance']
   }
@@ -49,7 +49,7 @@ const recentPosts = [
     category: 'Pricing Guide',
     readTime: '14 min read',
     publishDate: '2026-03-14',
-    image: 'BloomingFurniture/restoration-cost-guide',
+    image: '/blog/furniture-restoration-cost-guide.jpg',
     tags: ['pricing', 'restoration cost', 'south africa']
   },
   {
@@ -59,7 +59,7 @@ const recentPosts = [
     category: 'Decision Guide',
     readTime: '11 min read',
     publishDate: '2026-03-14',
-    image: 'BloomingFurniture/restoration-worth-it-guide',
+    image: '/blog/is-it-worth-restoring.jpg',
     tags: ['restoration', 'cost benefit', 'decision guide']
   },
   {
@@ -69,7 +69,7 @@ const recentPosts = [
     category: 'DIY & Professional Guide',
     readTime: '12 min read',
     publishDate: '2026-03-14',
-    image: 'BloomingFurniture/scratch-removal-guide',
+    image: '/blog/remove-scratches-guide.jpg',
     tags: ['DIY', 'scratch repair', 'wood care']
   },
   {
@@ -79,7 +79,7 @@ const recentPosts = [
     category: 'Comparison Guide',
     readTime: '13 min read',
     publishDate: '2026-03-14',
-    image: 'BloomingFurniture/restore-vs-buy-new-guide',
+    image: '/blog/restoration-vs-buying-new.jpg',
     tags: ['comparison', 'pricing', 'south africa']
   },
   {
@@ -89,7 +89,7 @@ const recentPosts = [
     category: 'Care Guide',
     readTime: '13 min read',
     publishDate: '2026-03-14',
-    image: 'BloomingFurniture/coastal-furniture-care-guide',
+    image: '/blog/coastal-furniture-care.jpg',
     tags: ['coastal care', 'west coast', 'furniture protection']
   },
   {
@@ -99,7 +99,7 @@ const recentPosts = [
     category: 'Problem Solving',
     readTime: '6 min read',
     publishDate: '2025-01-06',
-    image: 'BloomingFurniture/salt-damage-guide',
+    image: '/blog/salt-damage-guide.jpg',
     tags: ['salt damage', 'coastal', 'protection']
   }
 ];
