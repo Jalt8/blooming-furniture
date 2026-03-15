@@ -43,8 +43,8 @@ export default function LeatherCareClient() {
         {/* Introduction */}
         <div className="prose prose-lg max-w-none mb-12">
           <p className="text-lg text-forest-green leading-relaxed">
-            Living on the West Coast means your leather furniture faces some of the most challenging environmental conditions. 
-            The combination of salt-laden air, high humidity, and intense UV exposure can quickly deteriorate even the finest leather 
+            Living on the West Coast means your leather furniture faces some of the most challenging environmental conditions.
+            The combination of <Link href="/blog/sea-salt-furniture-damage-west-coast" className="text-dark-wood font-semibold hover:underline">salt-laden air</Link>, high humidity, and intense UV exposure can quickly deteriorate even the finest leather
             if not properly protected and maintained.
           </p>
           
@@ -509,8 +509,8 @@ export default function LeatherCareClient() {
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-bold text-dark-wood mb-2">Can leather furniture be repaired after coastal climate damage?</h3>
               <p className="text-forest-green">
-                Yes, most coastal damage can be repaired through professional restoration including reconditioning treatments, 
-                color restoration, crack repair, and protective coating application. Severe cases may require partial reupholstery 
+                Yes, most coastal damage can be repaired through <Link href="/furniture-restoration-langebaan" className="text-dark-wood font-semibold hover:underline">professional restoration</Link> including reconditioning treatments,
+                color restoration, crack repair, and protective coating application. Severe cases may require partial reupholstery
                 or component replacement. Early treatment provides better outcomes and lower costs.
               </p>
             </div>
@@ -521,7 +521,7 @@ export default function LeatherCareClient() {
         <section className="bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Protect Your Leather Investment</h2>
           <p className="text-lg mb-6 opacity-90">
-            Don't let coastal conditions destroy your beautiful leather furniture. Professional care and protection keep your pieces looking stunning for decades.
+            Don't let coastal conditions destroy your beautiful leather furniture. Professional care and protection keep your pieces looking stunning for decades. Learn more about <Link href="/blog/how-to-care-for-wooden-furniture-coastal-climate" className="text-white font-semibold underline hover:opacity-80">caring for all your furniture in a coastal climate</Link>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

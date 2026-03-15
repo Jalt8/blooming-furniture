@@ -104,9 +104,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en-ZA">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="alternate" hrefLang="en-ZA" href="https://bloomingfurniture.co.za" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <link
           rel="preload"

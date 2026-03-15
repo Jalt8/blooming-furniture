@@ -65,6 +65,16 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/french-polishing" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  French Polishing
+                </Link>
+              </li>
+              <li>
+                <Link href="/outdoor-furniture-restoration" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Outdoor Furniture Restoration
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="text-gray-300 hover:text-white-daisy transition-colors">
                   All Services
                 </Link>
@@ -107,6 +117,21 @@ const Footer: React.FC = () => {
               <li>
                 <Link href="/furniture-repair-paternoster" className="text-gray-300 hover:text-white-daisy transition-colors">
                   Paternoster
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-restoration-velddrif" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Velddrif
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-restoration-hopefield" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Hopefield
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-restoration-st-helena-bay" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  St Helena Bay
                 </Link>
               </li>
               <li>

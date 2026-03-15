@@ -287,8 +287,8 @@ export default function AntiqueRestorationClient() {
                   <div>
                     <h4 className="font-semibold text-dark-wood mb-2">Provenance Tracking</h4>
                     <p className="text-sm text-forest-green">
-                      Establishing ownership history through West Coast families, estates, and regional collections 
-                      helps verify authenticity and cultural significance.
+                            Establishing ownership history through West Coast families, estates, and regional collections
+                      helps verify authenticity and cultural significance. Many heritage pieces have been traced to homes in <Link href="/furniture-restoration-langebaan" className="text-dark-wood font-semibold hover:underline">Langebaan</Link> and surrounding towns.
                     </p>
                   </div>
                 </div>
@@ -385,7 +385,7 @@ export default function AntiqueRestorationClient() {
                 <div>
                   <h4 className="font-semibold text-forest-green mb-3">Victorian Era (1837-1901)</h4>
                   <ul className="space-y-2 text-sm text-forest-green">
-                    <li><strong>French Polish:</strong> High-gloss shellac finish</li>
+                    <li><strong><Link href="/french-polishing" className="text-dark-wood hover:underline">French Polish</Link>:</strong> High-gloss shellac finish</li>
                     <li><strong>Varnish:</strong> Durable coach varnish for quality pieces</li>
                     <li><strong>Ebonizing:</strong> Black lacquer treatments</li>
                     <li><strong>Gilding:</strong> Gold leaf decorative elements</li>
@@ -523,8 +523,8 @@ export default function AntiqueRestorationClient() {
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-bold text-dark-wood mb-2">How much does professional antique furniture restoration cost?</h3>
               <p className="text-forest-green">
-                Costs vary significantly based on piece complexity, required work, and historical significance. Simple repairs start around R2,000, 
-                while comprehensive restoration of quality pieces ranges R5,000-R15,000. Museum-quality conservation of important pieces can exceed R15,000. 
+                <Link href="/blog/furniture-restoration-cost-south-africa" className="text-dark-wood font-semibold hover:underline">Costs vary significantly</Link> based on piece complexity, required work, and historical significance. Simple repairs start around R2,000,
+                while comprehensive restoration of quality pieces ranges R5,000-R15,000. Museum-quality conservation of important pieces can exceed R15,000.
                 Assessment determines appropriate approach and investment level.
               </p>
             </div>

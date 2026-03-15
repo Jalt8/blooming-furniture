@@ -104,7 +104,16 @@ const restorationApproach = [
 
 export default function AntiqueRestorationPage() {
   return (
-    <div className="min-h-screen bg-daisy-cream pt-24 pb-16">
+    <>
+      {/* Service Schema - static data only, no user input */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+
+      <div className="min-h-screen bg-daisy-cream pt-24 pb-16">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-dark-wood via-forest-green to-dark-wood text-white-daisy py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -389,5 +398,6 @@ export default function AntiqueRestorationPage() {
           </div>
         </section>
       </div>
+    </>
   );
 }

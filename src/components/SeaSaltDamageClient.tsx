@@ -157,7 +157,7 @@ export default function SeaSaltDamageClient() {
                   Wood Surfaces
                 </h3>
                 <p className="text-forest-green mb-4">
-                  Wood absorbs salt crystals, leading to expansion, contraction, and eventual structural damage.
+                  Wood absorbs salt crystals, leading to expansion, contraction, and eventual structural damage. Learn how to protect your pieces in our <Link href="/blog/how-to-care-for-wooden-furniture-coastal-climate" className="text-dark-wood font-semibold hover:underline">wooden furniture coastal care guide</Link>.
                 </p>
                 <div className="bg-daisy-cream p-4 rounded">
                   <h4 className="font-semibold text-dark-wood mb-2">Common Issues:</h4>
@@ -428,7 +428,7 @@ export default function SeaSaltDamageClient() {
         <section className="bg-gradient-to-r from-forest-green to-dark-wood text-white rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Protect Your West Coast Investment</h2>
           <p className="text-lg mb-6 opacity-90">
-            Don't let sea salt destroy your beautiful furniture. Professional assessment and protection can save thousands in replacement costs.
+            Don't let sea salt destroy your beautiful furniture. <Link href="/furniture-repair-saldanha-bay" className="text-white font-semibold underline hover:opacity-80">Professional assessment and protection</Link> can save thousands in replacement costs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

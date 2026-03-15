@@ -28,7 +28,7 @@ const organizationSchema = {
   "name": "Blooming Furniture - Woodwork Restoration & Refurbishment",
   "description": "Expert woodwork and furniture restoration services on the West Coast South Africa. Professional wood refinishing, antique wood restoration, and wooden furniture repair serving Langebaan, Saldanha Bay, Vredenburg.",
   "url": "https://bloomingfurniture.co.za",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

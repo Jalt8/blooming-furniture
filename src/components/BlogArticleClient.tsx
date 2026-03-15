@@ -39,8 +39,8 @@ export default function BlogArticleClient() {
         {/* Introduction */}
         <div className="prose prose-lg max-w-none mb-12">
           <p className="text-lg text-forest-green leading-relaxed">
-            The West Coast of South Africa presents unique challenges and opportunities for furniture restoration. 
-            From the salt-laden Atlantic breezes to the specific wood species that have shaped our regional furniture heritage, 
+            The West Coast of South Africa presents unique challenges and opportunities for furniture restoration.
+            From the <Link href="/blog/sea-salt-furniture-damage-west-coast" className="text-dark-wood font-semibold hover:underline">salt-laden Atlantic breezes</Link> to the specific wood species that have shaped our regional furniture heritage,
             understanding these local factors is crucial for successful restoration projects.
           </p>
           
@@ -86,7 +86,7 @@ export default function BlogArticleClient() {
             <p className="text-forest-green leading-relaxed mb-4">
               <strong>Salt Air Impact:</strong> The ocean breeze carries microscopic salt particles that settle on furniture surfaces. 
               Over time, these particles attract moisture and accelerate the deterioration of finishes, particularly on metal hardware. 
-              This is why many West Coast antiques show characteristic pitting on brass fittings and handle hardware.
+              This is why many <Link href="/blog/antique-furniture-restoration-west-coast-heritage" className="text-dark-wood font-semibold hover:underline">West Coast antiques</Link> show characteristic pitting on brass fittings and handle hardware.
             </p>
             
             <p className="text-forest-green leading-relaxed">
@@ -187,7 +187,7 @@ export default function BlogArticleClient() {
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-bold text-dark-wood mb-2">When should I hire a professional for furniture restoration?</h3>
               <p className="text-forest-green">
-                For valuable antiques, structural damage, complex finishes, or when dealing with extensive salt air damage, professional restoration ensures proper techniques and materials are used. 
+                For valuable antiques, structural damage, complex finishes, or when dealing with extensive salt air damage, <Link href="/west-coast-furniture-repair" className="text-dark-wood font-semibold hover:underline">professional restoration</Link> ensures proper techniques and materials are used.
                 DIY approaches work well for simple maintenance and learning projects on less valuable pieces.
               </p>
             </div>
