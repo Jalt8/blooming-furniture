@@ -168,7 +168,7 @@ const ClientHome: React.FC = () => {
                   href="/wood-furniture-repair"
                   className="block text-center bg-forest-green text-white-daisy py-3 rounded-lg hover:bg-dark-wood transition duration-300 min-h-[44px] flex items-center justify-center"
                 >
-                  Learn More
+                  Explore Wood Repair
                 </Link>
               </div>
             </motion.div>
@@ -203,7 +203,7 @@ const ClientHome: React.FC = () => {
                   href="/furniture-refinishing"
                   className="block text-center bg-golden-center text-dark-wood py-3 rounded-lg hover:bg-white-daisy transition duration-300 font-semibold min-h-[44px] flex items-center justify-center"
                 >
-                  Learn More
+                  Explore Refinishing
                 </Link>
               </div>
             </motion.div>
@@ -235,7 +235,7 @@ const ClientHome: React.FC = () => {
                   href="/antique-restoration"
                   className="block text-center bg-forest-green text-white-daisy py-3 rounded-lg hover:bg-dark-wood transition duration-300 min-h-[44px] flex items-center justify-center"
                 >
-                  Learn More
+                  Explore Antique Restoration
                 </Link>
               </div>
             </motion.div>

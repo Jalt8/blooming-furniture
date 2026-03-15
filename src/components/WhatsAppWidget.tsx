@@ -25,8 +25,8 @@ const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({ phoneNumber, message = 
       <button
         onClick={handleClick}
         disabled={isLoading}
-        className={`bg-[#25D366] text-white rounded-full p-3 shadow-lg hover:bg-[#128C7E] transition duration-300 flex items-center ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-        aria-label="Chat on WhatsApp"
+        className={`bg-[#075E54] text-white rounded-full p-3 shadow-lg hover:bg-[#128C7E] transition duration-300 flex items-center ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+        aria-label="Chat with us"
       >
         {isLoading ? (
           <span className="animate-spin">⌛</span>

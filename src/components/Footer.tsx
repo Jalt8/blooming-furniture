@@ -179,26 +179,26 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               &copy; {new Date().getFullYear()} Blooming Furniture. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <Link href="/about" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/about" className="text-gray-300 hover:text-white-daisy transition-colors">
                 About
               </Link>
-              <Link href="/portfolio" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/portfolio" className="text-gray-300 hover:text-white-daisy transition-colors">
                 Portfolio
               </Link>
-              <Link href="/blog" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/blog" className="text-gray-300 hover:text-white-daisy transition-colors">
                 Blog
               </Link>
-              <Link href="/faq" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/faq" className="text-gray-300 hover:text-white-daisy transition-colors">
                 FAQ
               </Link>
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/privacy-policy" className="text-gray-300 hover:text-white-daisy transition-colors">
                 Privacy
               </Link>
-              <Link href="/terms-of-service" className="text-gray-400 hover:text-white-daisy transition-colors">
+              <Link href="/terms-of-service" className="text-gray-300 hover:text-white-daisy transition-colors">
                 Terms
               </Link>
             </div>

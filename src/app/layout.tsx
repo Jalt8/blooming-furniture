@@ -109,12 +109,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="alternate" hrefLang="en-ZA" href="https://bloomingfurniture.co.za" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <link
-          rel="preload"
-          href="/blooming-furniture.png"
-          as="image"
-          type="image/png"
-        />
       </head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ''} />
