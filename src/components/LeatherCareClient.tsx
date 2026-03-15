@@ -13,7 +13,7 @@ export default function LeatherCareClient() {
           <Image
             width={1200}
             height={600}
-            src="/images/blog/leather-care-guide.jpg"
+            src="/blog/leather-care-guide.jpg"
             alt="Leather furniture care in coastal environment showing protection techniques"
             className="object-cover w-full h-full"
           />

@@ -13,7 +13,7 @@ export default function BlogArticleClient() {
           <Image
             width={1200}
             height={600}
-            src="/images/blog/coastal-restoration-guide.jpg"
+            src="/blog/coastal-restoration-guide.jpg"
             alt="West Coast furniture restoration workshop with coastal view"
             className="object-cover w-full h-full"
           />

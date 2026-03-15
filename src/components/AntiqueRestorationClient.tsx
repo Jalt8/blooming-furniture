@@ -13,7 +13,7 @@ export default function AntiqueRestorationClient() {
           <Image
             width={1200}
             height={600}
-            src="/images/blog/antique-heritage-guide.jpg"
+            src="/blog/antique-heritage-guide.jpg"
             alt="Victorian furniture restoration showcasing West Coast heritage pieces"
             className="object-cover w-full h-full"
           />

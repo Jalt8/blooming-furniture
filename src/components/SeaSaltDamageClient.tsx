@@ -13,7 +13,7 @@ export default function SeaSaltDamageClient() {
           <Image
             width={1200}
             height={600}
-            src="/images/blog/salt-damage-guide.jpg"
+            src="/blog/salt-damage-guide.jpg"
             alt="Furniture damage from sea salt air on West Coast"
             className="object-cover w-full h-full"
           />
