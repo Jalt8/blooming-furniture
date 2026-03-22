@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Furniture Restoration Cost in South Africa: Complete 2026 Price Guide | Blooming Furniture',
+  title: 'Furniture Restoration Cost in South Africa: Complete 2026 Price Guide',
   description: 'How much does furniture restoration cost in South Africa? Complete pricing guide for wood repair, refinishing, antique restoration and more. Get a free quote from Blooming Furniture.',
   keywords: 'furniture restoration cost south africa, furniture repair prices, antique restoration cost, furniture refinishing price, wood repair cost south africa, furniture restoration quotes',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

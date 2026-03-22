@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Star, Clock, Award, Sparkles, Eye } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Heritage Chest Makeover - Mahogany Restoration Case Study | Blooming Furniture",
+  title: "Heritage Chest Makeover - Mahogany Restoration Case Study",
   description: "See the complete transformation of a family heirloom mahogany blanket chest from water-stained and faded to museum-ready showpiece. Expert grain revival, custom staining, and piano-smooth finish.",
   keywords: "mahogany restoration, heritage furniture, blanket chest restoration, antique furniture repair, wood grain revival, french polishing, furniture refinishing",
   openGraph: {

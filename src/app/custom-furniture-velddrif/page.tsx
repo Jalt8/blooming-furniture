@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Custom Furniture Velddrif",
   "url": "https://bloomingfurniture.co.za/custom-furniture-velddrif",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "address": { "@type": "PostalAddress", "addressLocality": "Velddrif", "addressRegion": "Western Cape", "addressCountry": "ZA" },
   "geo": { "@type": "GeoCoordinates", "latitude": -32.7727, "longitude": 18.1647 }
 };

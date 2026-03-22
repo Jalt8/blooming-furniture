@@ -34,11 +34,11 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Restoration & Refurbishment",
   "description": "Professional furniture restoration and repair services in West Coast South Africa. Expert craftsmanship serving Langebaan, Saldanha Bay, Vredenburg, and surrounding areas.",
   "url": "https://bloomingfurniture.co.za",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Langebaan",
+    "streetAddress": "19 Dias",
     "addressLocality": "Langebaan",
     "addressRegion": "Western Cape",
     "addressCountry": "ZA"

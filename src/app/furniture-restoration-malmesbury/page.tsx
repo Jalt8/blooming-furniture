@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Truck, Home, Wine, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration Malmesbury | Professional Wood Repair | Blooming Furniture",
+  title: "Furniture Restoration Malmesbury | Professional Wood Repair",
   description: "Professional furniture restoration, repair and refinishing services in Malmesbury, Western Cape. Specializing in Cape Dutch heritage furniture and antique restoration. Free quotes for Malmesbury and Swartland residents.",
   keywords: "furniture restoration Malmesbury, furniture repair Malmesbury, furniture refinishing Malmesbury, antique restoration Malmesbury, Malmesbury furniture services, Swartland furniture restoration, Cape Dutch furniture repair, wine estate furniture restoration",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Malmesbury Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Malmesbury, Western Cape. Specializing in Cape Dutch heritage furniture and Swartland antique restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-malmesbury",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

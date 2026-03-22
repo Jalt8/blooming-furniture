@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import SeaSaltDamageClient from '@/components/SeaSaltDamageClient';
 
 export const metadata: Metadata = {
-  title: 'How Sea Salt Damages Your Furniture: A West Coast Problem | Prevention Guide | Blooming Furniture',
+  title: 'How Sea Salt Damages Your Furniture: A West Coast Problem | Prevention Guide',
   description: 'Understand how sea salt air damages furniture on the West Coast. Learn prevention strategies, early warning signs, and professional repair solutions for coastal furniture protection.',
   keywords: 'sea salt furniture damage, coastal furniture problems, salt air furniture corrosion, west coast furniture protection, marine environment furniture care',
   openGraph: {
@@ -35,8 +35,9 @@ const articleSchema = {
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Complete Bedroom Set Coastal White Refinishing - 8+ Piece Suite | Blooming Furniture",
+  title: "Complete Bedroom Set Coastal White Refinishing - 8+ Piece Suite",
   description: "See the stunning transformation of an entire bedroom furniture suite refinished in crisp coastal white. Includes bed frame, nightstands, dresser, chest, vanity desk, wardrobe, and more creating cohesive fresh sanctuary.",
   keywords: "bedroom set refinishing, coastal bedroom furniture, white bedroom suite, furniture set restoration, complete bedroom makeover, matching bedroom furniture",
   openGraph: {
@@ -196,9 +197,9 @@ export default function CompleteBedroomSetCoastalWhite() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-26.jpeg"
-                  alt="Complete Bedroom Set - Coastal White After"
+                  alt="Complete Bedroom Set - Coastal White After" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -229,9 +230,9 @@ export default function CompleteBedroomSetCoastalWhite() {
                 { src: "/images/portfolio/portfolio-25.jpeg", caption: "Workshop process showing headboard refinishing" }
               ].map((image, index) => (
                 <div key={index} className="bg-white-daisy rounded-lg overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={400} height={300}
                     className="w-full h-64 object-cover"
                   />
                   <div className="p-4">
@@ -294,9 +295,9 @@ export default function CompleteBedroomSetCoastalWhite() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -348,9 +349,9 @@ export default function CompleteBedroomSetCoastalWhite() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-26.jpeg"
-                alt="Complete coastal bedroom suite with white furniture"
+                alt="Complete coastal bedroom suite with white furniture" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

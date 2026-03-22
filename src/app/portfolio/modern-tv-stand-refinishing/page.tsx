@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Modern TV Stand Two-Tone Refinishing - Custom Blue-Gray & Wood | Blooming Furniture",
+  title: "Modern TV Stand Two-Tone Refinishing - Custom Blue-Gray & Wood",
   description: "See the stunning transformation of a modern TV stand with custom two-tone refinishing. Sophisticated blue-gray body with natural wood drawer fronts and brushed nickel hardware.",
   keywords: "TV stand refinishing, media console makeover, two-tone furniture, blue-gray furniture, modern entertainment unit, custom furniture colors",
   openGraph: {
@@ -163,9 +164,9 @@ export default function ModernTVStandRefinishing() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-11.jpeg"
-                  alt="Modern TV Stand - Custom Two-Tone Transformation"
+                  alt="Modern TV Stand - Custom Two-Tone Transformation" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -191,9 +192,9 @@ export default function ModernTVStandRefinishing() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-10.jpeg"
-                  alt="Before refinishing - workshop process"
+                  alt="Before refinishing - workshop process" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -208,9 +209,9 @@ export default function ModernTVStandRefinishing() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-11.jpeg"
-                  alt="After refinishing - designer two-tone finish"
+                  alt="After refinishing - designer two-tone finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -276,9 +277,9 @@ export default function ModernTVStandRefinishing() {
                 { src: "/images/portfolio/portfolio-12.jpeg", caption: "Alternative angle showcasing two-tone design and modern hardware" }
               ].map((image, index) => (
                 <div key={index} className="bg-white-daisy rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={800} height={600}
                     className="w-full h-80 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -320,9 +321,9 @@ export default function ModernTVStandRefinishing() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -374,9 +375,9 @@ export default function ModernTVStandRefinishing() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-11.jpeg"
-                alt="Modern TV stand as bedroom focal point"
+                alt="Modern TV stand as bedroom focal point" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

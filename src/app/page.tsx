@@ -13,11 +13,6 @@ const websiteSchema = {
     "@type": "Organization",
     "name": "Blooming Furniture",
     "url": "https://bloomingfurniture.co.za"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://bloomingfurniture.co.za/services",
-    "query-input": "required name=search_term_string"
   }
 }
 
@@ -32,7 +27,7 @@ const organizationSchema = {
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "West Coast",
+    "streetAddress": "19 Dias",
     "addressLocality": "Langebaan",
     "addressRegion": "Western Cape",
     "postalCode": "7357",
@@ -106,7 +101,7 @@ const organizationSchema = {
 }
 
 export const metadata: Metadata = {
-  title: 'Expert Woodwork & Furniture Restoration West Coast | Blooming Furniture',
+  title: 'Expert Woodwork & Furniture Restoration West Coast',
   description: 'Transform your wooden furniture with expert woodwork restoration services. Professional wood furniture repair, refinishing & antique wood restoration on the West Coast South Africa. Free consultations available.',
   keywords: 'woodwork restoration West Coast, wood furniture repair, furniture restoration, wood refinishing, antique wood restoration, West Coast furniture restoration, wooden furniture repair, Saldanha Bay, Vredenburg, Langebaan woodwork',
   openGraph: {

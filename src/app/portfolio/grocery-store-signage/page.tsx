@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Grocery Store Custom Signage - Hand-Painted Display System | Blooming Furniture",
+  title: "Grocery Store Custom Signage - Hand-Painted Display System",
   description: "See the complete transformation of grocery store visual merchandising with artisan hand-painted signage across bakery, produce, wine, and egg departments. Custom chalkboard-style display headers.",
   keywords: "custom store signage, hand-painted signs, grocery store displays, bakery signage, chalkboard art, retail merchandising, artisan signage",
   openGraph: {
@@ -187,9 +188,9 @@ export default function GroceryStoreSignage() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/image_23.jpeg"
-                  alt="Grocery Store Bakery Signage - Complete Installation"
+                  alt="Grocery Store Bakery Signage - Complete Installation" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -257,9 +258,9 @@ export default function GroceryStoreSignage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {dept.signs.map((sign, signIndex) => (
                   <div key={signIndex} className="bg-white-daisy rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                    <img
+                    <Image
                       src={sign.image}
-                      alt={sign.title}
+                      alt={sign.title} width={400} height={300}
                       className="w-full h-64 object-cover"
                     />
                     <div className="p-4">
@@ -316,14 +317,14 @@ export default function GroceryStoreSignage() {
             {/* Featured Installation */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <img
+                <Image
                   src="/images/portfolio/image_28.jpeg"
-                  alt="Produce section with vibrant vegetable artwork"
+                  alt="Produce section with vibrant vegetable artwork" width={800} height={600}
                   className="rounded-lg w-full h-80 object-cover"
                 />
-                <img
+                <Image
                   src="/images/portfolio/image_23.jpeg"
-                  alt="Bakery section with I Love Baking signage"
+                  alt="Bakery section with I Love Baking signage" width={800} height={600}
                   className="rounded-lg w-full h-80 object-cover"
                 />
               </div>
@@ -401,9 +402,9 @@ export default function GroceryStoreSignage() {
                 { src: "/images/portfolio/image_20.jpeg", caption: "Playful rolling pin design" }
               ].map((image, index) => (
                 <div key={index} className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={400} height={300}
                     className="w-full h-64 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>

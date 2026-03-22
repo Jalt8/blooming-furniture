@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Waves, Wind } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Coastal Furniture Restoration in Yzerfontein | Blooming Furniture",
+  title: "Coastal Furniture Restoration in Yzerfontein",
   description: "Expert furniture restoration, repair and refinishing services in Yzerfontein, Western Cape. Specializing in coastal furniture protection and marine environment restoration. Free quotes.",
   keywords: "furniture restoration Yzerfontein, furniture repair Yzerfontein, furniture refinishing Yzerfontein, coastal furniture restoration, Yzerfontein furniture services, marine furniture protection, beachfront furniture repair",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Yzerfontein Coastal Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Yzerfontein, Western Cape. Specializing in coastal and marine environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-yzerfontein",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

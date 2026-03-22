@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Vintage Sideboard Refinishing - Two-Tone Coastal Transformation | Blooming Furniture",
+  title: "Vintage Sideboard Refinishing - Two-Tone Coastal Transformation",
   description: "See the stunning transformation of a vintage buffet from dark traditional finish to fresh coastal-modern two-tone style with crisp white body and natural wood top featuring circular medallion doors.",
   keywords: "sideboard refinishing, buffet restoration, two-tone furniture, coastal furniture, medallion cabinet, modern farmhouse, white furniture",
   openGraph: {
@@ -157,9 +158,9 @@ export default function VintageSideboardRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/image_41.jpeg"
-                  alt="Vintage Sideboard - Final Two-Tone Restoration"
+                  alt="Vintage Sideboard - Final Two-Tone Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -185,9 +186,9 @@ export default function VintageSideboardRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/image_40.jpeg"
-                  alt="Before restoration - dark traditional finish"
+                  alt="Before restoration - dark traditional finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -202,9 +203,9 @@ export default function VintageSideboardRestoration() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/image_41.jpeg"
-                  alt="After restoration - fresh two-tone finish"
+                  alt="After restoration - fresh two-tone finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -218,9 +219,9 @@ export default function VintageSideboardRestoration() {
 
             {/* Before/After Collage */}
             <div className="bg-white-daisy p-4 rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/portfolio/image_8.jpeg"
-                alt="Before/After comparison collage"
+                alt="Before/After comparison collage" width={800} height={600}
                 className="w-full rounded-lg"
               />
             </div>
@@ -279,9 +280,9 @@ export default function VintageSideboardRestoration() {
                 { src: "/images/portfolio/image_38.jpeg", caption: "Side view showcasing pristine white finish and black hardware" }
               ].map((image, index) => (
                 <div key={index} className="bg-white-daisy rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={800} height={600}
                     className="w-full h-80 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -323,9 +324,9 @@ export default function VintageSideboardRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -378,14 +379,14 @@ export default function VintageSideboardRestoration() {
             {/* In Client's Home */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <img
+                <Image
                   src="/images/portfolio/image_42.jpeg"
-                  alt="Sideboard installed in client's home"
+                  alt="Sideboard installed in client's home" width={800} height={600}
                   className="rounded-lg w-full h-80 object-cover"
                 />
-                <img
+                <Image
                   src="/images/portfolio/image_43.jpeg"
-                  alt="Top-down view showing natural wood top contrast"
+                  alt="Top-down view showing natural wood top contrast" width={800} height={600}
                   className="rounded-lg w-full h-80 object-cover"
                 />
               </div>

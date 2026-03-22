@@ -26,7 +26,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Custom Furniture Saldanha Bay",
   "description": "Professional custom furniture design and creation services in Saldanha Bay, Western Cape. Bespoke handcrafted pieces for port town living.",
   "url": "https://bloomingfurniture.co.za/custom-furniture-saldanha-bay",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

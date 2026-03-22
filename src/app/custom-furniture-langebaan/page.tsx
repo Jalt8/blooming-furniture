@@ -26,7 +26,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Custom Furniture Langebaan",
   "description": "Professional custom furniture design and creation services in Langebaan, Western Cape. Bespoke handcrafted pieces for coastal living.",
   "url": "https://bloomingfurniture.co.za/custom-furniture-langebaan",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

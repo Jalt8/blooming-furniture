@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Wrench } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Expert Furniture Repair in Saldanha Bay | Blooming Furniture",
+  title: "Expert Furniture Repair in Saldanha Bay",
   description: "Professional furniture repair and restoration services in Saldanha Bay, Western Cape. Quick, reliable furniture fixes for residential and commercial clients. Free estimates available.",
   keywords: "furniture repair Saldanha Bay, furniture restoration Saldanha Bay, furniture fixing Saldanha Bay, Saldanha furniture services, West Coast furniture repair, commercial furniture repair",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Saldanha Bay Furniture Repair",
   "description": "Professional furniture repair and restoration services in Saldanha Bay, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-repair-saldanha-bay",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

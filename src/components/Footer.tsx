@@ -75,6 +75,16 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/custom-furniture" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Custom Furniture
+                </Link>
+              </li>
+              <li>
+                <Link href="/coastal-furniture-protection" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Coastal Protection
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="text-gray-300 hover:text-white-daisy transition-colors">
                   All Services
                 </Link>
@@ -130,13 +140,23 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/furniture-restoration-yzerfontein" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Yzerfontein
+                </Link>
+              </li>
+              <li>
+                <Link href="/furniture-restoration-elands-bay" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  Elands Bay
+                </Link>
+              </li>
+              <li>
                 <Link href="/furniture-restoration-st-helena-bay" className="text-gray-300 hover:text-white-daisy transition-colors">
                   St Helena Bay
                 </Link>
               </li>
               <li>
-                <Link href="/west-coast-furniture-repair" className="text-gray-300 hover:text-white-daisy transition-colors">
-                  All West Coast Areas
+                <Link href="/service-areas" className="text-gray-300 hover:text-white-daisy transition-colors">
+                  All Service Areas
                 </Link>
               </li>
             </ul>
@@ -167,11 +187,11 @@ const Footer: React.FC = () => {
             </div>
 
             <Link
-              href="/contact"
+              href="/book-consultation"
               className="inline-flex items-center justify-center bg-golden-center text-dark-wood py-2 px-4 rounded-lg font-semibold text-sm hover:bg-white-daisy transition-all duration-300 w-full"
             >
               <Calendar className="mr-2 h-4 w-4" />
-              Free Consultation
+              Book Free Consultation
             </Link>
           </div>
         </div>

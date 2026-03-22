@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Wrench } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Antique Display Cabinet Restoration - Complete Refinishing | Blooming Furniture",
+  title: "Antique Display Cabinet Restoration - Complete Refinishing",
   description: "Witness the complete restoration of a severely deteriorated antique display cabinet from faded and damaged to showroom mahogany beauty. Expert refinishing, glass restoration, and hardware polishing.",
   keywords: "antique cabinet restoration, display cabinet refinishing, mahogany restoration, furniture disassembly restoration, glass cabinet repair, antique furniture repair",
   openGraph: {
@@ -142,9 +143,9 @@ export default function AntiqueDisplayCabinetRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/image_2.jpeg"
-                  alt="Antique Display Cabinet - Before Restoration"
+                  alt="Antique Display Cabinet - Before Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -206,9 +207,9 @@ export default function AntiqueDisplayCabinetRestoration() {
             </h2>
             <div className="max-w-3xl mx-auto">
               <div className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                <img
+                <Image
                   src="/images/portfolio/image_2.jpeg"
-                  alt="Display cabinet disassembled showing deteriorated finish"
+                  alt="Display cabinet disassembled showing deteriorated finish" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="p-4 text-sm text-forest-green text-center">
@@ -251,9 +252,9 @@ export default function AntiqueDisplayCabinetRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -306,17 +307,17 @@ export default function AntiqueDisplayCabinetRestoration() {
             {/* After Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/image_1.jpeg"
-                  alt="Beautifully restored cabinet with mahogany finish"
+                  alt="Beautifully restored cabinet with mahogany finish" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Stunning mahogany finish in client's home</p>
               </div>
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/image_3.jpeg"
-                  alt="Cabinet during final finishing stage"
+                  alt="Cabinet during final finishing stage" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Final assembly and finishing process</p>

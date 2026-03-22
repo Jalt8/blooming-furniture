@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Bedroom Wardrobe White Refinishing | Traditional Armoire Transformation | Blooming Furniture',
+  title: 'Bedroom Wardrobe White Refinishing | Traditional Armoire Transformation',
   description: 'Professional white refinishing of traditional pine wardrobes and armoires. Raised panel doors, beadboard detailing, crown molding, and generous storage transformed into bright coastal bedroom pieces perfect for cottage and Scandinavian interiors.',
   keywords: 'wardrobe refinishing, armoire restoration, bedroom storage refinishing, white wardrobe, coastal wardrobe, beadboard wardrobe, raised panel armoire, bedroom furniture refinishing, pine wardrobe painting, cottage style wardrobe',
   openGraph: {
@@ -119,9 +120,9 @@ export default function BedroomWardrobeWhiteRefinishing() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-35.jpeg"
-                  alt="Finished wardrobe with raised panel double doors and crown molding"
+                  alt="Finished wardrobe with raised panel double doors and crown molding" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic">
@@ -129,9 +130,9 @@ export default function BedroomWardrobeWhiteRefinishing() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-31.jpeg"
-                  alt="Completed armoire with bottom drawer storage and decorative vase accent"
+                  alt="Completed armoire with bottom drawer storage and decorative vase accent" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic">
@@ -141,9 +142,9 @@ export default function BedroomWardrobeWhiteRefinishing() {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-32.jpeg"
-                  alt="Refinished wardrobe featuring vertical beadboard-style panel doors"
+                  alt="Refinished wardrobe featuring vertical beadboard-style panel doors" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic text-sm">
@@ -151,9 +152,9 @@ export default function BedroomWardrobeWhiteRefinishing() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-33.jpeg"
-                  alt="Close-up view of beadboard door detail and white knob hardware"
+                  alt="Close-up view of beadboard door detail and white knob hardware" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic text-sm">
@@ -161,9 +162,9 @@ export default function BedroomWardrobeWhiteRefinishing() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-34.jpeg"
-                  alt="Final installation showing crisp white raised panel doors with crown molding"
+                  alt="Final installation showing crisp white raised panel doors with crown molding" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic text-sm">

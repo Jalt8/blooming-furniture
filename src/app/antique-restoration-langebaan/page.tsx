@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Antique Restoration Langebaan",
   "url": "https://bloomingfurniture.co.za/antique-restoration-langebaan",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "address": { "@type": "PostalAddress", "addressLocality": "Langebaan", "addressRegion": "Western Cape", "addressCountry": "ZA" },
   "geo": { "@type": "GeoCoordinates", "latitude": -33.0893, "longitude": 18.0371 }
 };

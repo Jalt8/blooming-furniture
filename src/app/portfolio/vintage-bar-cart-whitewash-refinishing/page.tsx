@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Vintage Bar Cart Whitewash Refinishing | Tea Trolley Restoration | Blooming Furniture',
+  title: 'Vintage Bar Cart Whitewash Refinishing | Tea Trolley Restoration',
   description: 'Professional restoration of vintage serving cart with claw feet into chic whitewashed bar trolley. Features raised gallery edges, tiered open shelving, rolling casters perfect for coastal and French country entertaining.',
   keywords: 'bar cart refinishing, tea trolley restoration, vintage serving cart, whitewash bar cart, coastal bar trolley, claw foot cart, mobile bar cart, entertaining furniture, French country bar cart, vintage trolley refinishing',
   openGraph: {
@@ -115,9 +116,9 @@ export default function VintageBarCartWhitewashRefinishing() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-41.jpeg"
-                  alt="Original dark wood finish bar cart in workshop before refinishing"
+                  alt="Original dark wood finish bar cart in workshop before refinishing" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 font-semibold">
@@ -128,9 +129,9 @@ export default function VintageBarCartWhitewashRefinishing() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-39.jpeg"
-                  alt="Stripped bar cart frame during outdoor refinishing process"
+                  alt="Stripped bar cart frame during outdoor refinishing process" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 font-semibold">
@@ -141,9 +142,9 @@ export default function VintageBarCartWhitewashRefinishing() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-40.jpeg"
-                  alt="Completed whitewashed bar cart styled in home with decorative accessories"
+                  alt="Completed whitewashed bar cart styled in home with decorative accessories" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 font-semibold">

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Star, Clock, Award, Sparkles, Eye } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Vintage Office Desk Restoration - Complete Transformation | Blooming Furniture",
+  title: "Vintage Office Desk Restoration - Complete Transformation",
   description: "Witness the dramatic transformation of a faded vintage office desk from deteriorated pink-mauve to luxurious mahogany finish. Expert restoration showcasing complete refinishing and drawer renewal.",
   keywords: "office desk restoration, vintage furniture refinishing, mahogany staining, desk restoration, furniture transformation, antique desk repair, wood refinishing",
   openGraph: {
@@ -143,9 +143,9 @@ export default function VintageWineChestRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/chest10.jpeg"
-                  alt="Vintage Office Desk - Before Restoration"
+                  alt="Vintage Office Desk - Before Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -212,9 +212,9 @@ export default function VintageWineChestRestoration() {
                 { src: "/images/portfolio/Chest6.jpg", caption: "Worn, faded surface texture" }
               ].map((image, index) => (
                 <div key={index} className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={400} height={300}
                     className="w-full h-64 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -256,9 +256,9 @@ export default function VintageWineChestRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -311,17 +311,17 @@ export default function VintageWineChestRestoration() {
             {/* After Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/Chest4.jpg"
-                  alt="Beautifully restored top with rich reddish-brown finish"
+                  alt="Beautifully restored top with rich reddish-brown finish" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Rich mahogany finish showcasing natural grain</p>
               </div>
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/Chest7.jpg"
-                  alt="Completed chest showcasing full restoration"
+                  alt="Completed chest showcasing full restoration" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Complete transformation in workshop</p>
@@ -329,9 +329,9 @@ export default function VintageWineChestRestoration() {
             </div>
 
             <div className="bg-golden-center/20 p-8 rounded-lg text-center">
-              <img
+              <Image
                 src="/images/portfolio/chest9.jpeg"
-                alt="Final result in client's home with stunning glossy finish"
+                alt="Final result in client's home with stunning glossy finish" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-2xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4">

@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Modern Dining Table Refinishing - Classic to Contemporary | Blooming Furniture",
+  title: "Modern Dining Table Refinishing - Classic to Contemporary",
   description: "See the stunning transformation of a traditional mahogany dining table into a modern gray masterpiece. Expert refinishing showcasing color transformation while preserving classic craftsmanship.",
   keywords: "dining table refinishing, mahogany to gray, modern furniture makeover, table restoration, whitewash finish, contemporary dining furniture, furniture color change",
   openGraph: {
@@ -143,9 +144,9 @@ export default function ModernDiningTableRefinishing() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-1.jpeg"
-                  alt="Classic Dining Table - Before Refinishing"
+                  alt="Classic Dining Table - Before Refinishing" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -211,9 +212,9 @@ export default function ModernDiningTableRefinishing() {
                 { src: "/images/portfolio/portfolio-2.jpeg", caption: "Rich dark wood tones showing dated appearance" }
               ].map((image, index) => (
                 <div key={index} className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={800} height={600}
                     className="w-full h-80 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -255,9 +256,9 @@ export default function ModernDiningTableRefinishing() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -310,17 +311,17 @@ export default function ModernDiningTableRefinishing() {
             {/* After Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-3.jpeg"
-                  alt="Transformed table with elegant light gray finish"
+                  alt="Transformed table with elegant light gray finish" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Modern gray aesthetic in contemporary setting</p>
               </div>
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-4.jpeg"
-                  alt="Close-up of refinished tabletop showing grain"
+                  alt="Close-up of refinished tabletop showing grain" width={800} height={600}
                   className="w-full h-auto"
                 />
                 <p className="text-center text-golden-center mt-2">Beautiful wood grain visible through translucent finish</p>
@@ -328,9 +329,9 @@ export default function ModernDiningTableRefinishing() {
             </div>
 
             <div className="bg-golden-center/20 p-8 rounded-lg text-center">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-5.jpeg"
-                alt="Complete dining room setup showcasing transformation"
+                alt="Complete dining room setup showcasing transformation" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-2xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4">

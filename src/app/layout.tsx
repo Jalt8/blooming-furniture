@@ -108,6 +108,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="alternate" hrefLang="en-ZA" href="https://bloomingfurniture.co.za" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <meta name="msapplication-TileColor" content="#da532c" />
       </head>
       <body className={`${inter.className} bg-white-daisy text-dark-wood`}>
@@ -118,85 +121,6 @@ export default function RootLayout({
         <WhatsAppWidget phoneNumber="+27793752588" message="Hi, I'm interested in your furniture restoration services." />
         <CookieConsent />
         <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''} />
-        
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "@id": "https://bloomingfurniture.co.za",
-              "name": "Blooming Furniture",
-              "description": "Professional woodwork restoration, furniture repair and wood refinishing services on the West Coast, South Africa. Expert craftsmen specializing in all types of wood furniture restoration and woodwork.",
-              "url": "https://bloomingfurniture.co.za",
-              "telephone": "+27793752588",
-              "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "Western Cape",
-                "addressCountry": "South Africa",
-                "addressLocality": "West Coast District"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": -32.9729,
-                "longitude": 18.0189
-              },
-              "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-16:00",
-              "priceRange": "$$",
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": -33.0895,
-                  "longitude": 18.0371
-                },
-                "geoRadius": "100000"
-              },
-              "sameAs": [
-                "https://wa.me/27793752588"
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Furniture Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Wood Furniture Repair",
-                      "description": "Professional wood furniture repair and restoration services"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Woodwork Restoration",
-                      "description": "Complete woodwork and furniture restoration services for all wood types"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Wood Refinishing",
-                      "description": "Expert wood refinishing and furniture refinishing services"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Antique Wood Restoration",
-                      "description": "Specialist antique wooden furniture restoration and preservation"
-                    }
-                  }
-                ]
-              }
-            })
-          }}
-        />
         
         <noscript>
           <iframe

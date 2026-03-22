@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Classic Buffet Whitewash Refinishing - Elegant Transformation | Blooming Furniture",
+  title: "Classic Buffet Whitewash Refinishing - Elegant Transformation",
   description: "See the stunning transformation of a traditional buffet from dark wood to sophisticated whitewash finish. Features raised panel doors, fluted pilasters, and modern black hardware contrast.",
   keywords: "buffet refinishing, credenza whitewash, raised panel doors, fluted pilasters, modern buffet, coastal buffet, whitewash furniture",
   openGraph: {
@@ -156,9 +157,9 @@ export default function ClassicBuffetWhitewash() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-7.jpeg"
-                  alt="Classic Buffet - Final Whitewash Transformation"
+                  alt="Classic Buffet - Final Whitewash Transformation" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -184,9 +185,9 @@ export default function ClassicBuffetWhitewash() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-6.jpeg"
-                  alt="Before restoration - dark traditional finish"
+                  alt="Before restoration - dark traditional finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -201,9 +202,9 @@ export default function ClassicBuffetWhitewash() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-9.jpeg"
-                  alt="After restoration - sophisticated whitewash finish"
+                  alt="After restoration - sophisticated whitewash finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -269,9 +270,9 @@ export default function ClassicBuffetWhitewash() {
                 { src: "/images/portfolio/portfolio-8.jpeg", caption: "Angled view showing architectural details and modern hardware" }
               ].map((image, index) => (
                 <div key={index} className="bg-white-daisy rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={800} height={600}
                     className="w-full h-80 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -313,9 +314,9 @@ export default function ClassicBuffetWhitewash() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -367,9 +368,9 @@ export default function ClassicBuffetWhitewash() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-7.jpeg"
-                alt="Beautifully styled buffet as dining room centerpiece"
+                alt="Beautifully styled buffet as dining room centerpiece" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

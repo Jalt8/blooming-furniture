@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Antique Furniture Restoration: Preserving West Coast Heritage | Expert Guide | Blooming Furniture',
+  title: 'Antique Furniture Restoration: Preserving West Coast Heritage | Expert Guide',
   description: 'Discover the rich heritage of West Coast antique furniture. Expert restoration techniques for Victorian, Colonial, and indigenous pieces. Preserve historical value with professional methods.',
   keywords: 'antique furniture restoration, west coast heritage furniture, victorian furniture restoration, colonial furniture repair, antique restoration south africa, historical furniture preservation',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

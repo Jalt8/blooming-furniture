@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Antique Victorian Washstand Complete Restoration - Marble Top & Ornate Details | Blooming Furniture",
+  title: "Antique Victorian Washstand Complete Restoration - Marble Top & Ornate Details",
   description: "See the spectacular restoration of an elaborate Victorian washstand with ornate carved details, marble countertop, decorative mirror frame, and rich mahogany finish. Complete disassembly and meticulous restoration.",
   keywords: "Victorian washstand restoration, antique furniture restoration, marble top washstand, ornate carved furniture, Victorian vanity, mahogany restoration",
   openGraph: {
@@ -163,9 +164,9 @@ export default function VictorianWashstandRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-18.jpeg"
-                  alt="Victorian Washstand - Complete Restoration"
+                  alt="Victorian Washstand - Complete Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -191,9 +192,9 @@ export default function VictorianWashstandRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">Ornate Components</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-15.jpeg"
-                  alt="Disassembled ornate mirror frame and carved components"
+                  alt="Disassembled ornate mirror frame and carved components" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -207,9 +208,9 @@ export default function VictorianWashstandRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">Base Unit Stripped</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-16.jpeg"
-                  alt="Base cabinet stripped to natural wood"
+                  alt="Base cabinet stripped to natural wood" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -223,9 +224,9 @@ export default function VictorianWashstandRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">Decorative Elements</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-17.jpeg"
-                  alt="Top view of disassembled mirror frame"
+                  alt="Top view of disassembled mirror frame" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -241,9 +242,9 @@ export default function VictorianWashstandRestoration() {
               <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                 <h3 className="text-xl font-semibold">AFTER - Victorian Magnificence Restored</h3>
               </div>
-              <img
+              <Image
                 src="/images/portfolio/portfolio-18.jpeg"
-                alt="Completed Victorian washstand restoration"
+                alt="Completed Victorian washstand restoration" width={800} height={600}
                 className="w-full h-96 object-cover"
               />
               <div className="p-6">
@@ -339,9 +340,9 @@ export default function VictorianWashstandRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -393,9 +394,9 @@ export default function VictorianWashstandRestoration() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-18.jpeg"
-                alt="Victorian washstand masterpiece fully restored"
+                alt="Victorian washstand masterpiece fully restored" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

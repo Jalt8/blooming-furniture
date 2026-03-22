@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Waves, Camera } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Repair in Paternoster | Coastal Furniture Specialists | Blooming Furniture",
+  title: "Furniture Repair in Paternoster | Coastal Furniture Specialists",
   description: "Expert furniture repair and restoration in Paternoster, Western Cape. Specialized coastal furniture treatments for this iconic fishing village. Premium services for holiday homes and locals.",
   keywords: "furniture repair Paternoster, coastal furniture restoration Paternoster, holiday home furniture repair, Paternoster furniture services, fishing village furniture, luxury furniture repair West Coast",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Paternoster Furniture Repair",
   "description": "Expert furniture repair and restoration services in Paternoster, Western Cape. Specialized coastal furniture treatments.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-paternoster",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

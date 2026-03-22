@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Blooming Furniture',
+  title: 'Privacy Policy',
   description: 'Privacy Policy for Blooming Furniture. Learn how we collect, use, and protect your personal information when using our furniture restoration services on the West Coast.',
   alternates: {
     canonical: 'https://bloomingfurniture.co.za/privacy-policy',

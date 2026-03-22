@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Mountain, Fish } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration in Elands Bay | Blooming Furniture",
+  title: "Furniture Restoration in Elands Bay",
   description: "Expert furniture restoration, repair and refinishing services in Elands Bay, Western Cape. Specializing in coastal cottage and fishing village furniture restoration. Free quotes available.",
   keywords: "furniture restoration Elands Bay, furniture repair Elands Bay, furniture refinishing Elands Bay, coastal furniture restoration, Elands Bay furniture services, fishing village furniture, cottage furniture restoration",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Elands Bay Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Elands Bay, Western Cape. Specializing in coastal cottage and fishing village furniture restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-elands-bay",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

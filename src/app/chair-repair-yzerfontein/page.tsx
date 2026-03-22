@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Chair Repair Yzerfontein",
   "url": "https://bloomingfurniture.co.za/chair-repair-yzerfontein",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "address": { "@type": "PostalAddress", "addressLocality": "Yzerfontein", "addressRegion": "Western Cape", "addressCountry": "ZA" },
   "geo": { "@type": "GeoCoordinates", "latitude": -33.3467, "longitude": 18.1592 }
 };

@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Farmhouse Dining Set Refinishing - Modern Coastal Transformation | Blooming Furniture",
+  title: "Farmhouse Dining Set Refinishing - Modern Coastal Transformation",
   description: "See the stunning refinishing of a farmhouse X-leg dining table and bench with custom whitewash finish and crisp white base. Modern coastal aesthetic with beautiful wood grain visibility.",
   keywords: "farmhouse table refinishing, X-leg table makeover, whitewash dining table, coastal furniture, modern farmhouse, dining set transformation",
   openGraph: {
@@ -142,9 +143,9 @@ export default function FarmhouseDiningSetRefinishing() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/image_7.jpeg"
-                  alt="Farmhouse Dining Set - Final Installation"
+                  alt="Farmhouse Dining Set - Final Installation" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -210,9 +211,9 @@ export default function FarmhouseDiningSetRefinishing() {
                 { src: "/images/portfolio/image_4.jpeg", caption: "Freshly finished with whitewash top and white base" }
               ].map((image, index) => (
                 <div key={index} className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={800} height={600}
                     className="w-full h-80 object-cover"
                   />
                   <p className="p-4 text-sm text-forest-green text-center">{image.caption}</p>
@@ -254,9 +255,9 @@ export default function FarmhouseDiningSetRefinishing() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -308,9 +309,9 @@ export default function FarmhouseDiningSetRefinishing() {
 
             {/* Final Installation */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/image_7.jpeg"
-                alt="Complete dining set in client's home"
+                alt="Complete dining set in client's home" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

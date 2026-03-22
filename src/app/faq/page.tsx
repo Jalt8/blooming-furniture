@@ -5,7 +5,7 @@ import { ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'FAQ - Furniture Restoration Questions Answered | Blooming Furniture',
+  title: 'FAQ - Furniture Restoration Questions Answered',
   description: 'Get answers to common furniture restoration questions. Learn about pricing, timelines, services, and our process. Expert woodwork restoration on the West Coast, South Africa.',
   keywords: 'furniture restoration FAQ, furniture repair questions, restoration cost, how long does restoration take, furniture restoration process, West Coast furniture FAQ, furniture care tips, French polishing, water damaged furniture',
   openGraph: {

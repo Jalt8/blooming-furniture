@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Furniture Restoration vs Buying New: Which Saves You More Money in South Africa? | Blooming Furniture',
+  title: 'Furniture Restoration vs Buying New: Which Saves You More Money in South Africa?',
   description: 'Furniture restoration vs buying new in South Africa: direct price comparison with real pricing from @Home, Coricraft, and Mr Price Home. Quality, environmental impact, and resale value compared.',
   keywords: 'furniture restoration vs buying new, restore or buy new furniture, furniture restoration south africa, furniture cost comparison, restore vs replace furniture, new furniture prices south africa',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

@@ -5,7 +5,7 @@ import { Table2, Check, Star, Phone, MessageCircle, Clock, Shield, Wrench, Paint
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Table Restoration Services | Dining, Coffee & Side Tables | Blooming Furniture',
+  title: 'Table Restoration Services | Dining, Coffee & Side Tables',
   description: 'Professional table restoration services on the West Coast. Restore dining tables, coffee tables, side tables & console tables. Fix water rings, scratches, wobbly legs & sun fade. Free quotes!',
   keywords: 'table restoration service, dining table restoration, coffee table repair, table refinishing, wooden table repair, table restoration West Coast, scratched table repair, wobbly table fix, table restoration South Africa',
   openGraph: {

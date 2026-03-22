@@ -5,7 +5,7 @@ import { DoorOpen, Check, Star, Phone, MessageCircle, Clock, Shield, Wrench, Pai
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Cabinet Restoration Services | Kitchen, Display & Antique Cabinets | Blooming Furniture',
+  title: 'Cabinet Restoration Services | Kitchen, Display & Antique Cabinets',
   description: 'Professional cabinet restoration services on the West Coast. Restore kitchen cabinets, display cabinets, wardrobes & antique cabinets. Fix peeling finish, water damage, broken hinges & more. Free quotes!',
   keywords: 'cabinet restoration service, kitchen cabinet restoration, display cabinet repair, antique cabinet restoration, wardrobe restoration, cabinet refinishing, cabinet repair West Coast, cabinet restoration South Africa',
   openGraph: {

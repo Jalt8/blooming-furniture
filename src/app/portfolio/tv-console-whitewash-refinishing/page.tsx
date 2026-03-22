@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Traditional TV Console Whitewash Refinishing - Coastal Media Unit | Blooming Furniture",
+  title: "Traditional TV Console Whitewash Refinishing - Coastal Media Unit",
   description: "See the transformation of a traditional media console from dark wood to fresh whitewashed coastal style. Features open shelving, decorative molding, and scalloped base details perfect for modern living rooms.",
   keywords: "TV console refinishing, media unit whitewash, coastal TV stand, entertainment center makeover, whitewash furniture, media cabinet restoration",
   openGraph: {
@@ -156,9 +157,9 @@ export default function TVConsoleWhitewashRefinishing() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-29.jpeg"
-                  alt="TV Console Whitewash - Installed in Home"
+                  alt="TV Console Whitewash - Installed in Home" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -184,9 +185,9 @@ export default function TVConsoleWhitewashRefinishing() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">WORKSHOP PROGRESS</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-28.jpeg"
-                  alt="Console during refinishing showing progress"
+                  alt="Console during refinishing showing progress" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -200,9 +201,9 @@ export default function TVConsoleWhitewashRefinishing() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">WHITEWASH APPLICATION</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-30.jpeg"
-                  alt="Media unit with whitewashed top"
+                  alt="Media unit with whitewashed top" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -216,9 +217,9 @@ export default function TVConsoleWhitewashRefinishing() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-lg font-semibold">FINAL RESULT</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-29.jpeg"
-                  alt="Completed console in home"
+                  alt="Completed console in home" width={400} height={300}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -303,9 +304,9 @@ export default function TVConsoleWhitewashRefinishing() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -357,9 +358,9 @@ export default function TVConsoleWhitewashRefinishing() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-29.jpeg"
-                alt="Whitewashed TV console as living room centerpiece"
+                alt="Whitewashed TV console as living room centerpiece" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

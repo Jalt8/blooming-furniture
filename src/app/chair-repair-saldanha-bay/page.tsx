@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Chair Repair Saldanha Bay",
   "url": "https://bloomingfurniture.co.za/chair-repair-saldanha-bay",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "address": { "@type": "PostalAddress", "addressLocality": "Saldanha Bay", "addressRegion": "Western Cape", "addressCountry": "ZA" },
   "geo": { "@type": "GeoCoordinates", "latitude": -33.0117, "longitude": 17.9442 }
 };

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Is It Worth Restoring Old Furniture? A Honest Cost-Benefit Analysis | Blooming Furniture',
+  title: 'Is It Worth Restoring Old Furniture? A Honest Cost-Benefit Analysis',
   description: 'Is it worth restoring old furniture? Honest cost-benefit analysis covering sentimental value, build quality, environmental benefits, and real cost comparison scenarios for South African homeowners.',
   keywords: 'is it worth restoring old furniture, furniture restoration worth it, restore vs buy new furniture, old furniture value, furniture restoration cost benefit, antique furniture restoration south africa',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

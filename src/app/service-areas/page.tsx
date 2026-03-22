@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Clock, Star, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration Service Areas | West Coast South Africa | Blooming Furniture",
+  title: "Furniture Restoration Service Areas | West Coast South Africa",
   description: "Professional furniture restoration services across the West Coast, South Africa. Serving Langebaan, Saldanha Bay, Vredenburg, Paternoster and surrounding areas with expert craftsmanship.",
   keywords: "furniture restoration West Coast, furniture repair service areas, Langebaan furniture restoration, Saldanha Bay furniture repair, Vredenburg furniture services, Paternoster furniture restoration",
   openGraph: {

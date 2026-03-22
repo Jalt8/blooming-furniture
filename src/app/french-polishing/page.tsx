@@ -5,7 +5,7 @@ import { Sparkles, Check, Star, Phone, MessageCircle, Clock, Shield, Layers, Eye
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'French Polishing Services West Coast | Traditional Wood Finishing | Blooming Furniture',
+  title: 'French Polishing Services West Coast | Traditional Wood Finishing',
   description: 'Professional French polishing services on the West Coast, South Africa. Traditional shellac finishing for antiques & fine furniture. Unmatched depth & lustre. Prices from R2,000. Free quotes!',
   keywords: 'French polishing West Coast, French polish furniture, shellac finishing, traditional wood finishing, antique French polish, hand-rubbed finish, furniture French polishing South Africa, Langebaan French polish',
   openGraph: {

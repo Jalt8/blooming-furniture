@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import BlogClient from '@/components/BlogClient';
 
 export const metadata: Metadata = {
-  title: 'Furniture Restoration Blog | Expert Tips & West Coast Guides | Blooming Furniture',
+  title: 'Furniture Restoration Blog | Expert Tips & West Coast Guides',
   description: 'Expert furniture restoration tips, West Coast guides, and local insights. Learn about antique restoration, coastal climate care, and professional techniques from Blooming Furniture experts.',
   keywords: 'furniture restoration blog, West Coast furniture care, antique restoration tips, coastal furniture maintenance, furniture repair guides',
   openGraph: {

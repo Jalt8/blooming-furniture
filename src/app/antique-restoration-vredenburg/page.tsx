@@ -25,7 +25,7 @@ const localBusinessSchema = {
   "@id": "https://bloomingfurniture.co.za",
   "name": "Blooming Furniture - Antique Restoration Vredenburg",
   "url": "https://bloomingfurniture.co.za/antique-restoration-vredenburg",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "address": { "@type": "PostalAddress", "addressLocality": "Vredenburg", "addressRegion": "Western Cape", "addressCountry": "ZA" },
   "geo": { "@type": "GeoCoordinates", "latitude": -32.9082, "longitude": 17.9860 }
 };

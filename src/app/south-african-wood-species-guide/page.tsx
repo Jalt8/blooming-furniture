@@ -4,7 +4,7 @@ import { Calendar, Clock, User, TreePine, Shield, Search, Sun, HelpCircle, Phone
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'South African Wood Species Guide: Identifying & Caring for Local Woods | Blooming Furniture',
+  title: 'South African Wood Species Guide: Identifying & Caring for Local Woods',
   description: 'Complete guide to South African wood species used in furniture: Stinkwood, Yellowwood, Blackwood, Kiaat, Teak & more. Learn identification, care, and restoration tips.',
   keywords: 'south african wood types, stinkwood furniture, yellowwood furniture, kiaat wood, SA wood species, south african wood identification, indigenous wood furniture, wood furniture care south africa',
   openGraph: {

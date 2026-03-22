@@ -4,7 +4,7 @@ import { Calendar, Clock, User, ArrowLeft } from 'lucide-react';
 import BlogArticleClient from '@/components/BlogArticleClient';
 
 export const metadata: Metadata = {
-  title: 'The Complete Guide to Furniture Restoration on the West Coast South Africa | Blooming Furniture',
+  title: 'The Complete Guide to Furniture Restoration on the West Coast South Africa',
   description: 'Master furniture restoration in West Coast conditions. Learn about coastal weather effects, local wood types, salt air protection, and professional restoration techniques for lasting results.',
   keywords: 'furniture restoration west coast, coastal furniture restoration, west coast furniture repair, salt air furniture damage, coastal climate furniture care, furniture restoration south africa',
   openGraph: {
@@ -37,15 +37,16 @@ const articleSchema = {
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Blooming Furniture",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://bloomingfurniture.co.za/blog/coastal-restoration-guide.jpg"
+      "url": "https://bloomingfurniture.co.za/blooming-furniture.png"
     }
   },
   "mainEntityOfPage": {

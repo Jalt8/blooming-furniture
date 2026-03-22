@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Traditional Sideboard Whitewash Refinishing - Glass Display Cabinet | Blooming Furniture",
+  title: "Traditional Sideboard Whitewash Refinishing - Glass Display Cabinet",
   description: "See the stunning transformation of a traditional buffet from dark wood to soft whitewashed finish. Features glass display section, raised panel doors, curved details, and vintage brass hardware.",
   keywords: "sideboard whitewash, buffet refinishing, glass display cabinet, whitewash furniture, French country buffet, coastal sideboard, farmhouse furniture",
   openGraph: {
@@ -163,9 +164,9 @@ export default function TraditionalSideboardWhitewash() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-24.jpeg"
-                  alt="Traditional Sideboard - Whitewash Transformation"
+                  alt="Traditional Sideboard - Whitewash Transformation" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -191,9 +192,9 @@ export default function TraditionalSideboardWhitewash() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-23.jpeg"
-                  alt="Before restoration - dark traditional finish"
+                  alt="Before restoration - dark traditional finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -208,9 +209,9 @@ export default function TraditionalSideboardWhitewash() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-24.jpeg"
-                  alt="After restoration - soft whitewashed finish"
+                  alt="After restoration - soft whitewashed finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -306,9 +307,9 @@ export default function TraditionalSideboardWhitewash() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -360,9 +361,9 @@ export default function TraditionalSideboardWhitewash() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-24.jpeg"
-                alt="Whitewashed sideboard with glass display as elegant focal point"
+                alt="Whitewashed sideboard with glass display as elegant focal point" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

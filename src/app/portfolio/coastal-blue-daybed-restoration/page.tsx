@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Outdoor Pine Daybed Coastal Blue Restoration | Blooming Furniture",
+  title: "Outdoor Pine Daybed Coastal Blue Restoration",
   description: "See the stunning coastal transformation of a weathered outdoor daybed from sun-damaged pine to vibrant turquoise blue frame with natural wood slats. Resort-style elegance for outdoor living.",
   keywords: "outdoor daybed restoration, coastal blue furniture, turquoise daybed, outdoor furniture refinishing, pine daybed, weather-resistant finish, pool furniture",
   openGraph: {
@@ -163,9 +164,9 @@ export default function CoastalBlueDaybedRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-21.jpeg"
-                  alt="Coastal Blue Daybed - After Restoration"
+                  alt="Coastal Blue Daybed - After Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -191,9 +192,9 @@ export default function CoastalBlueDaybedRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-22.jpeg"
-                  alt="Before restoration - weathered sun-damaged daybed"
+                  alt="Before restoration - weathered sun-damaged daybed" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -208,9 +209,9 @@ export default function CoastalBlueDaybedRestoration() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-21.jpeg"
-                  alt="After restoration - vibrant coastal blue finish"
+                  alt="After restoration - vibrant coastal blue finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -239,9 +240,9 @@ export default function CoastalBlueDaybedRestoration() {
                 { src: "/images/portfolio/sunbed7.jpg", caption: "Overhead deterioration view" }
               ].map((image, index) => (
                 <div key={index} className="bg-daisy-cream rounded-lg overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={image.src}
-                    alt={image.caption}
+                    alt={image.caption} width={400} height={300}
                     className="w-full h-48 object-cover"
                   />
                   <p className="p-3 text-sm text-forest-green text-center">{image.caption}</p>
@@ -323,9 +324,9 @@ export default function CoastalBlueDaybedRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -377,9 +378,9 @@ export default function CoastalBlueDaybedRestoration() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-21.jpeg"
-                alt="Coastal blue daybed as outdoor focal point"
+                alt="Coastal blue daybed as outdoor focal point" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

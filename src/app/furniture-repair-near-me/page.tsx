@@ -34,7 +34,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Local Furniture Repair Services",
   "description": "Professional furniture repair services near you. Expert local repairs for broken chairs, tables, cabinets, and all furniture types with convenient pickup and delivery.",
   "url": "https://bloomingfurniture.co.za/furniture-repair-near-me",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Leather Furniture Care & Repair in Coastal Climates | West Coast Guide | Blooming Furniture',
+  title: 'Leather Furniture Care & Repair in Coastal Climates | West Coast Guide',
   description: 'Protect your leather furniture from salt air and humidity. Expert tips for maintaining and repairing leather in West Coast conditions. Prevent cracking, fading, and salt damage.',
   keywords: 'leather furniture care, coastal climate leather protection, salt air leather damage, leather furniture repair, leather restoration west coast, humid climate leather maintenance',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2025-01-06",
   "dateModified": "2025-01-06",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

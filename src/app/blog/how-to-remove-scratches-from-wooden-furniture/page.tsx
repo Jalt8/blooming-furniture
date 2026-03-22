@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Remove Scratches from Wooden Furniture: DIY & Professional Guide | Blooming Furniture',
+  title: 'How to Remove Scratches from Wooden Furniture: DIY & Professional Guide',
   description: 'Learn how to remove scratches from wooden furniture with DIY methods and know when to call a professional. Step-by-step guide covering walnut trick, furniture markers, sanding, staining, and deep scratch repair.',
   keywords: 'remove scratches wooden furniture, fix scratches wood furniture, scratch repair furniture, DIY furniture scratch removal, wood scratch repair south africa, furniture scratch fix',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

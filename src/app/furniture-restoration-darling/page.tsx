@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Truck, Palette, Wine, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration Darling | Wood Repair & Refinishing | Blooming Furniture",
+  title: "Furniture Restoration Darling | Wood Repair & Refinishing",
   description: "Professional furniture restoration, repair and refinishing services in Darling, Western Cape. Specializing in boutique guest house and artistic home furniture care. Free quotes for Darling residents.",
   keywords: "furniture restoration Darling, furniture repair Darling, furniture refinishing Darling, antique restoration Darling, Darling furniture services, Darling West Coast furniture, guest house furniture restoration, Evita se Perron Darling",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Darling Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Darling, Western Cape. Serving the artistic community, boutique guest houses, and wine estates.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-darling",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

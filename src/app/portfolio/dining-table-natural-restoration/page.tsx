@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Large Dining Table Natural Wood Restoration - Stunning Grain Revival | Blooming Furniture",
+  title: "Large Dining Table Natural Wood Restoration - Stunning Grain Revival",
   description: "See the breathtaking transformation of a large dining table from heavy dark finish to stunning natural wood beauty. Spectacular grain patterns with honey, amber, and walnut tones revealed.",
   keywords: "dining table restoration, natural wood finish, wood grain revival, butcher block table, table refinishing, farmhouse table, organic modern",
   openGraph: {
@@ -163,9 +164,9 @@ export default function DiningTableNaturalRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/portfolio-13.jpeg"
-                  alt="Large Dining Table - Natural Wood Restoration After"
+                  alt="Large Dining Table - Natural Wood Restoration After" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -191,9 +192,9 @@ export default function DiningTableNaturalRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-14.jpeg"
-                  alt="Before restoration - heavy dark finish"
+                  alt="Before restoration - heavy dark finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -208,9 +209,9 @@ export default function DiningTableNaturalRestoration() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/portfolio-13.jpeg"
-                  alt="After restoration - stunning natural wood"
+                  alt="After restoration - stunning natural wood" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -296,9 +297,9 @@ export default function DiningTableNaturalRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -350,9 +351,9 @@ export default function DiningTableNaturalRestoration() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/portfolio-13.jpeg"
-                alt="Natural wood dining table as bright dining room centerpiece"
+                alt="Natural wood dining table as bright dining room centerpiece" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

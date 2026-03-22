@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Professional Woodwork & Furniture Restoration Langebaan | Blooming Furniture",
+  title: "Professional Woodwork & Furniture Restoration Langebaan",
   description: "Expert woodwork restoration, wood furniture repair and refinishing services in Langebaan, Western Cape. Transform your wooden furniture with local craftsmanship. Free quotes for Langebaan residents.",
   keywords: "woodwork restoration Langebaan, wood furniture repair Langebaan, furniture refinishing Langebaan, antique wood restoration Langebaan, Langebaan furniture services, West Coast woodwork, wooden furniture Langebaan",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Langebaan Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Langebaan, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-langebaan",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Star, Clock, Award, Waves, Sparkles, Sun } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Coastal-Chic Hope Chest - Lime-Wash Transformation Case Study | Blooming Furniture",
+  title: "Coastal-Chic Hope Chest - Lime-Wash Transformation Case Study",
   description: "See the complete lime-wash transformation of a dark cedar trunk into a stunning coastal statement piece. Expert cerusing, brass restoration, and weathered sun-kissed finish techniques.",
   keywords: "lime wash furniture, coastal furniture makeover, cerusing technique, hope chest restoration, coastal chic style, weathered furniture finish, brass hardware restoration",
   openGraph: {
@@ -127,9 +128,9 @@ export default function CoastalChicHopeChest() {
               </div>
               
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/Lime-Wash1.jpg"
-                  alt="Coastal-Chic Hope Chest - Before and After"
+                  alt="Coastal-Chic Hope Chest - Before and After" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -206,10 +207,10 @@ export default function CoastalChicHopeChest() {
                   
                   <div className={`grid gap-4 ${step.images.length > 1 ? 'grid-cols-2' : 'grid-cols-1'} ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                     {step.images.map((image, imgIndex) => (
-                      <img
+                      <Image
                         key={imgIndex}
                         src={image}
-                        alt={`${step.title} - Step ${step.step}`}
+                        alt={`${step.title} - Step ${step.step}`} width={800} height={600}
                         className="rounded-lg shadow-md w-full h-auto"
                       />
                     ))}

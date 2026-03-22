@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Calendar, Clock, User, ArrowLeft, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Care for Wooden Furniture in a Coastal Climate: West Coast Guide | Blooming Furniture',
+  title: 'How to Care for Wooden Furniture in a Coastal Climate: West Coast Guide',
   description: 'Expert guide on caring for wooden furniture in South Africa coastal climate. Cover salt air damage, humidity, UV protection, seasonal care calendar, and room-by-room advice for West Coast homes.',
   keywords: 'wooden furniture care coastal climate, furniture care west coast, salt air furniture damage, coastal furniture protection, furniture care south africa, wood furniture humidity damage',
   openGraph: {
@@ -36,8 +36,9 @@ const articleSchema = {
   "datePublished": "2026-03-14",
   "dateModified": "2026-03-14",
   "author": {
-    "@type": "Organization",
-    "name": "Blooming Furniture - Restoration & Refurbishment"
+    "@type": "Person",
+    "name": "Wendy Erasmus",
+    "url": "https://bloomingfurniture.co.za/about"
   },
   "publisher": {
     "@type": "Organization",

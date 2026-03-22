@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Church Kitchen Cabinet Refresh | Industrial-Style Gray Cabinet Refinishing | Blooming Furniture',
+  title: 'Church Kitchen Cabinet Refresh | Industrial-Style Gray Cabinet Refinishing',
   description: 'Professional church kitchen cabinet transformation with modern charcoal-gray finish. Natural wood cabinets refinished into sleek industrial-style units with durable clear sealer perfect for high-traffic community spaces.',
   keywords: 'church kitchen cabinets, commercial kitchen refinishing, gray cabinet paint, industrial kitchen cabinets, community space renovation, charcoal gray cabinets, church renovation, cabinet sealer, modern kitchen refresh',
   openGraph: {
@@ -111,9 +112,9 @@ export default function ChurchKitchenCabinetRefresh() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/kvreig.jpeg"
-                  alt="Church kitchen cabinets before refinishing showing natural wood finish"
+                  alt="Church kitchen cabinets before refinishing showing natural wood finish" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 font-semibold">
@@ -124,9 +125,9 @@ export default function ChurchKitchenCabinetRefresh() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/cp5w3n.jpeg"
-                  alt="Completed church kitchen with sleek charcoal-gray cabinets"
+                  alt="Completed church kitchen with sleek charcoal-gray cabinets" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 font-semibold">
@@ -148,44 +149,44 @@ export default function ChurchKitchenCabinetRefresh() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/yjhunm.jpeg"
-                  alt="Modern gray kitchen cabinets with industrial-style aesthetic"
+                  alt="Modern gray kitchen cabinets with industrial-style aesthetic" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/d7mc0v.jpeg"
-                  alt="Church kitchen cabinet detail showing smooth gray finish"
+                  alt="Church kitchen cabinet detail showing smooth gray finish" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/xi0gy3.jpeg"
-                  alt="Complete church kitchen view with refinished gray cabinets"
+                  alt="Complete church kitchen view with refinished gray cabinets" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/qs3dco.jpeg"
-                  alt="Kitchen workspace with modern gray cabinet finish"
+                  alt="Kitchen workspace with modern gray cabinet finish" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/eii8i2.jpeg"
-                  alt="Church kitchen storage cabinets with charcoal-gray paint"
+                  alt="Church kitchen storage cabinets with charcoal-gray paint" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/lfcviy.jpeg"
-                  alt="Finished kitchen showing industrial-style gray cabinetry"
+                  alt="Finished kitchen showing industrial-style gray cabinetry" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>

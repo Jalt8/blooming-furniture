@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Clock, Award, Sparkles, Eye, Palette } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Antique Pine Vanity with Delft Tiles - Complete Restoration | Blooming Furniture",
+  title: "Antique Pine Vanity with Delft Tiles - Complete Restoration",
   description: "See the stunning restoration of a Dutch-inspired antique pine vanity featuring beautiful Delft-style blue and white tile insets. From dull unfinished wood to rich honey-toned showpiece with high-gloss finish.",
   keywords: "antique vanity restoration, pine furniture refinishing, Delft tile furniture, Dutch-inspired vanity, dressing table restoration, Victorian furniture",
   openGraph: {
@@ -150,9 +151,9 @@ export default function AntiqueWashstandRestoration() {
               </div>
 
               <div className="relative">
-                <img
+                <Image
                   src="/images/portfolio/image_11.jpeg"
-                  alt="Antique Pine Vanity - Final Restoration"
+                  alt="Antique Pine Vanity - Final Restoration" width={800} height={600}
                   className="rounded-lg shadow-xl w-full"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-golden-center text-dark-wood px-4 py-2 rounded-lg shadow-lg">
@@ -178,9 +179,9 @@ export default function AntiqueWashstandRestoration() {
                 <div className="bg-forest-green text-white-daisy py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">BEFORE</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/image_9.jpeg"
-                  alt="Before restoration - dull unfinished wood"
+                  alt="Before restoration - dull unfinished wood" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -195,9 +196,9 @@ export default function AntiqueWashstandRestoration() {
                 <div className="bg-golden-center text-dark-wood py-3 px-6 text-center">
                   <h3 className="text-xl font-semibold">AFTER</h3>
                 </div>
-                <img
+                <Image
                   src="/images/portfolio/image_11.jpeg"
-                  alt="After restoration - rich honey-toned finish"
+                  alt="After restoration - rich honey-toned finish" width={800} height={600}
                   className="w-full h-96 object-cover"
                 />
                 <div className="p-6">
@@ -283,9 +284,9 @@ export default function AntiqueWashstandRestoration() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <img
+                    <Image
                       src={step.images[0]}
-                      alt={`${step.treatment} - Step ${step.step}`}
+                      alt={`${step.treatment} - Step ${step.step}`} width={800} height={600}
                       className="rounded-lg shadow-md w-full h-auto"
                     />
                   </div>
@@ -337,9 +338,9 @@ export default function AntiqueWashstandRestoration() {
 
             {/* Final Showcase */}
             <div className="bg-golden-center/20 p-8 rounded-lg">
-              <img
+              <Image
                 src="/images/portfolio/image_11.jpeg"
-                alt="Complete restored antique pine vanity with Delft tiles"
+                alt="Complete restored antique pine vanity with Delft tiles" width={800} height={600}
                 className="rounded-lg mb-6 mx-auto max-w-3xl w-full"
               />
               <blockquote className="text-2xl italic text-golden-center mb-4 text-center">

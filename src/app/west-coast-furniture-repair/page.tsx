@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import WestCoastClient from './client';
 
 export const metadata: Metadata = {
-  title: 'Furniture Repair West Coast South Africa | Blooming Furniture - Saldanha Bay, Vredenburg, Langebaan',
+  title: 'Furniture Repair West Coast South Africa',
   description: 'Professional furniture repair and restoration services in West Coast, South Africa. Serving Saldanha Bay, Vredenburg, Langebaan, Paternoster. Expert craftsmen, free quotes, collection & delivery available.',
   keywords: 'furniture repair West Coast South Africa, furniture restoration Saldanha Bay, furniture refinishing Vredenburg, antique restoration Langebaan, furniture makeover Paternoster, West Coast furniture services',
   openGraph: {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Home, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration Services in Vredenburg | Blooming Furniture",
+  title: "Furniture Restoration Services in Vredenburg",
   description: "Professional furniture restoration and refinishing services in Vredenburg, Western Cape. Antique restoration, modern furniture makeovers, and custom refinishing for Vredenburg residents.",
   keywords: "furniture restoration Vredenburg, furniture refinishing Vredenburg, antique restoration Vredenburg, furniture makeover Vredenburg, West Coast furniture restoration, custom furniture Vredenburg",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Vredenburg Furniture Restoration",
   "description": "Professional furniture restoration and refinishing services in Vredenburg, Western Cape",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-vredenburg",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

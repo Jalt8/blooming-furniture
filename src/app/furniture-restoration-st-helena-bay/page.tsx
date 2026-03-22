@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Truck, Shield, Anchor, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Furniture Restoration St Helena Bay | Expert Wood Repair | Blooming Furniture",
+  title: "Furniture Restoration St Helena Bay | Expert Wood Repair",
   description: "Professional furniture restoration, repair and refinishing services in St Helena Bay, Western Cape. Specializing in coastal furniture protection from salt air damage. Free quotes and collection from our Langebaan workshop.",
   keywords: "furniture restoration St Helena Bay, furniture repair St Helena Bay, furniture refinishing St Helena Bay, antique restoration St Helena Bay, St Helena Bay furniture services, coastal furniture protection, Shelley Point furniture repair, Britannia Bay furniture restoration",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - St Helena Bay Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in St Helena Bay, Western Cape. Specializing in coastal furniture protection from salt air damage.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-st-helena-bay",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

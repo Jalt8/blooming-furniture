@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Cottage Kitchen Mint Green Refresh | Rustic Cabinet Refinishing | Blooming Furniture',
+  title: 'Cottage Kitchen Mint Green Refresh | Rustic Cabinet Refinishing',
   description: 'Professional cottage kitchen transformation with soft mint-green cabinets, polished wood countertops, and custom open shelving. Vintage rustic charm meets modern functionality in this cozy kitchen renovation.',
   keywords: 'cottage kitchen renovation, mint green cabinets, rustic kitchen refinishing, wood countertop restoration, cottage style kitchen, vintage kitchen cabinets, open shelving, farmhouse kitchen, painted kitchen cabinets',
   openGraph: {
@@ -115,9 +116,9 @@ export default function CottageKitchenMintGreenRefresh() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
-                <img
+                <Image
                   src="/images/portfolio/image_31.jpeg"
-                  alt="Cottage kitchen with soft mint-green cabinets and wood countertops"
+                  alt="Cottage kitchen with soft mint-green cabinets and wood countertops" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic">
@@ -125,9 +126,9 @@ export default function CottageKitchenMintGreenRefresh() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   src="/images/portfolio/image_32.jpeg"
-                  alt="Charming cottage kitchen showing custom open shelving and rustic details"
+                  alt="Charming cottage kitchen showing custom open shelving and rustic details" width={800} height={600}
                   className="w-full rounded-lg shadow-lg"
                 />
                 <p className="text-center text-forest-green mt-3 italic">
@@ -136,9 +137,9 @@ export default function CottageKitchenMintGreenRefresh() {
               </div>
             </div>
             <div className="max-w-3xl mx-auto">
-              <img
+              <Image
                 src="/images/portfolio/image_33.jpeg"
-                alt="Complete cottage kitchen view with mint cabinets and wood details"
+                alt="Complete cottage kitchen view with mint cabinets and wood details" width={800} height={600}
                 className="w-full rounded-lg shadow-lg"
               />
               <p className="text-center text-forest-green mt-3 italic">

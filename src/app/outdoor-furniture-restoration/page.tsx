@@ -5,7 +5,7 @@ import { Sun, Check, Star, Phone, MessageCircle, Clock, Shield, Wind, Droplets, 
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Outdoor Furniture Restoration West Coast | Weather-Proof Refinishing | Blooming Furniture',
+  title: 'Outdoor Furniture Restoration West Coast | Weather-Proof Refinishing',
   description: 'Professional outdoor furniture restoration on the West Coast, South Africa. Weather-proof refinishing for teak benches, patio sets, garden chairs & daybeds. Marine-grade UV-resistant coatings. Free quotes!',
   keywords: 'outdoor furniture restoration, outdoor furniture repair, teak furniture restoration, patio furniture refinishing, garden furniture repair, weather-proof furniture finish, outdoor furniture West Coast, marine-grade furniture finish',
   openGraph: {

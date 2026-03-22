@@ -34,7 +34,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Local Furniture Restoration Services",
   "description": "Professional furniture restoration services near you. Expert local craftsmen providing comprehensive furniture repair, refinishing, and restoration services.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-near-me",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

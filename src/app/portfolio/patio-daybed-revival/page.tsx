@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Star, Clock, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Patio Daybed Revival - Furniture Restoration Case Study | Blooming Furniture",
+  title: "Patio Daybed Revival - Furniture Restoration Case Study",
   description: "See how we transformed a sun-bleached, weather-worn daybed into a stunning centerpiece. Complete restoration process including structural repairs, refinishing, and marine-grade protection.",
   keywords: "patio daybed restoration, outdoor furniture restoration, UV damage repair, structural furniture repair, marine-grade finish, coastal furniture protection",
   openGraph: {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Truck, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Expert Furniture Restoration in Velddrif | Blooming Furniture",
+  title: "Expert Furniture Restoration in Velddrif",
   description: "Professional furniture restoration, repair and refinishing services in Velddrif, Western Cape. Specializing in coastal furniture protection. Free quotes and collection service for Velddrif residents.",
   keywords: "furniture restoration Velddrif, furniture repair Velddrif, furniture refinishing Velddrif, antique restoration Velddrif, Velddrif furniture services, Berg River furniture restoration, coastal furniture protection",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Velddrif Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Velddrif, Western Cape. Specializing in coastal environment furniture protection.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-velddrif",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",

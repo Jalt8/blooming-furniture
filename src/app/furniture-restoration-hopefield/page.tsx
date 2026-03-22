@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Star, Award, Hammer, Paintbrush, Home, Leaf } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Professional Furniture Restoration in Hopefield | Blooming Furniture",
+  title: "Professional Furniture Restoration in Hopefield",
   description: "Expert furniture restoration, repair and refinishing services in Hopefield, Western Cape. Specializing in heritage and farmhouse furniture restoration. Free quotes for Hopefield residents.",
   keywords: "furniture restoration Hopefield, furniture repair Hopefield, furniture refinishing Hopefield, antique restoration Hopefield, Hopefield furniture services, farmhouse furniture restoration, heritage furniture repair",
   openGraph: {
@@ -40,7 +40,7 @@ const localBusinessSchema = {
   "name": "Blooming Furniture - Hopefield Furniture Restoration",
   "description": "Professional furniture restoration, repair and refinishing services in Hopefield, Western Cape. Specializing in heritage and farmhouse furniture restoration.",
   "url": "https://bloomingfurniture.co.za/furniture-restoration-hopefield",
-  "telephone": "(079) 375 2588",
+  "telephone": "+27793752588",
   "email": "wendydanie@gmail.com",
   "address": {
     "@type": "PostalAddress",
